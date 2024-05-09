@@ -1,0 +1,98 @@
+Testing ListUsersTest
+2024-05-09 10:52:24,003 - ('start', '452', '', '1556985522') Line 137
+2024-05-09 10:52:24,004 - ('start', '490', '', '362798436') Line 137
+2024-05-09 10:52:24,004 - ('start', '469', '', '1110308541') Line 137
+2024-05-09 10:52:24,015 - ('start', '249', '', '1734658966') Line 137
+2024-05-09 10:52:24,020 - passed start loop Line 101
+2024-05-09 10:52:24,021 - chunk: join 7 client4 Line 111
+2024-05-09 10:52:24,021 - passed start loop Line 101
+2024-05-09 10:52:24,022 - chunk: join 7 client3 Line 111
+2024-05-09 10:52:24,023 - passed start loop Line 101
+2024-05-09 10:52:24,023 - chunk: join 7 client2 Line 111
+2024-05-09 10:52:24,024 - ('data', '453', 'join 7 client2', '3911903503') Line 137
+2024-05-09 10:52:24,024 - msg chunk: join 7 client2 Line 168
+2024-05-09 10:52:24,035 - ('data', '491', 'join 7 client3', '955527555') Line 137
+2024-05-09 10:52:24,035 - msg chunk: join 7 client3 Line 168
+2024-05-09 10:52:24,035 - ('data', '470', 'join 7 client4', '3913186958') Line 137
+2024-05-09 10:52:24,036 - msg chunk: join 7 client4 Line 168
+2024-05-09 10:52:24,042 - passed initial data loop Line 126
+2024-05-09 10:52:24,042 - passed start loop Line 101
+2024-05-09 10:52:24,043 - chunk: join 7 client1 Line 111
+2024-05-09 10:52:24,044 - ('data', '250', 'join 7 client1', '205646427') Line 137
+2024-05-09 10:52:24,044 - msg chunk: join 7 client1 Line 168
+2024-05-09 10:52:24,054 - ('end', '454', '', '1552586740') Line 137
+2024-05-09 10:52:24,055 - end ack sent Line 178
+2024-05-09 10:52:24,055 - complete message: join 7 client2join 7 client3join 7 client4join 7 client1 Line 179
+2024-05-09 10:52:24,055 - {} Line 25
+2024-05-09 10:52:24,058 - passed initial data loop Line 126
+2024-05-09 10:52:24,061 - passed initial data loop Line 126
+2024-05-09 10:52:24,064 - ('end', '492', '', '315708670') Line 137
+2024-05-09 10:52:24,064 - end ack sent Line 178
+2024-05-09 10:52:24,064 - complete message:  Line 179
+2024-05-09 10:52:24,071 - passed initial data loop Line 126
+2024-05-09 10:52:24,072 - ('end', '471', '', '4031290772') Line 137
+2024-05-09 10:52:24,072 - end ack sent Line 178
+2024-05-09 10:52:24,072 - complete message:  Line 179
+2024-05-09 10:52:24,072 - ('end', '251', '', '3573653695') Line 137
+2024-05-09 10:52:24,072 - end ack sent Line 178
+2024-05-09 10:52:24,073 - complete message:  Line 179
+2024-05-09 10:52:24,116 - passed start loop Line 101
+2024-05-09 10:52:24,116 - ('start', '147', '', '710581324') Line 137
+2024-05-09 10:52:24,116 - chunk: request_users_list 0 Line 111
+2024-05-09 10:52:24,164 - passed initial data loop Line 126
+2024-05-09 10:52:24,190 - ('data', '148', 'request_users_list 0', '3896782866') Line 137
+2024-05-09 10:52:24,190 - msg chunk: request_users_list 0 Line 168
+2024-05-09 10:52:24,224 - ('end', '149', '', '604957874') Line 137
+2024-05-09 10:52:24,224 - end ack sent Line 178
+2024-05-09 10:52:24,224 - complete message: request_users_list 0 Line 179
+2024-05-09 10:52:24,224 - sender username not found Line 64
+2024-05-09 10:52:24,620 - passed start loop Line 101
+2024-05-09 10:52:24,620 - chunk: request_users_list 0 Line 111
+2024-05-09 10:52:24,631 - ('start', '345', '', '1394481986') Line 137
+2024-05-09 10:52:24,663 - ('data', '346', 'request_users_list 0', '2505123603') Line 137
+2024-05-09 10:52:24,664 - msg chunk: request_users_list 0 Line 168
+2024-05-09 10:52:24,702 - passed initial data loop Line 126
+2024-05-09 10:52:24,761 - ('end', '347', '', '1414566616') Line 137
+2024-05-09 10:52:24,762 - end ack sent Line 178
+2024-05-09 10:52:24,762 - complete message: request_users_list 0 Line 179
+2024-05-09 10:52:25,127 - passed start loop Line 101
+2024-05-09 10:52:25,127 - passed start loop Line 101
+2024-05-09 10:52:25,127 - passed start loop Line 101
+2024-05-09 10:52:25,127 - passed start loop Line 101
+2024-05-09 10:52:25,127 - chunk: disconnect 7 client4 Line 111
+2024-05-09 10:52:25,127 - chunk: disconnect 7 client3 Line 111
+2024-05-09 10:52:25,127 - chunk: disconnect 7 client1 Line 111
+2024-05-09 10:52:25,127 - chunk: disconnect 7 client2 Line 111
+2024-05-09 10:52:25,128 - ('start', '453', '', '1561320581') Line 137
+2024-05-09 10:52:25,139 - ('start', '225', '', '1259695406') Line 137
+2024-05-09 10:52:25,139 - ('start', '454', '', '1480641024') Line 137
+2024-05-09 10:52:25,139 - ('start', '219', '', '1354382244') Line 137
+2024-05-09 10:52:25,140 - ('data', '226', 'disconnect 7 client4', '3292050169') Line 137
+2024-05-09 10:52:25,140 - msg chunk: disconnect 7 client4 Line 168
+2024-05-09 10:52:25,149 - ('data', '455', 'disconnect 7 client1', '2506695760') Line 137
+2024-05-09 10:52:25,149 - msg chunk: disconnect 7 client1 Line 168
+2024-05-09 10:52:25,150 - ('data', '220', 'disconnect 7 client2', '2141742853') Line 137
+2024-05-09 10:52:25,150 - msg chunk: disconnect 7 client2 Line 168
+2024-05-09 10:52:25,150 - ('data', '454', 'disconnect 7 client3', '1009560582') Line 137
+2024-05-09 10:52:25,150 - msg chunk: disconnect 7 client3 Line 168
+2024-05-09 10:52:25,150 - passed initial data loop Line 126
+2024-05-09 10:52:25,160 - ('end', '455', '', '1565064643') Line 137
+2024-05-09 10:52:25,162 - end ack sent Line 178
+2024-05-09 10:52:25,162 - complete message: disconnect 7 client4disconnect 7 client1disconnect 7 client2disconnect 7 client3 Line 179
+2024-05-09 10:52:25,162 - passed initial data loop Line 126
+2024-05-09 10:52:25,162 - passed initial data loop Line 126
+Traceback (most recent call last):
+  File "server_1.py", line 256, in <module>
+2024-05-09 10:52:25,163 - passed initial data loop Line 126
+    SERVER.start()
+  File "server_1.py", line 198, in start
+    del self.users_dict[username]
+KeyError: 'client4disconnect'
+Traceback (most recent call last):
+  File "TestPart1.py", line 237, in <module>
+    f.execute_tests()
+  File "TestPart1.py", line 78, in execute_tests
+    self.start()
+  File "TestPart1.py", line 125, in start
+    raise Exception("Test timed out!")
+Exception: Test timed out!
