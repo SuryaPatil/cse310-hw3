@@ -54,7 +54,7 @@ class Client:
                 if input_arr[0] == "list":
                     self.send_packet("list")
                 elif input_arr[0] == "msg":
-                    msg = util.make_message("send_message",4, user_input) 
+                    self.send_packet(user_input)
                 elif input_arr[0] == "quit":
                     self.send_packet("quit")
                 elif input_arr[0] == "help":
@@ -92,9 +92,10 @@ class Client:
         start_time = time.time()
         while not self.ack_received: # wait for the ack from the server
             if time.time() - start_time >= util.TIME_OUT:
+                j = 0
                 # Timeout occurred
-                logger.debug("***Timeout occurred while waiting for ack.***")
-                self.sock.sendto(packet, (self.server_addr, self.server_port)) # resend the packet
+                #logger.debug("***Timeout occurred while waiting for ack.***")
+                #self.sock.sendto(packet, (self.server_addr, self.server_port)) # resend the packet
             pass
         self.ack_received = False
         
@@ -106,6 +107,8 @@ class Client:
             msg = util.make_message("request_users_list",2)
         elif user_input == "quit":
             msg = util.make_message("disconnect",1, self.name) 
+        elif user_input[0:3] == "msg":
+            msg = util.make_message("send_message",4, user_input) 
         chunks = [msg[i:i+util.CHUNK_SIZE] for i in range(0, len(msg), util.CHUNK_SIZE)] # Split the user input message into chunks
         for chunk in chunks:
             logger.debug("chunk: %s",chunk)
@@ -116,6 +119,7 @@ class Client:
             start_time = time.time()
             while not self.ack_received: # wait for the ack from the server
                 if time.time() - start_time >= util.TIME_OUT:
+                    j = 0
                     # Timeout occurred
                     logger.debug("***Timeout occurred while waiting for data ack.***")
                     self.sock.sendto(packet, (self.server_addr, self.server_port)) # resend the packet
@@ -131,14 +135,13 @@ class Client:
         while not self.ack_received: # wait for the ack from the server
             if time.time() - start_time >= util.TIME_OUT:
                 # Timeout occurred
-           #     logger.debug("***Timeout occurred while waiting for end ack.***")
+                #logger.debug("***Timeout occurred while waiting for end ack.***")
                 self.sock.sendto(packet, (self.server_addr, self.server_port)) # resend the packet
             pass
 
         if user_input == "quit":
-            print("quitting...")
+            print("quitting")
             sys.exit()
-
 
     def receive_handler(self):
         '''
@@ -241,7 +244,7 @@ if __name__ == "__main__":
         logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(message)s Line %(lineno)d')
         logger = logging.getLogger(__name__)
         # Disable DEBUG level logging for the root logger
-        #logging.getLogger().setLevel(logging.INFO)
+        logging.getLogger().setLevel(logging.INFO)
         # Create a file handler
         # file_handler = logging.FileHandler('debug.log')
         # file_handler.setLevel(logging.DEBUG)  # Set the handler level to DEBUG

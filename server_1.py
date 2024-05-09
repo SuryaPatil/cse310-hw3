@@ -8,6 +8,7 @@ import util
 import logging
 import time
 import queue
+import threading
 
 class Server:
     '''
@@ -21,7 +22,8 @@ class Server:
         self.sock.settimeout(None)
         self.sock.bind((self.server_addr, self.server_port))
         self.users_dict = {} # map usernames to addresses
-        self.messages = queue.Queue()
+        self.messageQueue = queue.Queue()
+        self.messages = {} # map addresses to messages
     
     def join(self, username, addr):
         logger.debug(self.users_dict)
@@ -71,7 +73,11 @@ class Server:
         packet = util.make_packet(msg=msg).encode()
         self.sock.sendto(packet, addr)
 
+    # @addr: address of the sender
+    # @text: the command the sender entered into the CLI
+    # @num_receivers: The number of users the client wants to send the message to
     def msg(self, addr, text, num_receivers):
+        logger.debug("text: %s",text)
         # find who sent the message
         sender = ""
         for key, value in self.users_dict.items():
@@ -126,10 +132,63 @@ class Server:
 
     def handle_pkt(self):
         while True:
-            while not self.messages.empty():
-                packet, addr = self.messages.get()
+            while not self.messageQueue.empty():
+                packet, address = self.messageQueue.get()
                 parsed_pkt = util.parse_packet(packet.decode())
-                logger.debug(parsed_pkt)
+                logger.debug(parsed_pkt) 
+
+                pkt_type = parsed_pkt[0] # obtain the packet type ("start", ack, "data", or "end")
+                seqno = int(parsed_pkt[1]) # obtain the sequence number
+                
+                decoded_pkt = packet.decode()
+                if not util.validate_checksum(decoded_pkt):
+                    logger.debug("*** Checksum invalid. Must discard packet ***")
+                    continue # discard the packet if checksum is invalid (don't send an ack)
+
+                msg_type_arr = ""
+                msg_type = ""
+
+                if pkt_type == "start":
+                    packet = util.make_packet(msg_type="ack", seqno=seqno+1).encode() # ack client's start packet
+
+                    self.messages[address] = "" # start constructing a new message for this connection
+                    self.sock.sendto(packet, address) # send the ack
+                    #logger.debug("start ack sent")
+                    continue
+                elif pkt_type == "data":
+                    logger.debug("msg chunk: %s", parsed_pkt[2])
+                    self.messages[address] += parsed_pkt[2] # append the message chunk to the message
+                    packet = util.make_packet(msg_type="ack", seqno=seqno+1).encode() # ack client's start packet
+                    self.sock.sendto(packet, address)
+                    #logger.debug("data ack sent")
+
+                    continue
+                elif pkt_type == "end":
+                    packet = util.make_packet(msg_type="ack", seqno=seqno+1).encode() # ack client's start packet
+                    self.sock.sendto(packet, address)
+                    logger.debug("end ack sent")
+                    logger.debug("complete message: %s", self.messages[address])
+                    msg_type_arr = self.messages[address].split(' ')
+                    msg_type = msg_type_arr[0]
+
+                #logger.debug("msg_type_arr: %s", msg_type_arr)
+                logger.debug("msg_type: %s", msg_type)
+                if msg_type == "join":
+                    username = msg_type_arr[2]
+                    self.join(username, address)
+                elif msg_type == "request_users_list":
+                    self.list(address)
+                elif msg_type == "send_message":
+                    # parsed_pkt[2] contains the text of the message
+                    # msg_type_arr[3] represents how many recipients the message has
+                    self.msg(address, self.messages[address], int(msg_type_arr[3]))
+                elif msg_type == "disconnect":
+                    username = msg_type_arr[2]
+                    del self.users_dict[username]
+                    print("disconnected:",username)        
+                elif msg_type == "unknown": # server receives a message it does not recognize
+                    self.unknown(address)
+
 
     def start(self):
         '''
@@ -141,66 +200,9 @@ class Server:
             # Receive the client packet along with the address it is coming from
             packet, address = self.sock.recvfrom(1024)
             parsed_pkt = util.parse_packet(packet.decode())
-            self.messages.put((packet, address)) # put the message in the message queue
-            logger.debug(parsed_pkt)
+            self.messageQueue.put((packet, address)) # put the message in the message queue
 
-            pkt_type = parsed_pkt[0] # obtain the packet type ("start", ack, "data", or "end")
-            seqno = int(parsed_pkt[1]) # obtain the sequence number
-            
-            decoded_pkt = packet.decode()
-            if not util.validate_checksum(decoded_pkt):
-                logger.debug("*** Checksum invalid. Must discard packet ***")
-                continue # discard the packet if checksum is invalid (don't send an ack)
-
-            msg_type_arr = ""
-            msg_type = ""
-
-            if pkt_type == "start":
-                packet = util.make_packet(msg_type="ack", seqno=seqno+1).encode() # ack client's start packet
-                # timeout = 0.5  # 500 milliseconds
-                # start_time = time.time()
-                # while time.time() - start_time <= timeout:
-                #     time.sleep(0.01)  # Sleep for a short duration to reduce CPU usage
-                self.sock.sendto(packet, address)
-                #logger.debug("start ack sent")
-                continue
-            elif pkt_type == "data":
-                logger.debug("msg chunk: %s", parsed_pkt[2])
-                packet = util.make_packet(msg_type="ack", seqno=seqno+1).encode() # ack client's start packet
-                self.sock.sendto(packet, address)
-                #logger.debug("data ack sent")
-                if parsed_pkt[2] != 'None':
-                    msg += parsed_pkt[2] # build the complete message from all the chunks
-                continue
-            elif pkt_type == "end":
-                packet = util.make_packet(msg_type="ack", seqno=seqno+1).encode() # ack client's start packet
-                self.sock.sendto(packet, address)
-                logger.debug("end ack sent")
-                logger.debug("complete message: %s", msg)
-                msg_type_arr = msg.split(' ')
-                msg_type = msg_type_arr[0]
-
-            #logger.debug("msg_type_arr: %s", msg_type_arr)
-            #logger.debug("msg_type: %s", msg_type)
-            if msg_type == "join":
-                username = msg_type_arr[2]
-                self.join(username, address)
-                msg = ""
-            elif msg_type == "request_users_list":
-                self.list(address)
-                msg = ""
-            elif msg_type == "send_message":
-                # parsed_pkt[2] contains the text of the message
-                # msg_type_arr[3] represents how many recipients the message has
-                self.msg(address, parsed_pkt[2], int(msg_type_arr[3]))
-            elif msg_type == "disconnect":
-                username = msg_type_arr[2]
-                del self.users_dict[username]
-                print("disconnected:",username)        
-            elif msg_type == "unknown": # server receives a message it does not recognize
-                self.unknown(address)
-
-            msg = ""
+            continue
 
 
     #    raise NotImplementedError # remove it once u start your implementation
@@ -242,7 +244,7 @@ if __name__ == "__main__":
         logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(message)s Line %(lineno)d')
         logger = logging.getLogger(__name__)
         # Disable DEBUG level logging for the root logger
-        #logging.getLogger().setLevel(logging.INFO)
+        logging.getLogger().setLevel(logging.INFO)
         # Create a file handler
         # file_handler = logging.FileHandler('debug.log')
         # file_handler.setLevel(logging.DEBUG)  # Set the handler level to DEBUG
@@ -253,6 +255,12 @@ if __name__ == "__main__":
 
         # # Add the file handler to the logger
         # logger.addHandler(file_handler)
-        SERVER.start()
+        t1 = threading.Thread(target=SERVER.start)
+        t2 = threading.Thread(target=SERVER.handle_pkt)
+
+
+
+        t1.start()
+        t2.start()
     except (KeyboardInterrupt, SystemExit):
         exit()

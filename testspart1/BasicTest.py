@@ -85,10 +85,10 @@ class BasicTest(object):
         for client in clients_out.keys():
             with open("client_"+client) as f:
                 lines = list(map(lambda x: x.lower(), f.read().split('\n')))
-                # print(lines)
-                # print("***")
-                # print(clients_out[client])
-                # print("@@@")
+                print(lines)
+                print("***")
+                print(clients_out[client])
+                print("@@@")
                 for each_line in clients_out[client]:
                     if each_line.lower() not in lines:
                         print("Test Failed: Client output is not correct")
