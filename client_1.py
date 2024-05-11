@@ -9,7 +9,6 @@ from threading import Thread
 import os
 import util
 import logging
-import time
 
 '''
 Write your code inside this class. 
@@ -30,8 +29,6 @@ class Client:
         self.sock.bind(('', random.randint(10000, 40000)))
         self.name = username
         self.running = True
-        self.ack_received = False
-        self.seq_num = 0 # The sequence number of each packet sent. This will be incremented each time a packet is sent
 
     def start(self):
         '''
@@ -40,23 +37,29 @@ class Client:
         Use make_message() and make_util() functions from util.py to make your first join packet
         Waits for userinput and then process it
         '''
-        try: 
-            self.send_packet("join") # Begin by sending a join message
+        try:
+            msg = util.make_message("join",1, self.name) # 1
+            packet = util.make_packet(msg_type="start",msg=msg).encode() # To start a connection, send a START packet
+            self.sock.sendto(packet, (self.server_addr, self.server_port)) # send the packet
 
             while self.running:
                 valid = True # Is the user input valid?
+            #  print("running:",self.running)
                 # Wait for user input
                 user_input = input()
                 input_arr = user_input.split(' ')
                 msg = None
 
-                # check the first word in the user input and make the appropriate message
                 if input_arr[0] == "list":
-                    self.send_packet("list")
+                    msg = util.make_message("request_users_list",2) 
                 elif input_arr[0] == "msg":
-                    self.send_packet(user_input)
+                    msg = util.make_message("send_message",4, user_input) 
                 elif input_arr[0] == "quit":
-                    self.send_packet("quit")
+                    msg = util.make_message("disconnect",1, self.name) 
+                    packet = util.make_packet(msg=msg).encode()
+                    self.sock.sendto(packet, (self.server_addr, self.server_port))
+                    print("quitting")
+                    sys.exit()
                 elif input_arr[0] == "help":
                     s = '''1) msg <number_of_users> <username1> <username2> ... <message>
 2) list
@@ -65,108 +68,43 @@ class Client:
                     print(s)
                 else:
                     valid = False
+                    #msg = util.make_message("unknown",2) 
+                packet = util.make_packet(msg=msg).encode()
 
-                # if self.running and valid: # If socket is still open and input is valid, send the packet
-                #     self.sock.sendto(packet, (self.server_addr, self.server_port)) 
-                #     if input_arr[0] == "quit": # if the user input was to quit, exit the program
-                #         print("quitting")
-                #         sys.exit()
-                # else:
-                if not self.running:
-                    logger.debug("breaking...")
-                    break
-                if not valid:
-                    print("incorrect userinput format")
-                
+                if self.running and valid:
+                    # send the packet
+                    self.sock.sendto(packet, (self.server_addr, self.server_port))
+                else:
+                    if not valid:
+                        print("incorrect userinput format")
+                    if not self.running:
+                        logger.debug("breaking...")
+                        break
         except OSError:
             logger.debug("OS Error")
-            sys.exit()
-
-    # helper function that sends data in chunks and waits for ack before sending next packet
-    # @user_input: the command the user entered into the CLI (JOIN, MSG, LIST, QUIT)
-    def send_packet(self, user_input):
-        seq_num = random.randint(100, 499) # The sequence number of each packet sent. This will be incremented each time a packet is sent
-        packet = util.make_packet(msg_type="start", seqno=seq_num).encode() # To start a connection, send a START packet
-        self.sock.sendto(packet, (self.server_addr, self.server_port)) # send the packet
-
-        start_time = time.time()
-        while not self.ack_received: # wait for the ack from the server
-            if time.time() - start_time >= util.TIME_OUT:
-                j = 0
-                # Timeout occurred
-                #logger.debug("***Timeout occurred while waiting for ack.***")
-                #self.sock.sendto(packet, (self.server_addr, self.server_port)) # resend the packet
-            pass
-        self.ack_received = False
-        
-        logger.debug("passed start loop")
-        msg = None
-        if user_input == "join":
-            msg = util.make_message(user_input,1, self.name)
-        elif user_input == "list":
-            msg = util.make_message("request_users_list",2)
-        elif user_input == "quit":
-            msg = util.make_message("disconnect",1, self.name) 
-        elif user_input[0:3] == "msg":
-            msg = util.make_message("send_message",4, user_input) 
-        chunks = [msg[i:i+util.CHUNK_SIZE] for i in range(0, len(msg), util.CHUNK_SIZE)] # Split the user input message into chunks
-        for chunk in chunks:
-            logger.debug("chunk: %s",chunk)
-            seq_num += 1 # seq_num should be incremented for each additional packet sent
-            packet = util.make_packet(msg_type="data",msg=chunk, seqno=seq_num).encode() # send messages in the format of a header, followed by a chunk of data
-            self.sock.sendto(packet, (self.server_addr, self.server_port)) # send the packet
-
-            start_time = time.time()
-            while not self.ack_received: # wait for the ack from the server
-                if time.time() - start_time >= util.TIME_OUT:
-                    j = 0
-                    # Timeout occurred
-                    logger.debug("***Timeout occurred while waiting for data ack.***")
-                    self.sock.sendto(packet, (self.server_addr, self.server_port)) # resend the packet
-                pass
-            self.ack_received = False
-
-        seq_num += 1 # increment seq_num 
-        logger.debug("passed initial data loop")
-        packet = util.make_packet(msg_type="end", seqno=seq_num).encode() # After transmitting the entire message, send END packet to 
-                                                                                # to mark end of the connection 
-        self.sock.sendto(packet, (self.server_addr, self.server_port)) # send the packet
-        start_time = time.time()
-        while not self.ack_received: # wait for the ack from the server
-            if time.time() - start_time >= util.TIME_OUT:
-                # Timeout occurred
-                #logger.debug("***Timeout occurred while waiting for end ack.***")
-                self.sock.sendto(packet, (self.server_addr, self.server_port)) # resend the packet
-            pass
-
-        if user_input == "quit":
-            print("quitting")
             sys.exit()
 
     def receive_handler(self):
         '''
         Waits for a message from server and process it accordingly
         '''
-
+        
         while True:
-            #logger.debug("waiting for message...")
+            logger.debug("waiting for message...")
             packet, address = self.sock.recvfrom(1024)
-            #logger.debug(packet)
+            logger.debug(packet)
             msg_type, seqno, data, checksum = util.parse_packet(packet.decode())
             #logger.debug(data)
-            if msg_type == "ack":
-                #logger.debug("received ack")
-                self.ack_received = True
-                continue
             msg_type_arr = data.split(' ')
-          #  logger.debug(data)
-          #  logger.debug(msg_type_arr)
+            logger.debug(data)
+            logger.debug(msg_type_arr)
             
             msg = msg_type_arr[0]
             if msg == "err_server_full":
                 print("disconnected: server full")
                 self.running = False  # Set the shutdown flag
                 self.sock.close()
+                os.system("client_1.py < test.txt")
                 sys.exit() # program still runs for some reason
                 
             #     self.sock.shutdown(socket.SHUT_WR)
@@ -199,6 +137,10 @@ class Client:
                 self.running = False  # Set the shutdown flag
                 self.sock.close()
                 sys.exit() # program still runs for some reason
+
+
+
+
 
 
 # Do not change below part of code
@@ -241,7 +183,7 @@ if __name__ == "__main__":
 
     S = Client(USER_NAME, DEST, PORT, WINDOW_SIZE)
     try:
-        logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(message)s Line %(lineno)d')
+        logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
         logger = logging.getLogger(__name__)
         # Disable DEBUG level logging for the root logger
         logging.getLogger().setLevel(logging.INFO)

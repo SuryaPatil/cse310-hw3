@@ -1,0 +1,298 @@
+Testing BasicFunctionality
+2024-05-11 14:37:26,938 - ('start', '415', '', '3605018464') Line 184
+2024-05-11 14:37:26,939 - start ack sent 416 Line 205
+2024-05-11 14:37:27,064 - ('start', '387', '', '441217172') Line 184
+2024-05-11 14:37:27,064 - start ack sent 388 Line 205
+2024-05-11 14:37:27,070 - passed start loop Line 95
+2024-05-11 14:37:27,071 - chunk 1: join 7 client3 Line 108
+2024-05-11 14:37:27,089 - ('start', '124', '', '225934793') Line 184
+2024-05-11 14:37:27,089 - start ack sent 125 Line 205
+2024-05-11 14:37:27,089 - ('data', '416', 'join 7 client3', '255321028') Line 184
+2024-05-11 14:37:27,089 - data ack sent 417 Line 212
+2024-05-11 14:37:27,100 - passed start loop Line 95
+2024-05-11 14:37:27,104 - chunk 1: join 7 client1 Line 108
+2024-05-11 14:37:27,116 - passed initial data loop Line 130
+2024-05-11 14:37:27,116 - passed start loop Line 95
+2024-05-11 14:37:27,117 - chunk 1: join 7 client2 Line 108
+2024-05-11 14:37:27,134 - ('data', '388', 'join 7 client1', '3457739382') Line 184
+2024-05-11 14:37:27,134 - data ack sent 389 Line 212
+2024-05-11 14:37:27,134 - ('data', '125', 'join 7 client2', '2444941785') Line 184
+2024-05-11 14:37:27,134 - data ack sent 126 Line 212
+2024-05-11 14:37:27,140 - ('end', '417', '', '3517890298') Line 184
+2024-05-11 14:37:27,141 - end ack sent 418 Line 217
+2024-05-11 14:37:27,141 - complete message from client: join 7 client3 Line 218
+2024-05-11 14:37:27,141 - {} Line 32
+2024-05-11 14:37:27,142 - ('start', '332', '', '3414570366') Line 184
+2024-05-11 14:37:27,145 - start ack sent 333 Line 205
+2024-05-11 14:37:27,151 - passed start loop Line 95
+2024-05-11 14:37:27,151 - chunk 1: join 7 client4 Line 108
+2024-05-11 14:37:27,152 - passed initial data loop Line 130
+2024-05-11 14:37:27,155 - end ack received Line 141
+2024-05-11 14:37:27,161 - passed initial data loop Line 130
+2024-05-11 14:37:27,162 - ('end', '126', '', '171570259') Line 184
+2024-05-11 14:37:27,162 - end ack sent 127 Line 217
+2024-05-11 14:37:27,163 - complete message from client: join 7 client2 Line 218
+2024-05-11 14:37:27,163 - {'client3': ('127.0.0.1', 49099)} Line 32
+2024-05-11 14:37:27,184 - ('data', '333', 'join 7 client4', '4214389063') Line 184
+2024-05-11 14:37:27,188 - data ack sent 334 Line 212
+2024-05-11 14:37:27,189 - ('end', '389', '', '337117290') Line 184
+2024-05-11 14:37:27,189 - end ack sent 390 Line 217
+2024-05-11 14:37:27,189 - complete message from client: join 7 client1 Line 218
+2024-05-11 14:37:27,190 - {'client3': ('127.0.0.1', 49099), 'client2': ('127.0.0.1', 49100)} Line 32
+2024-05-11 14:37:27,191 - end ack received Line 141
+2024-05-11 14:37:27,197 - passed initial data loop Line 130
+2024-05-11 14:37:27,224 - end ack received Line 141
+2024-05-11 14:37:27,244 - ('end', '334', '', '3418428472') Line 184
+2024-05-11 14:37:27,245 - end ack sent 335 Line 217
+2024-05-11 14:37:27,245 - complete message from client: join 7 client4 Line 218
+2024-05-11 14:37:27,245 - {'client3': ('127.0.0.1', 49099), 'client2': ('127.0.0.1', 49100), 'client1': ('127.0.0.1', 49101)} Line 32
+2024-05-11 14:37:27,284 - end ack received Line 141
+2024-05-11 14:37:28,585 - passed start loop Line 95
+2024-05-11 14:37:28,585 - chunk 1: request_users_list 0 Line 108
+2024-05-11 14:37:28,623 - ('start', '219', '', '1354382244') Line 184
+2024-05-11 14:37:28,624 - start ack sent 220 Line 205
+2024-05-11 14:37:28,668 - ('data', '220', 'request_users_list 0', '1831704375') Line 184
+2024-05-11 14:37:28,668 - data ack sent 221 Line 212
+2024-05-11 14:37:28,688 - passed initial data loop Line 130
+2024-05-11 14:37:28,720 - end ack received Line 141
+2024-05-11 14:37:28,753 - ('end', '221', '', '1222023174') Line 184
+2024-05-11 14:37:28,753 - end ack sent 222 Line 217
+2024-05-11 14:37:28,754 - complete message from client: request_users_list 0 Line 218
+2024-05-11 14:37:28,759 - server sent start msg 169 Line 147
+2024-05-11 14:37:28,812 - received start 169 Line 161
+2024-05-11 14:37:28,869 - ('ack', '170', '', '164318439') Line 184
+2024-05-11 14:37:28,869 - server received ack Line 198
+2024-05-11 14:37:28,875 - server passed start loop Line 154
+2024-05-11 14:37:28,875 - chunk 1: response_users_list 37 list: client1 client2 client3 client4 Line 158
+2024-05-11 14:37:28,875 - received data 170 Line 167
+2024-05-11 14:37:28,876 - client msg chunk: ('data', '170', 'response_users_list 37 list: client1 client2 client3 client4', '3155956608') Line 170
+2024-05-11 14:37:28,881 - client msg chunk: ('data', '170', 'response_users_list 37 list: client1 client2 client3 client4', '3155956608') Line 165
+2024-05-11 14:37:28,944 - ('ack', '171', '', '134817488') Line 184
+2024-05-11 14:37:28,944 - server received ack Line 198
+2024-05-11 14:37:28,951 - server passed initial data loop Line 171
+2024-05-11 14:37:28,951 - received data 171 Line 175
+2024-05-11 14:37:28,951 - complete message from server: response_users_list 37 list: client1 client2 client3 client4 Line 178
+2024-05-11 14:37:29,018 - ('ack', '172', '', '172988553') Line 184
+2024-05-11 14:37:29,024 - server received ack Line 198
+2024-05-11 14:37:29,037 - server passed end loop Line 177
+2024-05-11 14:37:30,590 - passed start loop Line 95
+2024-05-11 14:37:30,590 - chunk 1: send_message 43 msg 3 client1 client3 client4 Can we cheat? Line 108
+2024-05-11 14:37:30,641 - ('start', '128', '', '74286253') Line 184
+2024-05-11 14:37:30,641 - start ack sent 129 Line 205
+2024-05-11 14:37:30,661 - ('data', '129', 'send_message 43 msg 3 client1 client3 client4 Can we cheat?', '1959398749') Line 184
+2024-05-11 14:37:30,662 - data ack sent 130 Line 212
+2024-05-11 14:37:30,696 - passed initial data loop Line 130
+2024-05-11 14:37:30,728 - end ack received Line 141
+2024-05-11 14:37:30,762 - ('end', '130', '', '3054038916') Line 184
+2024-05-11 14:37:30,762 - end ack sent 131 Line 217
+2024-05-11 14:37:30,762 - complete message from client: send_message 43 msg 3 client1 client3 client4 Can we cheat? Line 218
+2024-05-11 14:37:30,762 - text: send_message 43 msg 3 client1 client3 client4 Can we cheat? Line 86
+2024-05-11 14:37:30,762 - ['client1', 'client3', 'client4'] Line 106
+2024-05-11 14:37:30,762 - 4 client4 client1 client3 client4 Can we cheat? Line 110
+2024-05-11 14:37:30,763 - server sent start msg 144 Line 147
+2024-05-11 14:37:30,769 - server sent start msg 334 Line 147
+2024-05-11 14:37:30,778 - received start 334 Line 161
+2024-05-11 14:37:30,778 - received start 144 Line 161
+2024-05-11 14:37:30,788 - received start 410 Line 161
+2024-05-11 14:37:30,794 - server sent start msg 410 Line 147
+2024-05-11 14:37:30,836 - ('ack', '145', '', '498409954') Line 184
+2024-05-11 14:37:30,836 - server received ack Line 198
+2024-05-11 14:37:30,853 - server passed start loop Line 154
+2024-05-11 14:37:30,854 - chunk 1: forward_message 47 4 client4 client1 client3 client4 Can we cheat? Line 158
+2024-05-11 14:37:30,871 - ('ack', '335', '', '4204939835') Line 184
+2024-05-11 14:37:30,887 - received data 145 Line 167
+2024-05-11 14:37:30,887 - client msg chunk: ('data', '145', 'forward_message 47 4 client4 client1 client3 client4 Can we cheat?', '2622242397') Line 170
+2024-05-11 14:37:30,878 - client msg chunk: ('data', '145', 'forward_message 47 4 client4 client1 client3 client4 Can we cheat?', '2622242397') Line 165
+2024-05-11 14:37:30,893 - server received ack Line 198
+2024-05-11 14:37:30,936 - ('ack', '411', '', '3850565244') Line 184
+2024-05-11 14:37:30,942 - server passed start loop Line 154
+2024-05-11 14:37:30,973 - chunk 1: forward_message 47 4 client4 client1 client3 client4 Can we cheat? Line 158
+2024-05-11 14:37:30,954 - server received ack Line 198
+2024-05-11 14:37:31,017 - received data 335 Line 167
+2024-05-11 14:37:30,990 - client msg chunk: ('data', '335', 'forward_message 47 4 client4 client1 client3 client4 Can we cheat?', '2785880732') Line 165
+2024-05-11 14:37:31,017 - client msg chunk: ('data', '335', 'forward_message 47 4 client4 client1 client3 client4 Can we cheat?', '2785880732') Line 170
+2024-05-11 14:37:31,006 - ('ack', '146', '', '536059835') Line 184
+2024-05-11 14:37:31,006 - server passed start loop Line 154
+2024-05-11 14:37:31,035 - server received ack Line 198
+2024-05-11 14:37:31,047 - chunk 1: forward_message 47 4 client4 client1 client3 client4 Can we cheat? Line 158
+2024-05-11 14:37:31,068 - server passed initial data loop Line 171
+2024-05-11 14:37:31,101 - received data 146 Line 175
+2024-05-11 14:37:31,102 - complete message from server: forward_message 47 4 client4 client1 client3 client4 Can we cheat? Line 178
+2024-05-11 14:37:31,084 - client msg chunk: ('data', '411', 'forward_message 47 4 client4 client1 client3 client4 Can we cheat?', '2634593635') Line 165
+2024-05-11 14:37:31,112 - received data 411 Line 167
+2024-05-11 14:37:31,112 - client msg chunk: ('data', '411', 'forward_message 47 4 client4 client1 client3 client4 Can we cheat?', '2634593635') Line 170
+2024-05-11 14:37:31,095 - ('ack', '336', '', '4175754338') Line 184
+2024-05-11 14:37:31,174 - server received ack Line 198
+2024-05-11 14:37:31,174 - ('ack', '147', '', '506590604') Line 184
+2024-05-11 14:37:31,174 - server received ack Line 198
+2024-05-11 14:37:31,174 - ('ack', '412', '', '3888400421') Line 184
+2024-05-11 14:37:31,174 - server received ack Line 198
+2024-05-11 14:37:31,180 - server passed end loop Line 177
+2024-05-11 14:37:31,181 - server passed initial data loop Line 171
+2024-05-11 14:37:31,192 - server passed initial data loop Line 171
+2024-05-11 14:37:31,205 - received data 412 Line 175
+2024-05-11 14:37:31,205 - received data 336 Line 175
+2024-05-11 14:37:31,205 - complete message from server: forward_message 47 4 client4 client1 client3 client4 Can we cheat? Line 178
+2024-05-11 14:37:31,205 - complete message from server: forward_message 47 4 client4 client1 client3 client4 Can we cheat? Line 178
+2024-05-11 14:37:31,239 - ('ack', '413', '', '3859161618') Line 184
+2024-05-11 14:37:31,240 - server received ack Line 198
+2024-05-11 14:37:31,251 - ('ack', '337', '', '4180057685') Line 184
+2024-05-11 14:37:31,251 - server received ack Line 198
+2024-05-11 14:37:31,257 - server passed end loop Line 177
+2024-05-11 14:37:31,264 - server passed end loop Line 177
+2024-05-11 14:37:32,595 - passed start loop Line 95
+2024-05-11 14:37:32,595 - chunk 1: send_message 5030 msg 3 client1 client3 client4 fMflTlZLKcoZbPVNQrNYiFnpFivPhBtbbJhEzjKtsOiUJOfXUFnJvmaRnSTwflhIJBfAukwQoqCkYWhWVPUYprZrpaVgKRdHaJUsMIUonotCDHBdVCfILXjUpepBmbjEATDLvcXsfbizReNkJByiMHECuVHkEACnsfQbfLmDpiKnbkGenOTtOOvwhyFLVigEiZdmElviRCSWWWLXgiOYayiukjFhghtMixEyJUbkuXtxJHYYgceaGTLatheEsHoQDwDsCyqLQtGYRuLisfTdrqxqYOOGXlPnRFFiKgyzWMEjrsGxKbpmWXpwPxpTyJICwzUqEffBWSRFuUAjupXwQHobHwDkaQULtusqgXcrRXEwWFPGJZwZYMJbysYHKriMIciianbEDiORwbHUrcfvFnZXwjGbRsEjtTBaiwfXdXGOEjnZlSjyCKQGTjdFulJpxiJVGTTypccMSdbuNBrunnemWSieAVJdlOTJkLFJbuPZEQqOaXPhDJBKsIteKFPPotrbnPgjKjgVZEquoYfFYmELihNFphPvanuhfpTVuihJCZvmfjfqbKboflcXWZbaJEwaKGdisrDGRkrtSiEaMeJjTytxChgWUliKEMgIfzMlQJXjjqLghmHwvPMjHmCFFoFsbpxAsbLJnjiIacMkPlEiQeksVYgaXeDTecuoKPvcAhtrIodesexymxVfsgQPLPxniONwChDRPskPblPZXIzesSHYNjoSUavWwUzVDsyfKRUWWnkxZYWuwoGBdySXnJkQBTGwBpfFbVbomQADguGhaEsPrGKbWPzHpRutDaQICbefGVDYOXkAyKSSzwdXjqvNzxnoceJLLCfFimbzMfafFfKXCjEVBkKfVOiescfELorHiuWUTarFkkOPNYWThevzhKbuewinDQJUYvBtBRsEiYNXbQCnNIlUJVSbnFjgoVorpzMLQTBcnQKRWPLtDoTIUPRoABCbzxnayAxDXyBPtlyenyElmfvPrTXvlxYtXKAIJLISrTvSwmSeAgdhTbZMUYaZckhlTQXBQaGcBmqMywVRICFBARDqsoGqrWKOelncLWbPTKXSgezhhmUGNhWiVPpICdYdtvnthItjHnAPjUTxxVZvcjfguJaplqWpUCsMQaqFRAZZPZShyFRqPKsTGZwRfeARRCAGRDNIRLUkrwdTVHGcIfYJIwAxaQILQrBlHGmGXRySBiFxCOXAyhGooKmFLIuyPADlcnSCohyMGFoExHlkXRuWMAEHvVOuSZulKmYwkrjIGrNPIWjDFdFHoRzoLlcousHhcXZCgzndlXzioRdRrOtdbHQHkqqugkXbbDzJjPddtMPremdiqDtACWCd Line 108
+2024-05-11 14:37:32,623 - ('start', '289', '', '766669870') Line 184
+2024-05-11 14:37:32,623 - start ack sent 290 Line 205
+2024-05-11 14:37:32,656 - ('data', '290', '', 'send_message 5030 msg 3 client1 client3 client4 fMflTlZLKcoZbPVNQrNYiFnpFivPhBtbbJhEzjKtsOiUJOfXUFnJvmaRnSTwflhIJBfAukwQoqCkYWhWVPUYprZrpaVgKRdHaJUsMIUonotCDHBdVCfILXjUpepBmbjEATDLvcXsfbizReNkJByiMHECuVHkEACnsfQbfLmDpiKnbkGenOTtOOvwhyFLVigEiZdmElviRCSWWWLXgiOYayiukjFhghtMixEyJUbkuXtxJHYYgceaGTLatheEsHoQDwDsCyqLQtGYRuLisfTdrqxqYOOGXlPnRFFiKgyzWMEjrsGxKbpmWXpwPxpTyJICwzUqEffBWSRFuUAjupXwQHobHwDkaQULtusqgXcrRXEwWFPGJZwZYMJbysYHKriMIciianbEDiORwbHUrcfvFnZXwjGbRsEjtTBaiwfXdXGOEjnZlSjyCKQGTjdFulJpxiJVGTTypccMSdbuNBrunnemWSieAVJdlOTJkLFJbuPZEQqOaXPhDJBKsIteKFPPotrbnPgjKjgVZEquoYfFYmELihNFphPvanuhfpTVuihJCZvmfjfqbKboflcXWZbaJEwaKGdisrDGRkrtSiEaMeJjTytxChgWUliKEMgIfzMlQJXjjqLghmHwvPMjHmCFFoFsbpxAsbLJnjiIacMkPlEiQeksVYgaXeDTecuoKPvcAhtrIodesexymxVfsgQPLPxniONwChDRPskPblPZXIzesSHYNjoSUavWwUzVDsyfKRUWWnkxZYWuwoGBdySXnJkQBTGwBpfFbVbomQADguGhaEsPrGKbWPzHpRutDaQICbefGVDYOXkAyKSSzwdXjqvNzxnoceJLLCfFimbzMfafFfKXCjEVBkKfVOiescfELorHiuWUTarFkkOPNYWThevzhKbuewinDQJUYvBtBRsEiYNXbQCnNIlUJVSbnFjgoVorpzMLQTBcnQKRWPLtDoTIUPR') Line 184
+2024-05-11 14:37:32,656 - data ack sent 291 Line 212
+2024-05-11 14:37:32,689 - chunk 2: JRFRZBfmvBluCeeuDuIFlclnFsLHusmpVNRfLbkApHLMPPeotOWgLFaWjvLTfmZWrwYNfaNzxiiUfEnYuJhdqYrzieLzPfSJSIZHLjsDvSbnXKRFNJRjHeSSgMEvBwUkCrGTBbTzBFjsbWkMiqZQcqjypfqVihVDuSOnGYZrMKWCGITHvrWCBzPsVOQJlNdgsZnnkLIGqYvnMTsiOcNYxwRHJYHQReZBuhbAqBsTxdDaYNTWOOItdbSTXcxQviNmqaWRYazxYEokcibMDEXpWfhUBJCqZEaPjMNeoaBKpDdVqkXpoWrkEUWalyrmDlNxhjZFYSpAQtUqYWdEwiFeGpWqImSfLtSvOkKjpcaMpvcqjmXsIvoNpOvSXFIJAQWAsFZJTXRaSywzSdhYoyWvUqWLntUASKDkGVNkDTiyoqQJWMBjeVeiFzLMTsQfzZQMIQDxtCjEEFByaaMsFbEhoRiXxakbZaihknMDhkvFQtKuWctnBgXzhkPRuPktimOTmLpfVGloIKSMpHMxkrtItUcmcIzpNakQfuyJYELECLkQJEStftpEzpvHmlWekDOZRpKeBzDsLvYIUEMbwUeLViuPzkmNfvhQuyMAjxoiMUsRHEOoVeEJGImOJoVCgYBiPfVPyNaKqghaYaLPOiCJBfiIcZwHOKFONSxRPzeYuLWatKKmGScmFtNSIyzKYZlKdUXsNRhcZzPLYUZPAFSDoeWcobJlKonxRmTcdWFhwkUOmWIVhVvMiHCcdxkHHMNGyPAgkEHpkXdcuLlDSKgfpgxtihcOucfSxpLlNYArEdSKlQcbWOurMlcmZSFUOBswnltzvFKkWAiRYCdOHbWAJiUBcOmyIyhDPlrZarMtiAXnZuegcFucXBDjwhkWJnOzOCrRbzxfvTkdfXUfeeEJJGPczEesWEbEsrngaTEtnlnSqBRGxieBBVvTojOseZpBWdfCVlhOulkdrfQgMmPAaucdOHhejEMidaVATQkjEluLzXtyrTpYGAZrgtAvcDDjnYAEcABeowHICVcyifsVhjyFvZpNdhunOqjNMIaoOuYpLDHkqNCfybywpJOeGDXCJOIHWhZHnAnxXaRrCKhbExxFxzzprJmQTnKvHuTPsHHfQHlOBZzzmqXlpnBzHepILqDqYaZNWLXcrDKlMsjBUJzWMVPrOOnnzzGiXkgmRzIKcPaZqGIwXTDMiQnuXDDwTyTarxkDIUmRAShOuyuCMIOtVOlQxBNEURGnmeNoGJcFpaWQXsQQJpzZEXBAqAvcvzkIweUyYfdyWQGwRPdzHRVMYLObBYFdiFEIeMKyndOyNUfUGHlozZUQHGnrcNFtABnpLAgJzpcPKTNGFzEFtxTwkhEtEncUHXXTuDJxYVOvvgDbMvhVQErl Line 108
+2024-05-11 14:37:32,721 - chunk 3: mohYmGqIrTTXxLaeldiqUhdLRWLOebiLOprGAlrnmcCqFwGclNRgSOtjwOjzovVWTzkqKNPJrjcuBSerjNsSXINYnLmlIUGvEblhbTKCfNlWCrKHiJNuxLjMjxzhlEKTUJILHmVDuIAaFKHCavlbrSbALkIrRiITXReKTdaytZMHkPTZhkPjmVmqbpnZjeBmXeuorKaVqDBwQWwiHKVNtLEjyREwKhSvYiuYEnxIDQgehKXZdlsoFuJaDOJVqUMVnINYmcZpDGoJNFXZJBLLQvvLngGESDjbTGWYoyiYqiSwYmmQSfqxyOQODEGBzPXFHalxffEpuLeIfwkQQmMTZkcENcOKVUBioJlLjpxAnmKfpSazeQkYpbLSsZooLpJiNTgyCLzsZtmqOzVGstvNlYdTwZdwgGNUHcKyYSNSnvecBgvyosQlLCsEtRwWwPGGBDMWtbctAhBjjgYuZDKKDEwZvuufZeQUmcHBBRGcGApOuibYxqfeEDEQhIvyTFewwAXnEuREoYClEnFigdxNUyVSjJoLoLrwQgERNOuMIeOsecPZixklLbGdnysiizCwlPzJgVgqHxgczAdwcYQzcruRMupdbbhRKEhrqzzdpDOLnWkVKWnefwanoIgRivdhoBlpfiSsushgBGwCRveLbKNcHcNqjubwUEXynJSCArVevLQbRwIXPuKYUBKJnMAzfJUMlVOSvdpAOxoQvftYTxjWsqBhGFFdbuhgfHXoJFJsYyMOYQMRXYyKJxKWYrTOyBmxHkiysFPzqPkviWUXLBoHRNxtSURZGccGNtFdWnvjnabeCsiIzIJBBPuSLsXarjzaXxQTMGfDIAhfTbpuUKdrnertGnzadsfktvbcIZBaeNMrEpSsfdZKMkCrpozeJDoifxDknRUioteqQOwBxaPCfowQnFKeBtIzqqAPSVGUXGXrSDBrMoUijvbjoFsCfokYUMEJmDKYDfpTMIQCwKdOaNcaUidZjYAXZnXigmOhetXTNjHTVxDVonCXsPNuhDDeryMGQgfavEOAQYjCbiaQHyUArKWwkdUwYQvuKrPcDjqRkbuRANSmCVOkixZUMRgDloRIsaInAwFNOmCCuYadBcooHWzXErFBRyewgFjbDVVndnTOTdrHEcjhvWMkULOOMfjUtLgNVuJAnKxneqFTFkiOqzLNWQZFWatHqKQJFdGmxbphKSkjyLSDdcyyTsrFlHbayduLrJYemNdAhkJalmdTevksfzxMFXArDwrQknMWZQCoYkbhCqKBcjtiqlXYlZycXakPTnzKqbOjVWPJgAeehDJfgKtswaQANEHLHcLSngFhONRkOhclWUoPkekOvnepuTeLaiJkBwbKKECkgQNoHhWcaxaluYbUViIQWkwhuecgwLSS Line 108
+2024-05-11 14:37:32,768 - ('data', '291', '', 'JRFRZBfmvBluCeeuDuIFlclnFsLHusmpVNRfLbkApHLMPPeotOWgLFaWjvLTfmZWrwYNfaNzxiiUfEnYuJhdqYrzieLzPfSJSIZHLjsDvSbnXKRFNJRjHeSSgMEvBwUkCrGTBbTzBFjsbWkMiqZQcqjypfqVihVDuSOnGYZrMKWCGITHvrWCBzPsVOQJlNdgsZnnkLIGqYvnMTsiOcNYxwRHJYHQReZBuhbAqBsTxdDaYNTWOOItdbSTXcxQviNmqaWRYazxYEokcibMDEXpWfhUBJCqZEaPjMNeoaBKpDdVqkXpoWrkEUWalyrmDlNxhjZFYSpAQtUqYWdEwiFeGpWqImSfLtSvOkKjpcaMpvcqjmXsIvoNpOvSXFIJAQWAsFZJTXRaSywzSdhYoyWvUqWLntUASKDkGVNkDTiyoqQJWMBjeVeiFzLMTsQfzZQMIQDxtCjEEFByaaMsFbEhoRiXxakbZaihknMDhkvFQtKuWctnBgXzhkPRuPktimOTmLpfVGloIKSMpHMxkrtItUcmcIzpNakQfuyJYELECLkQJEStftpEzpvHmlWekDOZRpKeBzDsLvYIUEMbwUeLViuPzkmNfvhQuyMAjxoiMUsRHEOoVeEJGImOJoVCgYBiPfVPyNaKqghaYaLPOiCJBfiIcZwHOKFONSxRPzeYuLWatKKmGScmFtNSIyzKYZlKdUXsNRhcZzPLYUZPAFSDoeWcobJlKonxRmTcdWFhwkUOmWIVhVvMiHCcdxkHHMNGyPAgkEHpkXdcuLlDSKgfpgxtihcOucfSxpLlNYArEdSKlQcbWOurMlcmZSFUOBswnltzvFKkWAiRYCdOHbWAJiUBcOmyIyhDPlrZarMtiAXnZuegcFucXBDjwhkWJnOzOCrRbzxfvTkdfXUfeeEJJGPczEesWEbEsrngaTEtnlnSqBRGxieBBVvTojOseZpBWdfCVlhOulkdrfQgMmPAaucdOHhejEMidaVATQkjEluLzXtyrTpYGAZ') Line 184
+2024-05-11 14:37:32,768 - data ack sent 292 Line 212
+2024-05-11 14:37:32,786 - ('data', '292', '', 'mohYmGqIrTTXxLaeldiqUhdLRWLOebiLOprGAlrnmcCqFwGclNRgSOtjwOjzovVWTzkqKNPJrjcuBSerjNsSXINYnLmlIUGvEblhbTKCfNlWCrKHiJNuxLjMjxzhlEKTUJILHmVDuIAaFKHCavlbrSbALkIrRiITXReKTdaytZMHkPTZhkPjmVmqbpnZjeBmXeuorKaVqDBwQWwiHKVNtLEjyREwKhSvYiuYEnxIDQgehKXZdlsoFuJaDOJVqUMVnINYmcZpDGoJNFXZJBLLQvvLngGESDjbTGWYoyiYqiSwYmmQSfqxyOQODEGBzPXFHalxffEpuLeIfwkQQmMTZkcENcOKVUBioJlLjpxAnmKfpSazeQkYpbLSsZooLpJiNTgyCLzsZtmqOzVGstvNlYdTwZdwgGNUHcKyYSNSnvecBgvyosQlLCsEtRwWwPGGBDMWtbctAhBjjgYuZDKKDEwZvuufZeQUmcHBBRGcGApOuibYxqfeEDEQhIvyTFewwAXnEuREoYClEnFigdxNUyVSjJoLoLrwQgERNOuMIeOsecPZixklLbGdnysiizCwlPzJgVgqHxgczAdwcYQzcruRMupdbbhRKEhrqzzdpDOLnWkVKWnefwanoIgRivdhoBlpfiSsushgBGwCRveLbKNcHcNqjubwUEXynJSCArVevLQbRwIXPuKYUBKJnMAzfJUMlVOSvdpAOxoQvftYTxjWsqBhGFFdbuhgfHXoJFJsYyMOYQMRXYyKJxKWYrTOyBmxHkiysFPzqPkviWUXLBoHRNxtSURZGccGNtFdWnvjnabeCsiIzIJBBPuSLsXarjzaXxQTMGfDIAhfTbpuUKdrnertGnzadsfktvbcIZBaeNMrEpSsfdZKMkCrpozeJDoifxDknRUioteqQOwBxaPCfowQnFKeBtIzqqAPSVGUXGXrSDBrMoUijvbjoFsCfokYUMEJmDKYDfpTMIQCwKdOaNcaUidZjYAXZnXigmOhetXTNjHTVxD') Line 184
+2024-05-11 14:37:32,786 - data ack sent 293 Line 212
+2024-05-11 14:37:32,817 - chunk 4: DvsndEKTHkntYNzLhZPUYQhLqxRhrPlCYTtEcFplqMHhlnRvBiIlVaUUvXHBKRXoktcrdsMSFKrINSdofnoDQJxyzIEkpOjtUstuWswkjLTYHULhEuJvXoZQIMNclziJfpIurIwSIjWnRdibkmgJOAtktJiYxLJWAemwtidgadxDNnAFEaTqmLoEUdorljuajLLQafkUMBJxTegoLCRCnxiCNRPVOdgShpCgaphyZXmUoWtKeWDkbOkKrLKQHSIclyQLbDgmzqcFhVBJFLbDUixuqrllUlGlCbxmQgtdvIiNsIFqtPsYwdeRMvpknRgmKEhQRJZomWOavTPzzbqxwtBELiKBAItimwbWihgJaaWqjyeCLavRmopGsxfKJkdmfPgPjgTmOCojuBxgQAPDESdFpQSIUGtfddBqZVUiNSyIlddhmpNJyscIskDczPiysFmWhrFYVRsldlXspbptdfrcymDblOtDCdkpiidgLWmWuHojYUCOjYJaGYqfpBwbQhlrSHubpTyAwPkYmUpoUYAempPDIUHXNNTAmGAsmDJREMoaspQFUcqvRlSsXSOjxKkrQyiZnEfhrlxIiskTGXKoAlkJDUXYRkthHvewHHFbAUJlcRzoLypdapOmLTDWDnyEadfxpVGZuxPTaClxAUlVJfTIYmxVhXWhIAupkMGLdABaPNlnmgVaaTxecZInAiKUImAKbCmGRpIggcXSnUHOaZMdXZVEfEVxnFykmMiFtClNsOKRVjbqLvVmRJFoBHLMxRCBGKdwugJjkgwOimoooobvOkXKdpZwrQazPQUcWFiscIFznfabwyGdApTdCohkUpmjKMqfcTJb Line 108
+2024-05-11 14:37:32,849 - passed initial data loop Line 130
+2024-05-11 14:37:32,889 - ('data', '293', 'DvsndEKTHkntYNzLhZPUYQhLqxRhrPlCYTtEcFplqMHhlnRvBiIlVaUUvXHBKRXoktcrdsMSFKrINSdofnoDQJxyzIEkpOjtUstuWswkjLTYHULhEuJvXoZQIMNclziJfpIurIwSIjWnRdibkmgJOAtktJiYxLJWAemwtidgadxDNnAFEaTqmLoEUdorljuajLLQafkUMBJxTegoLCRCnxiCNRPVOdgShpCgaphyZXmUoWtKeWDkbOkKrLKQHSIclyQLbDgmzqcFhVBJFLbDUixuqrllUlGlCbxmQgtdvIiNsIFqtPsYwdeRMvpknRgmKEhQRJZomWOavTPzzbqxwtBELiKBAItimwbWihgJaaWqjyeCLavRmopGsxfKJkdmfPgPjgTmOCojuBxgQAPDESdFpQSIUGtfddBqZVUiNSyIlddhmpNJyscIskDczPiysFmWhrFYVRsldlXspbptdfrcymDblOtDCdkpiidgLWmWuHojYUCOjYJaGYqfpBwbQhlrSHubpTyAwPkYmUpoUYAempPDIUHXNNTAmGAsmDJREMoaspQFUcqvRlSsXSOjxKkrQyiZnEfhrlxIiskTGXKoAlkJDUXYRkthHvewHHFbAUJlcRzoLypdapOmLTDWDnyEadfxpVGZuxPTaClxAUlVJfTIYmxVhXWhIAupkMGLdABaPNlnmgVaaTxecZInAiKUImAKbCmGRpIggcXSnUHOaZMdXZVEfEVxnFykmMiFtClNsOKRVjbqLvVmRJFoBHLMxRCBGKdwugJjkgwOimoooobvOkXKdpZwrQazPQUcWFiscIFznfabwyGdApTdCohkUpmjKMqfcTJb', '2536890393') Line 184
+2024-05-11 14:37:32,889 - data ack sent 294 Line 212
+2024-05-11 14:37:32,920 - ('end', '294', '', '2568805868') Line 184
+2024-05-11 14:37:32,920 - end ack sent 295 Line 217
+2024-05-11 14:37:32,920 - complete message from client: DvsndEKTHkntYNzLhZPUYQhLqxRhrPlCYTtEcFplqMHhlnRvBiIlVaUUvXHBKRXoktcrdsMSFKrINSdofnoDQJxyzIEkpOjtUstuWswkjLTYHULhEuJvXoZQIMNclziJfpIurIwSIjWnRdibkmgJOAtktJiYxLJWAemwtidgadxDNnAFEaTqmLoEUdorljuajLLQafkUMBJxTegoLCRCnxiCNRPVOdgShpCgaphyZXmUoWtKeWDkbOkKrLKQHSIclyQLbDgmzqcFhVBJFLbDUixuqrllUlGlCbxmQgtdvIiNsIFqtPsYwdeRMvpknRgmKEhQRJZomWOavTPzzbqxwtBELiKBAItimwbWihgJaaWqjyeCLavRmopGsxfKJkdmfPgPjgTmOCojuBxgQAPDESdFpQSIUGtfddBqZVUiNSyIlddhmpNJyscIskDczPiysFmWhrFYVRsldlXspbptdfrcymDblOtDCdkpiidgLWmWuHojYUCOjYJaGYqfpBwbQhlrSHubpTyAwPkYmUpoUYAempPDIUHXNNTAmGAsmDJREMoaspQFUcqvRlSsXSOjxKkrQyiZnEfhrlxIiskTGXKoAlkJDUXYRkthHvewHHFbAUJlcRzoLypdapOmLTDWDnyEadfxpVGZuxPTaClxAUlVJfTIYmxVhXWhIAupkMGLdABaPNlnmgVaaTxecZInAiKUImAKbCmGRpIggcXSnUHOaZMdXZVEfEVxnFykmMiFtClNsOKRVjbqLvVmRJFoBHLMxRCBGKdwugJjkgwOimoooobvOkXKdpZwrQazPQUcWFiscIFznfabwyGdApTdCohkUpmjKMqfcTJb Line 218
+2024-05-11 14:37:32,946 - end ack received Line 141
+2024-05-11 14:37:34,603 - passed start loop Line 95
+2024-05-11 14:37:34,603 - chunk 1: send_message 71 msg 4 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 108
+2024-05-11 14:37:34,651 - ('start', '226', '', '1230230391') Line 184
+2024-05-11 14:37:34,651 - start ack sent 227 Line 205
+2024-05-11 14:37:34,699 - ('data', '227', 'send_message 71 msg 4 client1 client2 client3 client4 Hello Dear Friends! Do not cheat.', '1096364119') Line 184
+2024-05-11 14:37:34,699 - data ack sent 228 Line 212
+2024-05-11 14:37:34,718 - passed initial data loop Line 130
+2024-05-11 14:37:34,751 - end ack received Line 141
+2024-05-11 14:37:34,784 - ('end', '228', '', '1191682953') Line 184
+2024-05-11 14:37:34,784 - end ack sent 229 Line 217
+2024-05-11 14:37:34,784 - complete message from client: send_message 71 msg 4 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 218
+2024-05-11 14:37:34,785 - text: send_message 71 msg 4 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 86
+2024-05-11 14:37:34,785 - ['client1', 'client2', 'client3', 'client4'] Line 106
+2024-05-11 14:37:34,785 - 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 110
+2024-05-11 14:37:34,785 - server sent start msg 258 Line 147
+2024-05-11 14:37:34,792 - server sent start msg 195 Line 147
+2024-05-11 14:37:34,800 - received start 258 Line 161
+2024-05-11 14:37:34,816 - received start 433 Line 161
+2024-05-11 14:37:34,816 - received start 195 Line 161
+2024-05-11 14:37:34,822 - server sent start msg 433 Line 147
+2024-05-11 14:37:34,822 - received start 421 Line 161
+2024-05-11 14:37:34,834 - ('ack', '259', '', '3954427187') Line 184
+2024-05-11 14:37:34,884 - server sent start msg 421 Line 147
+2024-05-11 14:37:34,884 - server received ack Line 198
+2024-05-11 14:37:34,960 - ('ack', '196', '', '3986245478') Line 184
+2024-05-11 14:37:34,973 - server passed start loop Line 154
+2024-05-11 14:37:34,973 - server received ack Line 198
+2024-05-11 14:37:35,011 - chunk 1: forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 158
+2024-05-11 14:37:35,049 - ('ack', '434', '', '1228995612') Line 184
+2024-05-11 14:37:35,106 - received data 259 Line 167
+2024-05-11 14:37:35,106 - client msg chunk: ('data', '259', 'forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat.', '4042771256') Line 170
+2024-05-11 14:37:35,049 - server passed start loop Line 154
+2024-05-11 14:37:35,068 - client msg chunk: ('data', '259', 'forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat.', '4042771256') Line 165
+2024-05-11 14:37:35,090 - server received ack Line 198
+2024-05-11 14:37:35,121 - chunk 1: forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 158
+2024-05-11 14:37:35,218 - received data 196 Line 167
+2024-05-11 14:37:35,218 - client msg chunk: ('data', '196', 'forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat.', '750150436') Line 170
+2024-05-11 14:37:35,181 - ('ack', '422', '', '4117882827') Line 184
+2024-05-11 14:37:35,181 - server passed start loop Line 154
+2024-05-11 14:37:35,229 - server received ack Line 198
+2024-05-11 14:37:35,262 - ('ack', '260', '', '4141306194') Line 184
+2024-05-11 14:37:35,263 - server received ack Line 198
+2024-05-11 14:37:35,275 - ('ack', '197', '', '3965398353') Line 184
+2024-05-11 14:37:35,239 - client msg chunk: ('data', '196', 'forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat.', '750150436') Line 165
+2024-05-11 14:37:35,250 - chunk 1: forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 158
+2024-05-11 14:37:35,276 - server received ack Line 198
+2024-05-11 14:37:35,305 - received data 434 Line 167
+2024-05-11 14:37:35,305 - client msg chunk: ('data', '434', 'forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat.', '1686876122') Line 170
+2024-05-11 14:37:35,263 - server passed start loop Line 154
+2024-05-11 14:37:35,276 - server passed initial data loop Line 171
+2024-05-11 14:37:35,293 - client msg chunk: ('data', '434', 'forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat.', '1686876122') Line 165
+2024-05-11 14:37:35,348 - received data 260 Line 175
+2024-05-11 14:37:35,348 - complete message from server: forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 178
+2024-05-11 14:37:35,309 - server passed initial data loop Line 171
+2024-05-11 14:37:35,373 - received data 197 Line 175
+2024-05-11 14:37:35,373 - complete message from server: forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 178
+2024-05-11 14:37:35,315 - chunk 1: forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 158
+2024-05-11 14:37:35,373 - ('ack', '435', '', '1216517675') Line 184
+2024-05-11 14:37:35,427 - received data 422 Line 167
+2024-05-11 14:37:35,427 - client msg chunk: ('data', '422', 'forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat.', '3900891818') Line 170
+2024-05-11 14:37:35,407 - client msg chunk: ('data', '422', 'forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat.', '3900891818') Line 165
+2024-05-11 14:37:35,438 - server received ack Line 198
+2024-05-11 14:37:35,523 - ('ack', '261', '', '4145363813') Line 184
+2024-05-11 14:37:35,540 - server received ack Line 198
+2024-05-11 14:37:35,547 - server passed initial data loop Line 171
+2024-05-11 14:37:35,557 - ('ack', '198', '', '3876022892') Line 184
+2024-05-11 14:37:35,568 - server passed end loop Line 177
+2024-05-11 14:37:35,613 - received data 435 Line 175
+2024-05-11 14:37:35,613 - complete message from server: forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 178
+2024-05-11 14:37:35,592 - server received ack Line 198
+2024-05-11 14:37:35,651 - ('ack', '423', '', '4105407996') Line 184
+2024-05-11 14:37:35,651 - server received ack Line 198
+2024-05-11 14:37:35,667 - server passed end loop Line 177
+2024-05-11 14:37:35,668 - server passed initial data loop Line 171
+2024-05-11 14:37:35,668 - ('ack', '436', '', '1254369394') Line 184
+2024-05-11 14:37:35,681 - server received ack Line 198
+2024-05-11 14:37:35,690 - received data 423 Line 175
+2024-05-11 14:37:35,690 - complete message from server: forward_message 75 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 178
+2024-05-11 14:37:35,697 - server passed end loop Line 177
+2024-05-11 14:37:35,768 - ('ack', '424', '', '4059863929') Line 184
+2024-05-11 14:37:35,768 - server received ack Line 198
+2024-05-11 14:37:35,774 - server passed end loop Line 177
+2024-05-11 14:37:42,606 - passed start loop Line 95
+2024-05-11 14:37:42,606 - passed start loop Line 95
+2024-05-11 14:37:42,606 - chunk 1: disconnect 7 client1 Line 108
+2024-05-11 14:37:42,606 - chunk 1: disconnect 7 client3 Line 108
+2024-05-11 14:37:42,607 - passed start loop Line 95
+2024-05-11 14:37:42,607 - passed start loop Line 95
+2024-05-11 14:37:42,607 - chunk 1: disconnect 7 client2 Line 108
+2024-05-11 14:37:42,607 - chunk 1: disconnect 7 client4 Line 108
+2024-05-11 14:37:42,628 - ('start', '278', '', '1947405903') Line 184
+2024-05-11 14:37:42,628 - start ack sent 279 Line 205
+2024-05-11 14:37:42,629 - ('start', '343', '', '1469278192') Line 184
+2024-05-11 14:37:42,629 - start ack sent 344 Line 205
+2024-05-11 14:37:42,629 - ('start', '394', '', '2696325544') Line 184
+2024-05-11 14:37:42,629 - start ack sent 395 Line 205
+2024-05-11 14:37:42,629 - ('start', '303', '', '3639734439') Line 184
+2024-05-11 14:37:42,629 - start ack sent 304 Line 205
+2024-05-11 14:37:42,670 - passed initial data loop Line 130
+2024-05-11 14:37:42,670 - passed initial data loop Line 130
+2024-05-11 14:37:42,670 - passed initial data loop Line 130
+2024-05-11 14:37:42,670 - passed initial data loop Line 130
+2024-05-11 14:37:42,670 - ('data', '344', 'disconnect 7 client1', '1097815819') Line 184
+2024-05-11 14:37:42,671 - data ack sent 345 Line 212
+2024-05-11 14:37:42,673 - ('data', '395', 'disconnect 7 client2', '3407817178') Line 184
+2024-05-11 14:37:42,673 - data ack sent 396 Line 212
+2024-05-11 14:37:42,673 - ('data', '304', 'disconnect 7 client3', '442477526') Line 184
+2024-05-11 14:37:42,673 - data ack sent 305 Line 212
+2024-05-11 14:37:42,673 - ('data', '279', 'disconnect 7 client4', '1511756297') Line 184
+2024-05-11 14:37:42,673 - data ack sent 280 Line 212
+2024-05-11 14:37:42,719 - ('end', '280', '', '648614485') Line 184
+2024-05-11 14:37:42,719 - end ack received Line 141
+2024-05-11 14:37:42,719 - end ack sent 281 Line 217
+2024-05-11 14:37:42,719 - end ack received Line 141
+2024-05-11 14:37:42,719 - end ack received Line 141
+2024-05-11 14:37:42,719 - complete message from client: disconnect 7 client4 Line 218
+2024-05-11 14:37:42,719 - ('end', '396', '', '2818056242') Line 184
+2024-05-11 14:37:42,719 - end ack sent 397 Line 217
+2024-05-11 14:37:42,719 - complete message from client: disconnect 7 client2 Line 218
+2024-05-11 14:37:42,719 - end ack received Line 141
+2024-05-11 14:37:42,719 - ('end', '305', '', '3635859937') Line 184
+2024-05-11 14:37:42,719 - end ack sent 306 Line 217
+2024-05-11 14:37:42,719 - complete message from client: disconnect 7 client3 Line 218
+2024-05-11 14:37:42,719 - ('end', '345', '', '1473529526') Line 184
+2024-05-11 14:37:42,720 - end ack sent 346 Line 217
+2024-05-11 14:37:42,720 - complete message from client: disconnect 7 client1 Line 218
+Exception ignored in: <module 'threading' from '/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py'>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 1388, in _shutdown
+    lock.acquire()
+KeyboardInterrupt: 
+['list: client1 client2 client3 client4', 'msg: client4: can we cheat?', 'msg: client2: hello dear friends! do not cheat.', 'quitting', '']
+****
+['quitting', 'list: client1 client2 client3 client4', 'msg: client4: Can we cheat?', 'msg: client4: fMflTlZLKcoZbPVNQrNYiFnpFivPhBtbbJhEzjKtsOiUJOfXUFnJvmaRnSTwflhIJBfAukwQoqCkYWhWVPUYprZrpaVgKRdHaJUsMIUonotCDHBdVCfILXjUpepBmbjEATDLvcXsfbizReNkJByiMHECuVHkEACnsfQbfLmDpiKnbkGenOTtOOvwhyFLVigEiZdmElviRCSWWWLXgiOYayiukjFhghtMixEyJUbkuXtxJHYYgceaGTLatheEsHoQDwDsCyqLQtGYRuLisfTdrqxqYOOGXlPnRFFiKgyzWMEjrsGxKbpmWXpwPxpTyJICwzUqEffBWSRFuUAjupXwQHobHwDkaQULtusqgXcrRXEwWFPGJZwZYMJbysYHKriMIciianbEDiORwbHUrcfvFnZXwjGbRsEjtTBaiwfXdXGOEjnZlSjyCKQGTjdFulJpxiJVGTTypccMSdbuNBrunnemWSieAVJdlOTJkLFJbuPZEQqOaXPhDJBKsIteKFPPotrbnPgjKjgVZEquoYfFYmELihNFphPvanuhfpTVuihJCZvmfjfqbKboflcXWZbaJEwaKGdisrDGRkrtSiEaMeJjTytxChgWUliKEMgIfzMlQJXjjqLghmHwvPMjHmCFFoFsbpxAsbLJnjiIacMkPlEiQeksVYgaXeDTecuoKPvcAhtrIodesexymxVfsgQPLPxniONwChDRPskPblPZXIzesSHYNjoSUavWwUzVDsyfKRUWWnkxZYWuwoGBdySXnJkQBTGwBpfFbVbomQADguGhaEsPrGKbWPzHpRutDaQICbefGVDYOXkAyKSSzwdXjqvNzxnoceJLLCfFimbzMfafFfKXCjEVBkKfVOiescfELorHiuWUTarFkkOPNYWThevzhKbuewinDQJUYvBtBRsEiYNXbQCnNIlUJVSbnFjgoVorpzMLQTBcnQKRWPLtDoTIUPRoABCbzxnayAxDXyBPtlyenyElmfvPrTXvlxYtXKAIJLISrTvSwmSeAgdhTbZMUYaZckhlTQXBQaGcBmqMywVRICFBARDqsoGqrWKOelncLWbPTKXSgezhhmUGNhWiVPpICdYdtvnthItjHnAPjUTxxVZvcjfguJaplqWpUCsMQaqFRAZZPZShyFRqPKsTGZwRfeARRCAGRDNIRLUkrwdTVHGcIfYJIwAxaQILQrBlHGmGXRySBiFxCOXAyhGooKmFLIuyPADlcnSCohyMGFoExHlkXRuWMAEHvVOuSZulKmYwkrjIGrNPIWjDFdFHoRzoLlcousHhcXZCgzndlXzioRdRrOtdbHQHkqqugkXbbDzJjPddtMPremdiqDtACWCdJRFRZBfmvBluCeeuDuIFlclnFsLHusmpVNRfLbkApHLMPPeotOWgLFaWjvLTfmZWrwYNfaNzxiiUfEnYuJhdqYrzieLzPfSJSIZHLjsDvSbnXKRFNJRjHeSSgMEvBwUkCrGTBbTzBFjsbWkMiqZQcqjypfqVihVDuSOnGYZrMKWCGITHvrWCBzPsVOQJlNdgsZnnkLIGqYvnMTsiOcNYxwRHJYHQReZBuhbAqBsTxdDaYNTWOOItdbSTXcxQviNmqaWRYazxYEokcibMDEXpWfhUBJCqZEaPjMNeoaBKpDdVqkXpoWrkEUWalyrmDlNxhjZFYSpAQtUqYWdEwiFeGpWqImSfLtSvOkKjpcaMpvcqjmXsIvoNpOvSXFIJAQWAsFZJTXRaSywzSdhYoyWvUqWLntUASKDkGVNkDTiyoqQJWMBjeVeiFzLMTsQfzZQMIQDxtCjEEFByaaMsFbEhoRiXxakbZaihknMDhkvFQtKuWctnBgXzhkPRuPktimOTmLpfVGloIKSMpHMxkrtItUcmcIzpNakQfuyJYELECLkQJEStftpEzpvHmlWekDOZRpKeBzDsLvYIUEMbwUeLViuPzkmNfvhQuyMAjxoiMUsRHEOoVeEJGImOJoVCgYBiPfVPyNaKqghaYaLPOiCJBfiIcZwHOKFONSxRPzeYuLWatKKmGScmFtNSIyzKYZlKdUXsNRhcZzPLYUZPAFSDoeWcobJlKonxRmTcdWFhwkUOmWIVhVvMiHCcdxkHHMNGyPAgkEHpkXdcuLlDSKgfpgxtihcOucfSxpLlNYArEdSKlQcbWOurMlcmZSFUOBswnltzvFKkWAiRYCdOHbWAJiUBcOmyIyhDPlrZarMtiAXnZuegcFucXBDjwhkWJnOzOCrRbzxfvTkdfXUfeeEJJGPczEesWEbEsrngaTEtnlnSqBRGxieBBVvTojOseZpBWdfCVlhOulkdrfQgMmPAaucdOHhejEMidaVATQkjEluLzXtyrTpYGAZrgtAvcDDjnYAEcABeowHICVcyifsVhjyFvZpNdhunOqjNMIaoOuYpLDHkqNCfybywpJOeGDXCJOIHWhZHnAnxXaRrCKhbExxFxzzprJmQTnKvHuTPsHHfQHlOBZzzmqXlpnBzHepILqDqYaZNWLXcrDKlMsjBUJzWMVPrOOnnzzGiXkgmRzIKcPaZqGIwXTDMiQnuXDDwTyTarxkDIUmRAShOuyuCMIOtVOlQxBNEURGnmeNoGJcFpaWQXsQQJpzZEXBAqAvcvzkIweUyYfdyWQGwRPdzHRVMYLObBYFdiFEIeMKyndOyNUfUGHlozZUQHGnrcNFtABnpLAgJzpcPKTNGFzEFtxTwkhEtEncUHXXTuDJxYVOvvgDbMvhVQErlmohYmGqIrTTXxLaeldiqUhdLRWLOebiLOprGAlrnmcCqFwGclNRgSOtjwOjzovVWTzkqKNPJrjcuBSerjNsSXINYnLmlIUGvEblhbTKCfNlWCrKHiJNuxLjMjxzhlEKTUJILHmVDuIAaFKHCavlbrSbALkIrRiITXReKTdaytZMHkPTZhkPjmVmqbpnZjeBmXeuorKaVqDBwQWwiHKVNtLEjyREwKhSvYiuYEnxIDQgehKXZdlsoFuJaDOJVqUMVnINYmcZpDGoJNFXZJBLLQvvLngGESDjbTGWYoyiYqiSwYmmQSfqxyOQODEGBzPXFHalxffEpuLeIfwkQQmMTZkcENcOKVUBioJlLjpxAnmKfpSazeQkYpbLSsZooLpJiNTgyCLzsZtmqOzVGstvNlYdTwZdwgGNUHcKyYSNSnvecBgvyosQlLCsEtRwWwPGGBDMWtbctAhBjjgYuZDKKDEwZvuufZeQUmcHBBRGcGApOuibYxqfeEDEQhIvyTFewwAXnEuREoYClEnFigdxNUyVSjJoLoLrwQgERNOuMIeOsecPZixklLbGdnysiizCwlPzJgVgqHxgczAdwcYQzcruRMupdbbhRKEhrqzzdpDOLnWkVKWnefwanoIgRivdhoBlpfiSsushgBGwCRveLbKNcHcNqjubwUEXynJSCArVevLQbRwIXPuKYUBKJnMAzfJUMlVOSvdpAOxoQvftYTxjWsqBhGFFdbuhgfHXoJFJsYyMOYQMRXYyKJxKWYrTOyBmxHkiysFPzqPkviWUXLBoHRNxtSURZGccGNtFdWnvjnabeCsiIzIJBBPuSLsXarjzaXxQTMGfDIAhfTbpuUKdrnertGnzadsfktvbcIZBaeNMrEpSsfdZKMkCrpozeJDoifxDknRUioteqQOwBxaPCfowQnFKeBtIzqqAPSVGUXGXrSDBrMoUijvbjoFsCfokYUMEJmDKYDfpTMIQCwKdOaNcaUidZjYAXZnXigmOhetXTNjHTVxDVonCXsPNuhDDeryMGQgfavEOAQYjCbiaQHyUArKWwkdUwYQvuKrPcDjqRkbuRANSmCVOkixZUMRgDloRIsaInAwFNOmCCuYadBcooHWzXErFBRyewgFjbDVVndnTOTdrHEcjhvWMkULOOMfjUtLgNVuJAnKxneqFTFkiOqzLNWQZFWatHqKQJFdGmxbphKSkjyLSDdcyyTsrFlHbayduLrJYemNdAhkJalmdTevksfzxMFXArDwrQknMWZQCoYkbhCqKBcjtiqlXYlZycXakPTnzKqbOjVWPJgAeehDJfgKtswaQANEHLHcLSngFhONRkOhclWUoPkekOvnepuTeLaiJkBwbKKECkgQNoHhWcaxaluYbUViIQWkwhuecgwLSSDvsndEKTHkntYNzLhZPUYQhLqxRhrPlCYTtEcFplqMHhlnRvBiIlVaUUvXHBKRXoktcrdsMSFKrINSdofnoDQJxyzIEkpOjtUstuWswkjLTYHULhEuJvXoZQIMNclziJfpIurIwSIjWnRdibkmgJOAtktJiYxLJWAemwtidgadxDNnAFEaTqmLoEUdorljuajLLQafkUMBJxTegoLCRCnxiCNRPVOdgShpCgaphyZXmUoWtKeWDkbOkKrLKQHSIclyQLbDgmzqcFhVBJFLbDUixuqrllUlGlCbxmQgtdvIiNsIFqtPsYwdeRMvpknRgmKEhQRJZomWOavTPzzbqxwtBELiKBAItimwbWihgJaaWqjyeCLavRmopGsxfKJkdmfPgPjgTmOCojuBxgQAPDESdFpQSIUGtfddBqZVUiNSyIlddhmpNJyscIskDczPiysFmWhrFYVRsldlXspbptdfrcymDblOtDCdkpiidgLWmWuHojYUCOjYJaGYqfpBwbQhlrSHubpTyAwPkYmUpoUYAempPDIUHXNNTAmGAsmDJREMoaspQFUcqvRlSsXSOjxKkrQyiZnEfhrlxIiskTGXKoAlkJDUXYRkthHvewHHFbAUJlcRzoLypdapOmLTDWDnyEadfxpVGZuxPTaClxAUlVJfTIYmxVhXWhIAupkMGLdABaPNlnmgVaaTxecZInAiKUImAKbCmGRpIggcXSnUHOaZMdXZVEfEVxnFykmMiFtClNsOKRVjbqLvVmRJFoBHLMxRCBGKdwugJjkgwOimoooobvOkXKdpZwrQazPQUcWFiscIFznfabwyGdApTdCohkUpmjKMqfcTJb', 'msg: client2: Hello Dear Friends! Do not cheat.']
+Test Failed: Client output is not correct for client client1
+msg: client4: fmfltlzlkcozbpvnqrnyifnpfivphbtbbjhezjktsoiujofxufnjvmarnstwflhijbfaukwqoqckywhwvpuypr not in expected output

@@ -1,112 +1,214 @@
-MAC-VENPAT:starter_code suryapatil$ python3 TestPart1.py
-Testing ListUsersTest
-2024-05-09 14:39:19,254 - ('start', '322', '', '1933201947') Line 135
-2024-05-09 14:39:19,255 - ('start', '491', '', '341686099') Line 135
-2024-05-09 14:39:19,255 - ('start', '361', '', '4263410453') Line 135
-2024-05-09 14:39:19,255 - ('start', '385', '', '432579834') Line 135
-2024-05-09 14:39:19,272 - passed start loop Line 102
-2024-05-09 14:39:19,272 - chunk: join 7 client1 Line 112
-2024-05-09 14:39:19,272 - passed start loop Line 102
-2024-05-09 14:39:19,273 - chunk: join 7 client2 Line 112
-2024-05-09 14:39:19,283 - passed start loop Line 102
-2024-05-09 14:39:19,284 - chunk: join 7 client3 Line 112
-2024-05-09 14:39:19,292 - passed start loop Line 102
-2024-05-09 14:39:19,293 - chunk: join 7 client4 Line 112
-2024-05-09 14:39:19,302 - ('data', '492', 'join 7 client2', '1920293702') Line 135
-2024-05-09 14:39:19,302 - msg chunk: join 7 client2 Line 156
-2024-05-09 14:39:19,302 - ('data', '386', 'join 7 client4', '4065060517') Line 135
-2024-05-09 14:39:19,302 - msg chunk: join 7 client4 Line 156
-2024-05-09 14:39:19,310 - passed initial data loop Line 128
-2024-05-09 14:39:19,314 - ('data', '323', 'join 7 client1', '1763130339') Line 135
-2024-05-09 14:39:19,315 - msg chunk: join 7 client1 Line 156
-2024-05-09 14:39:19,315 - ('data', '362', 'join 7 client3', '3610199332') Line 135
-2024-05-09 14:39:19,315 - msg chunk: join 7 client3 Line 156
-2024-05-09 14:39:19,323 - passed initial data loop Line 128
-2024-05-09 14:39:19,332 - ('end', '493', '', '320028361') Line 135
-2024-05-09 14:39:19,332 - end ack sent Line 167
-2024-05-09 14:39:19,332 - complete message: join 7 client2 Line 168
-2024-05-09 14:39:19,333 - msg_type: join Line 173
-2024-05-09 14:39:19,333 - {} Line 29
-2024-05-09 14:39:19,333 - ('end', '387', '', '512109920') Line 135
-2024-05-09 14:39:19,333 - end ack sent Line 167
-2024-05-09 14:39:19,333 - complete message: join 7 client4 Line 168
-2024-05-09 14:39:19,333 - msg_type: join Line 173
-2024-05-09 14:39:19,333 - {'client2': ('127.0.0.1', 45623)} Line 29
-2024-05-09 14:39:19,333 - passed initial data loop Line 128
-2024-05-09 14:39:19,341 - ('end', '363', '', '4182831759') Line 135
-2024-05-09 14:39:19,341 - end ack sent Line 167
-2024-05-09 14:39:19,341 - complete message: join 7 client3 Line 168
-2024-05-09 14:39:19,341 - msg_type: join Line 173
-2024-05-09 14:39:19,341 - {'client2': ('127.0.0.1', 45623), 'client4': ('127.0.0.1', 45621)} Line 29
-2024-05-09 14:39:19,343 - passed initial data loop Line 128
-2024-05-09 14:39:19,356 - ('end', '324', '', '1937601373') Line 135
-2024-05-09 14:39:19,356 - end ack sent Line 167
-2024-05-09 14:39:19,356 - complete message: join 7 client1 Line 168
-2024-05-09 14:39:19,356 - msg_type: join Line 173
-2024-05-09 14:39:19,356 - {'client2': ('127.0.0.1', 45623), 'client4': ('127.0.0.1', 45621), 'client3': ('127.0.0.1', 45622)} Line 29
-2024-05-09 14:39:19,384 - passed start loop Line 102
-2024-05-09 14:39:19,384 - chunk: request_users_list 0 Line 112
-2024-05-09 14:39:19,415 - ('start', '378', '', '1232283647') Line 135
-2024-05-09 14:39:19,449 - ('data', '379', 'request_users_list 0', '3142538675') Line 135
-2024-05-09 14:39:19,449 - msg chunk: request_users_list 0 Line 156
-2024-05-09 14:39:19,481 - passed initial data loop Line 128
-2024-05-09 14:39:19,547 - ('end', '380', '', '466172901') Line 135
-2024-05-09 14:39:19,547 - end ack sent Line 167
-2024-05-09 14:39:19,547 - complete message: request_users_list 0 Line 168
-2024-05-09 14:39:19,548 - msg_type: request_users_list Line 173
-2024-05-09 14:39:19,860 - passed start loop Line 102
-2024-05-09 14:39:19,860 - chunk: request_users_list 0 Line 112
-2024-05-09 14:39:19,889 - ('start', '131', '', '3003177031') Line 135
-2024-05-09 14:39:19,916 - ('data', '132', 'request_users_list 0', '879990698') Line 135
-2024-05-09 14:39:19,916 - msg chunk: request_users_list 0 Line 156
-2024-05-09 14:39:19,944 - passed initial data loop Line 128
-2024-05-09 14:39:20,009 - ('end', '133', '', '3025031645') Line 135
-2024-05-09 14:39:20,009 - end ack sent Line 167
-2024-05-09 14:39:20,009 - complete message: request_users_list 0 Line 168
-2024-05-09 14:39:20,009 - msg_type: request_users_list Line 173
-2024-05-09 14:39:20,366 - passed start loop Line 102
-2024-05-09 14:39:20,366 - passed start loop Line 102
-2024-05-09 14:39:20,366 - passed start loop Line 102
-2024-05-09 14:39:20,366 - chunk: disconnect 7 client3 Line 112
-2024-05-09 14:39:20,366 - chunk: disconnect 7 client2 Line 112
-2024-05-09 14:39:20,366 - passed start loop Line 102
-2024-05-09 14:39:20,366 - chunk: disconnect 7 client4 Line 112
-2024-05-09 14:39:20,367 - chunk: disconnect 7 client1 Line 112
-2024-05-09 14:39:20,419 - ('start', '418', '', '3728254003') Line 135
-2024-05-09 14:39:20,420 - ('start', '374', '', '1080680091') Line 135
-2024-05-09 14:39:20,420 - ('start', '139', '', '3172174335') Line 135
-2024-05-09 14:39:20,420 - ('start', '120', '', '176084245') Line 135
-2024-05-09 14:39:20,420 - ('data', '419', 'disconnect 7 client3', '3468442168') Line 135
-2024-05-09 14:39:20,420 - msg chunk: disconnect 7 client3 Line 156
-2024-05-09 14:39:20,420 - ('data', '375', 'disconnect 7 client4', '4285915314') Line 135
-2024-05-09 14:39:20,420 - msg chunk: disconnect 7 client4 Line 156
-2024-05-09 14:39:20,420 - ('data', '140', 'disconnect 7 client1', '3512062149') Line 135
-2024-05-09 14:39:20,420 - msg chunk: disconnect 7 client1 Line 156
-2024-05-09 14:39:20,420 - ('data', '121', 'disconnect 7 client2', '3509992322') Line 135
-2024-05-09 14:39:20,421 - msg chunk: disconnect 7 client2 Line 156
-2024-05-09 14:39:20,452 - passed initial data loop Line 128
-2024-05-09 14:39:20,452 - passed initial data loop Line 128
-2024-05-09 14:39:20,452 - passed initial data loop Line 128
-2024-05-09 14:39:20,452 - passed initial data loop Line 128
-2024-05-09 14:39:20,474 - ('end', '376', '', '1193760513') Line 135
-2024-05-09 14:39:20,475 - end ack sent Line 167
-2024-05-09 14:39:20,475 - complete message: disconnect 7 client4 Line 168
-2024-05-09 14:39:20,475 - msg_type: disconnect Line 173
-2024-05-09 14:39:20,475 - ('end', '141', '', '706592010') Line 135
-2024-05-09 14:39:20,476 - end ack sent Line 167
-2024-05-09 14:39:20,476 - complete message: disconnect 7 client1 Line 168
-2024-05-09 14:39:20,476 - msg_type: disconnect Line 173
-2024-05-09 14:39:20,476 - ('end', '122', '', '221273231') Line 135
-2024-05-09 14:39:20,476 - end ack sent Line 167
-2024-05-09 14:39:20,477 - complete message: disconnect 7 client2 Line 168
-2024-05-09 14:39:20,477 - msg_type: disconnect Line 173
-2024-05-09 14:39:20,478 - ('end', '420', '', '3327395729') Line 135
-2024-05-09 14:39:20,478 - end ack sent Line 167
-2024-05-09 14:39:20,478 - complete message: disconnect 7 client3 Line 168
-2024-05-09 14:39:20,479 - msg_type: disconnect Line 173
+Testing BasicFunctionality
+2024-05-09 18:58:28,380 - ('start', '180', '', '1707292017') Line 138
+2024-05-09 18:58:28,416 - ('start', '115', '', '503363600') Line 138
+2024-05-09 18:58:28,428 - passed start loop Line 102
+2024-05-09 18:58:28,428 - chunk: join 7 client1 Line 114
+2024-05-09 18:58:28,446 - ('start', '183', '', '1736805160') Line 138
+2024-05-09 18:58:28,459 - passed start loop Line 102
+2024-05-09 18:58:28,460 - chunk: join 7 client2 Line 114
+2024-05-09 18:58:28,468 - passed start loop Line 102
+2024-05-09 18:58:28,468 - chunk: join 7 client3 Line 114
+2024-05-09 18:58:28,523 - ('data', '181', 'join 7 client1', '3675940954') Line 138
+2024-05-09 18:58:28,526 - msg chunk: join 7 client1 Line 159
+2024-05-09 18:58:28,526 - ('start', '371', '', '1185029232') Line 138
+2024-05-09 18:58:28,527 - ('data', '116', 'join 7 client2', '681991999') Line 138
+2024-05-09 18:58:28,527 - msg chunk: join 7 client2 Line 159
+2024-05-09 18:58:28,527 - ('data', '184', 'join 7 client3', '495117908') Line 138
+2024-05-09 18:58:28,528 - msg chunk: join 7 client3 Line 159
+2024-05-09 18:58:28,533 - passed start loop Line 102
+2024-05-09 18:58:28,534 - passed initial data loop Line 135
+2024-05-09 18:58:28,534 - chunk: join 7 client4 Line 114
+2024-05-09 18:58:28,534 - passed initial data loop Line 135
+2024-05-09 18:58:28,541 - ('data', '372', 'join 7 client4', '2000446722') Line 138
+2024-05-09 18:58:28,541 - msg chunk: join 7 client4 Line 159
+2024-05-09 18:58:28,544 - passed initial data loop Line 135
+2024-05-09 18:58:28,563 - passed initial data loop Line 135
+2024-05-09 18:58:28,578 - ('end', '117', '', '424554890') Line 138
+2024-05-09 18:58:28,579 - end ack sent Line 169
+2024-05-09 18:58:28,579 - complete message: join 7 client2 Line 170
+2024-05-09 18:58:28,579 - msg_type: join Line 175
+2024-05-09 18:58:28,580 - {} Line 29
+2024-05-09 18:58:28,580 - ('end', '185', '', '1740810862') Line 138
+2024-05-09 18:58:28,580 - end ack sent Line 169
+2024-05-09 18:58:28,581 - complete message: join 7 client3 Line 170
+2024-05-09 18:58:28,581 - msg_type: join Line 175
+2024-05-09 18:58:28,581 - {'client2': ('127.0.0.1', 59954)} Line 29
+2024-05-09 18:58:28,581 - ('end', '182', '', '1653456107') Line 138
+2024-05-09 18:58:28,582 - end ack sent Line 169
+2024-05-09 18:58:28,582 - complete message: join 7 client1 Line 170
+2024-05-09 18:58:28,582 - msg_type: join Line 175
+2024-05-09 18:58:28,582 - {'client2': ('127.0.0.1', 59954), 'client3': ('127.0.0.1', 59953)} Line 29
+2024-05-09 18:58:28,582 - ('end', '373', '', '1106023914') Line 138
+2024-05-09 18:58:28,583 - end ack sent Line 169
+2024-05-09 18:58:28,583 - complete message: join 7 client4 Line 170
+2024-05-09 18:58:28,583 - msg_type: join Line 175
+2024-05-09 18:58:28,583 - {'client2': ('127.0.0.1', 59954), 'client3': ('127.0.0.1', 59953), 'client1': ('127.0.0.1', 59955)} Line 29
+2024-05-09 18:58:30,020 - passed start loop Line 102
+2024-05-09 18:58:30,020 - chunk: request_users_list 0 Line 114
+2024-05-09 18:58:30,037 - ('start', '235', '', '4087941707') Line 138
+2024-05-09 18:58:30,074 - ('data', '236', 'request_users_list 0', '29524074') Line 138
+2024-05-09 18:58:30,075 - msg chunk: request_users_list 0 Line 159
+2024-05-09 18:58:30,100 - passed initial data loop Line 135
+2024-05-09 18:58:30,171 - ('end', '237', '', '4108813265') Line 138
+2024-05-09 18:58:30,171 - end ack sent Line 169
+2024-05-09 18:58:30,171 - complete message: request_users_list 0 Line 170
+2024-05-09 18:58:30,171 - msg_type: request_users_list Line 175
+2024-05-09 18:58:32,027 - passed start loop Line 102
+2024-05-09 18:58:32,027 - chunk: send_message 43 msg 3 client1 client3 client4 Can we cheat? Line 114
+2024-05-09 18:58:32,076 - ('start', '265', '', '3296197241') Line 138
+2024-05-09 18:58:32,109 - ('data', '266', 'send_message 43 msg 3 client1 client3 client4 Can we cheat?', '2742119687') Line 138
+2024-05-09 18:58:32,109 - msg chunk: send_message 43 msg 3 client1 client3 client4 Can we cheat? Line 159
+2024-05-09 18:58:32,141 - passed initial data loop Line 135
+2024-05-09 18:58:32,211 - ('end', '267', '', '3275322339') Line 138
+2024-05-09 18:58:32,211 - end ack sent Line 169
+2024-05-09 18:58:32,212 - complete message: send_message 43 msg 3 client1 client3 client4 Can we cheat? Line 170
+2024-05-09 18:58:32,212 - msg_type: send_message Line 175
+2024-05-09 18:58:32,212 - text: send_message 43 msg 3 client1 client3 client4 Can we cheat? Line 80
+2024-05-09 18:58:32,212 - ['client1', 'client3', 'client4'] Line 100
+2024-05-09 18:58:32,212 - 4 client4 client1 client3 client4 Can we cheat? Line 104
+2024-05-09 18:58:34,032 - passed start loop Line 102
+2024-05-09 18:58:34,032 - chunk: send_message 5030 msg 3 client1 client3 client4 AuAhLKOzaFowMWFTeHlRSPbqrqbOevYHtaFeHlYwmVxgTnvDhiWMJTvuKEDVPkjwygrBEWInAVmDXnBPBJVysRLKCNdMurNwYTLEPSRfteSqiHEKgoIkIDObyIsmbcqzLJOBAMkMMhOAXTZFzxdEkHpuLwHSBzxGHNdfAvhmRdvMTmCfObnZZYxIThPmkpHjpGZujTkwstutqElqSPaGqwGszJARxoKHcLLKneZIoUyOLBqHyIknpqjPslHrNOGwTrjjlrxDkbohKigafrcIWkKTLwtDpkwsiJlYEpvWjVsFgQxUTvgKuTfFBASGJiEczodMASWQukRdsOCQfWQJQElEuRYSDQFEIEBUxEMissLLpAsPFKUfPnkTPkCoQhmhsIDZxMLmUBjnzAaJiXQGCoZHfiAqzdXuIGVCLIKloDNKKmKqPlcIfGyvbQUjojuibhKGRqiqzrjERfEvbKqLGvHcMLiyqZyfUFjzIdnyqEvASJqIJOznocPpRETCGvRRqDkrSmQCERCLEVEYBPUwstMMYpsBZPjIcAODgaDpEaRZcIqTrwOoaPaXhrejSeMdyiIWYkgraGqFZTmabwEKOFSwoKeVSADRKemGegLkmiWnWvXXlXQTmgTOeLGldaZjTvuGQNxThGqtxImPdRBZOtDLeAQuuFeKjxhsqYDGknxrwWYliMHQMJSNMWGSnzjgSXKbONzWWjNmXSLzdjClnLrZuaOWQGbgXCiiUPNoisjOMyHymWthDyibUIiloWHnAUxPJQeBTCCZUSIvzDsTOyHxROoDHDhfYxAUxTGUcPbBiGvEObhqdAInZcAZfffGMaAxbFFODTlnXcRSKSMkfIjMfhDKgsQzxeqfEMfBKMUPrtDdXBldcGWIJcPMGbldpjRIXFgsSoLbCuWSZSKfGaNzhrzzeYgPnhfgUvJeJYlCMhzaygiMxVGgHQbEPtCgENDKmrWlntfchDlGaUKDGVoUKlUkEUXmByrWbQfhvPvOLHncyHZeZhuAvkmuSZjJhOWgGisEIShoeNASDVhkAeHWYGPXzhfOlziVzmoPJJRdxLfUlXufoDqIvOFnLDWaYYNhGWiNQHGThuCbZydQJXhcdcUrPnuedLbnBFlCoEsIhBwJKuoPeUMNVsIFZbUkoGooNPUSSryqiaCBGFoZRRvklOpiXtgarnYoWrpsGPXrTeyTZNPmyPCKUihVfzAXINFbzQmGQbZElnKYStIMqzNQgKCRhEtLUCAUFzNtzALIUOEoxMDJjuEYPCnyqyqXhJiaEovGJGaiVEjhCJnldFhYfzAQseLogpHPmQrTBiWdLKJnHatpMGxOrARuMzhhDlbQPYxq Line 114
+2024-05-09 18:58:34,060 - ('start', '455', '', '1501732919') Line 138
+2024-05-09 18:58:34,105 - ('data', '456', '', 'send_message 5030 msg 3 client1 client3 client4 AuAhLKOzaFowMWFTeHlRSPbqrqbOevYHtaFeHlYwmVxgTnvDhiWMJTvuKEDVPkjwygrBEWInAVmDXnBPBJVysRLKCNdMurNwYTLEPSRfteSqiHEKgoIkIDObyIsmbcqzLJOBAMkMMhOAXTZFzxdEkHpuLwHSBzxGHNdfAvhmRdvMTmCfObnZZYxIThPmkpHjpGZujTkwstutqElqSPaGqwGszJARxoKHcLLKneZIoUyOLBqHyIknpqjPslHrNOGwTrjjlrxDkbohKigafrcIWkKTLwtDpkwsiJlYEpvWjVsFgQxUTvgKuTfFBASGJiEczodMASWQukRdsOCQfWQJQElEuRYSDQFEIEBUxEMissLLpAsPFKUfPnkTPkCoQhmhsIDZxMLmUBjnzAaJiXQGCoZHfiAqzdXuIGVCLIKloDNKKmKqPlcIfGyvbQUjojuibhKGRqiqzrjERfEvbKqLGvHcMLiyqZyfUFjzIdnyqEvASJqIJOznocPpRETCGvRRqDkrSmQCERCLEVEYBPUwstMMYpsBZPjIcAODgaDpEaRZcIqTrwOoaPaXhrejSeMdyiIWYkgraGqFZTmabwEKOFSwoKeVSADRKemGegLkmiWnWvXXlXQTmgTOeLGldaZjTvuGQNxThGqtxImPdRBZOtDLeAQuuFeKjxhsqYDGknxrwWYliMHQMJSNMWGSnzjgSXKbONzWWjNmXSLzdjClnLrZuaOWQGbgXCiiUPNoisjOMyHymWthDyibUIiloWHnAUxPJQeBTCCZUSIvzDsTOyHxROoDHDhfYxAUxTGUcPbBiGvEObhqdAInZcAZfffGMaAxbFFODTlnXcRSKSMkfIjMfhDKgsQzxeqfEMfBKMUPrtDdXBldcGWIJcPMGbldpjRIXFgsSoLbCuWSZSKfGaNzhrzzeYgPnhfgUvJeJYlCMhzaygiMxVGgHQbEPtCgENDKmrW') Line 138
+2024-05-09 18:58:34,105 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:34,126 - chunk: tDqQmZqjJyCpsJcQpFXCWaltpbyJkwUsuRwOwMboWhyqGpifrgpyyfjyhLKoTkfcRbRPYleQhifakLBgaDAYfTqeypELleSbWPraPmOxDjGznYjKJHCpJXzwFWmcrzfhUlOQNmmSfLYkpiYFXHpWsdHehGGddXnIZBVXriuVufxDmEkkwJPxZtHnqGUhbIWlKCFYhGUtmFFYOUaXCsKHgADnAqQbTQJaCkwOlpvvsEQRoZrdaLlYPaBwsGsLyYhuTfgckCcXVYUDeFSalohcRCBcfyUvpqFZcrACQNTVswrcmQMoXfDYUHrHppMHqwFxyYASJEcstnTktJniQArACiZpTgueVchTUCWRUetYdagoiCmSRGYSNfFvErcnsXpIbQFfaMfMXBDnGutmTTvEcNwNogloUOOphuZIBbmAigFlUdnMWqMwBErRmhnGJhHcNKuOLeVVpGKWvJNKGgeulZPDGgURrXeEuZcBRPnZcQoPAOJjPgHDAoNaJIlJfWvBLifoxSMZOyCBzbwhUCfrYoWIrkSPcqqTbBUSbnzBbvfXpeekaJUnDxJNspGWNFwQQkenCHOXsdwfpSwDawXyZYyQAqtVFDugXwubmGhyevoSIObPybPOLpfFPNnlcABWajuHplaCZfMreSurHJaaohtUNFysfvlrDaJxzSQRTcsNtfoppoeKUeLlxvbjLpsWAtgmMkgNFjJZlxPKvClAcQhPHtVsVgzxXoIjsYQHXVOnqyhWhBhUcjhSIeZDKKDzrgLilldOEdjdZzNFAHDCnwWCXdhDcGcpZKpoiHyiBPMeElxulCJbZygaORQKbacgwcxPxqCZjeXctUjAREMcAKboJzAKwuuRpokSeqsUnAXcFaAzotBNCRZJyaFoUAVkQWksDtjrKxkuohwikPTiToDQBqrLViyLvEPiLQGThhegyghZrRGpXiXMxtIlPRiwsDpxveVudAktxNjUnCDVFuCkXengqUPglmciJYSkreOidRAtZsOMkaqXRCmwOUgPPqNsAtCYXMtKhIaVFPhHlnKdyPerAmSnEFkbEWLVucPNaSnyxGUgIOHrQYPwDUBJOQwcOWwmWtVZGZdyayCpNvisDgzUHjBGFlAuZjsaJEkPcLTTyFvVNmwAJxkGZThwytogjTKOJAHnagPORDRaROwodigDyERdBTanZBttHIkWdVzkccMpMHYojPQXWTJQSsZPBNZkJbkKYouUIHoxJKGVqUJDHnthAQYAaYGEhYoCiktJgoUZXcTwoRMSbmvipTwJFpWmfYLxvtxzZMmwDATlGwbkPnatiwNvBbfUMfANsYMSWNFLqcWKhIeTLTUzDeIAvdeYXmEmwWBwYhfVCwrFtadpuZJJyUPVWcVQDgxCMyzBzXyyMUII Line 114
+2024-05-09 18:58:34,159 - ('data', '457', '', 'tDqQmZqjJyCpsJcQpFXCWaltpbyJkwUsuRwOwMboWhyqGpifrgpyyfjyhLKoTkfcRbRPYleQhifakLBgaDAYfTqeypELleSbWPraPmOxDjGznYjKJHCpJXzwFWmcrzfhUlOQNmmSfLYkpiYFXHpWsdHehGGddXnIZBVXriuVufxDmEkkwJPxZtHnqGUhbIWlKCFYhGUtmFFYOUaXCsKHgADnAqQbTQJaCkwOlpvvsEQRoZrdaLlYPaBwsGsLyYhuTfgckCcXVYUDeFSalohcRCBcfyUvpqFZcrACQNTVswrcmQMoXfDYUHrHppMHqwFxyYASJEcstnTktJniQArACiZpTgueVchTUCWRUetYdagoiCmSRGYSNfFvErcnsXpIbQFfaMfMXBDnGutmTTvEcNwNogloUOOphuZIBbmAigFlUdnMWqMwBErRmhnGJhHcNKuOLeVVpGKWvJNKGgeulZPDGgURrXeEuZcBRPnZcQoPAOJjPgHDAoNaJIlJfWvBLifoxSMZOyCBzbwhUCfrYoWIrkSPcqqTbBUSbnzBbvfXpeekaJUnDxJNspGWNFwQQkenCHOXsdwfpSwDawXyZYyQAqtVFDugXwubmGhyevoSIObPybPOLpfFPNnlcABWajuHplaCZfMreSurHJaaohtUNFysfvlrDaJxzSQRTcsNtfoppoeKUeLlxvbjLpsWAtgmMkgNFjJZlxPKvClAcQhPHtVsVgzxXoIjsYQHXVOnqyhWhBhUcjhSIeZDKKDzrgLilldOEdjdZzNFAHDCnwWCXdhDcGcpZKpoiHyiBPMeElxulCJbZygaORQKbacgwcxPxqCZjeXctUjAREMcAKboJzAKwuuRpokSeqsUnAXcFaAzotBNCRZJyaFoUAVkQWksDtjrKxkuohwikPTiToDQBqrLViyLvEPiLQGThhegyghZrRGpXiXMxtIlPRiwsDpxveVudAktxNjUnCDVFuCkXengqUPglmciJYSkreOidRAtZsOMkaq') Line 138
+2024-05-09 18:58:34,159 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:34,627 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:34,627 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:34,628 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:34,628 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:34,628 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:34,629 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:34,629 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:34,629 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:34,630 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:34,630 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:34,631 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:34,631 - Gave ip resending Line 124
+2024-05-09 18:58:34,631 - chunk: xlRxSnPEZhfMpOIzXesrgfxPVsxMeoqherThElYvcbZmQRWHMxXSOJISyzoKpvsWJDGZWeAxLiTIHayakoKmhmCOOiajnPGbSrxdXqefchEnQzxZIMgOBqmjPuncbuEgPgYmwlAmwPZdQgqOjqKrPyfkUjebTMwIhmFGjSxmaIIKoXsMJeWVDYELllEcngsJOCHtQQHsRlIbSTPwcLbjQMEnpSMmPnBqxmDqVyqLItyTgzTEYeRaStRcLcNCYYLqmOJpFxGCTXMoZihEjtOfrxUiiZYByplvhdRQzueyVrHMOGuyJtRbhhjWIrbwwNLgbjMZKOolJcgfpkLlMwRtlhoPgiuspuUGIDHrWbvXwTiFVAuTUihtMmgfxhHnxJEsZAdiAWorezduUqUgwqBfJtuRECDyaSikPoaxhojKHEdPZVMhTNyxBhOlbtxDTRBtMErADNbtnjuCSUGipdpcjvDEfHyKzGDdEefwSHYUnjRejQBaVuVHFYHKFFHivtXhtSysIvZuqinCyWoScVIWpQhirjueJPMYtIjeLknxdlPnbIfgCdJIGsYLKkimbOhaCtDZlZeKyUkHyCevQAjhQEvmrwfOLLpXUckXqfTWpPksmjcqUESSGmrUypJmblaxtUUgOVBIWSVPteCOBILURTPeWTunoKuJmShaTSmBfgcbokOnzzHrkkERbhpyXnaZvyUupUqdxVWhgNFhsRAESeCOHKRXWisqWVmkuUptDXrTGksAyrBUZduFfFJglGAohoGZelhBrYlpNkbhzwzlfuAEFriIZQWOTpVAtNkWJQlkKQBIKWxlUUkLogWAZKzbAJdxMrTpNpkXTLFYCekmRafqaNwOHqXpSWhnvoTBPzjhRgYloykqsdEnhnkXJKZOiKAwapFAaGhYzTSJtqVdWkCgYvdhTWZwEDdsnyQZCoIAoTIMkyVXPLmcgeqnFnOyanNkLSSFLEgvMWOkAJGWFvhterFkDMxpRzgpBYFkdTpeydVEGzFJWHankSDLtXipDGqeKFdVudzfcJOGOrtxefUNjSmpnlqnQedhPUrPpVuqBZyuIOydvqreuVOcxcKeHyAlFwmxSTOgwwXEabZiJAwGhzSsSXuPCOODpABAyyaupoWzAJVRnqtMGnhfkUqWgyqpkfCUOBQZfattUUZxsPrMkcIKEQyykodzLBlUhyoviFUZxlWoSisIKcRFbuWbHbJvpdYlwzJJFensSNSNvbIjXJRNNdnryraWXlBVomxUDuzcYkHWtTYDPnbKksfOczHKzZzwtLThoKjSJeKUfkAkZNEPAzLdfnwAGzkBaSQrpkDRanIIyRmzRvYQxokfKhHOeFBlxrDEoDPdDgFNWVhHkfvaRIbPGmaJmgqDxIgcklrUYazIRBkq Line 114
+2024-05-09 18:58:34,680 - ('data', '457', '', 'tDqQmZqjJyCpsJcQpFXCWaltpbyJkwUsuRwOwMboWhyqGpifrgpyyfjyhLKoTkfcRbRPYleQhifakLBgaDAYfTqeypELleSbWPraPmOxDjGznYjKJHCpJXzwFWmcrzfhUlOQNmmSfLYkpiYFXHpWsdHehGGddXnIZBVXriuVufxDmEkkwJPxZtHnqGUhbIWlKCFYhGUtmFFYOUaXCsKHgADnAqQbTQJaCkwOlpvvsEQRoZrdaLlYPaBwsGsLyYhuTfgckCcXVYUDeFSalohcRCBcfyUvpqFZcrACQNTVswrcmQMoXfDYUHrHppMHqwFxyYASJEcstnTktJniQArACiZpTgueVchTUCWRUetYdagoiCmSRGYSNfFvErcnsXpIbQFfaMfMXBDnGutmTTvEcNwNogloUOOphuZIBbmAigFlUdnMWqMwBErRmhnGJhHcNKuOLeVVpGKWvJNKGgeulZPDGgURrXeEuZcBRPnZcQoPAOJjPgHDAoNaJIlJfWvBLifoxSMZOyCBzbwhUCfrYoWIrkSPcqqTbBUSbnzBbvfXpeekaJUnDxJNspGWNFwQQkenCHOXsdwfpSwDawXyZYyQAqtVFDugXwubmGhyevoSIObPybPOLpfFPNnlcABWajuHplaCZfMreSurHJaaohtUNFysfvlrDaJxzSQRTcsNtfoppoeKUeLlxvbjLpsWAtgmMkgNFjJZlxPKvClAcQhPHtVsVgzxXoIjsYQHXVOnqyhWhBhUcjhSIeZDKKDzrgLilldOEdjdZzNFAHDCnwWCXdhDcGcpZKpoiHyiBPMeElxulCJbZygaORQKbacgwcxPxqCZjeXctUjAREMcAKboJzAKwuuRpokSeqsUnAXcFaAzotBNCRZJyaFoUAVkQWksDtjrKxkuohwikPTiToDQBqrLViyLvEPiLQGThhegyghZrRGpXiXMxtIlPRiwsDpxveVudAktxNjUnCDVFuCkXengqUPglmciJYSkreOidRAtZsOMkaq') Line 138
+2024-05-09 18:58:34,680 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:34,700 - ('data', '457', '', 'tDqQmZqjJyCpsJcQpFXCWaltpbyJkwUsuRwOwMboWhyqGpifrgpyyfjyhLKoTkfcRbRPYleQhifakLBgaDAYfTqeypELleSbWPraPmOxDjGznYjKJHCpJXzwFWmcrzfhUlOQNmmSfLYkpiYFXHpWsdHehGGddXnIZBVXriuVufxDmEkkwJPxZtHnqGUhbIWlKCFYhGUtmFFYOUaXCsKHgADnAqQbTQJaCkwOlpvvsEQRoZrdaLlYPaBwsGsLyYhuTfgckCcXVYUDeFSalohcRCBcfyUvpqFZcrACQNTVswrcmQMoXfDYUHrHppMHqwFxyYASJEcstnTktJniQArACiZpTgueVchTUCWRUetYdagoiCmSRGYSNfFvErcnsXpIbQFfaMfMXBDnGutmTTvEcNwNogloUOOphuZIBbmAigFlUdnMWqMwBErRmhnGJhHcNKuOLeVVpGKWvJNKGgeulZPDGgURrXeEuZcBRPnZcQoPAOJjPgHDAoNaJIlJfWvBLifoxSMZOyCBzbwhUCfrYoWIrkSPcqqTbBUSbnzBbvfXpeekaJUnDxJNspGWNFwQQkenCHOXsdwfpSwDawXyZYyQAqtVFDugXwubmGhyevoSIObPybPOLpfFPNnlcABWajuHplaCZfMreSurHJaaohtUNFysfvlrDaJxzSQRTcsNtfoppoeKUeLlxvbjLpsWAtgmMkgNFjJZlxPKvClAcQhPHtVsVgzxXoIjsYQHXVOnqyhWhBhUcjhSIeZDKKDzrgLilldOEdjdZzNFAHDCnwWCXdhDcGcpZKpoiHyiBPMeElxulCJbZygaORQKbacgwcxPxqCZjeXctUjAREMcAKboJzAKwuuRpokSeqsUnAXcFaAzotBNCRZJyaFoUAVkQWksDtjrKxkuohwikPTiToDQBqrLViyLvEPiLQGThhegyghZrRGpXiXMxtIlPRiwsDpxveVudAktxNjUnCDVFuCkXengqUPglmciJYSkreOidRAtZsOMkaq') Line 138
+2024-05-09 18:58:34,701 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:34,733 - ('data', '457', '', 'tDqQmZqjJyCpsJcQpFXCWaltpbyJkwUsuRwOwMboWhyqGpifrgpyyfjyhLKoTkfcRbRPYleQhifakLBgaDAYfTqeypELleSbWPraPmOxDjGznYjKJHCpJXzwFWmcrzfhUlOQNmmSfLYkpiYFXHpWsdHehGGddXnIZBVXriuVufxDmEkkwJPxZtHnqGUhbIWlKCFYhGUtmFFYOUaXCsKHgADnAqQbTQJaCkwOlpvvsEQRoZrdaLlYPaBwsGsLyYhuTfgckCcXVYUDeFSalohcRCBcfyUvpqFZcrACQNTVswrcmQMoXfDYUHrHppMHqwFxyYASJEcstnTktJniQArACiZpTgueVchTUCWRUetYdagoiCmSRGYSNfFvErcnsXpIbQFfaMfMXBDnGutmTTvEcNwNogloUOOphuZIBbmAigFlUdnMWqMwBErRmhnGJhHcNKuOLeVVpGKWvJNKGgeulZPDGgURrXeEuZcBRPnZcQoPAOJjPgHDAoNaJIlJfWvBLifoxSMZOyCBzbwhUCfrYoWIrkSPcqqTbBUSbnzBbvfXpeekaJUnDxJNspGWNFwQQkenCHOXsdwfpSwDawXyZYyQAqtVFDugXwubmGhyevoSIObPybPOLpfFPNnlcABWajuHplaCZfMreSurHJaaohtUNFysfvlrDaJxzSQRTcsNtfoppoeKUeLlxvbjLpsWAtgmMkgNFjJZlxPKvClAcQhPHtVsVgzxXoIjsYQHXVOnqyhWhBhUcjhSIeZDKKDzrgLilldOEdjdZzNFAHDCnwWCXdhDcGcpZKpoiHyiBPMeElxulCJbZygaORQKbacgwcxPxqCZjeXctUjAREMcAKboJzAKwuuRpokSeqsUnAXcFaAzotBNCRZJyaFoUAVkQWksDtjrKxkuohwikPTiToDQBqrLViyLvEPiLQGThhegyghZrRGpXiXMxtIlPRiwsDpxveVudAktxNjUnCDVFuCkXengqUPglmciJYSkreOidRAtZsOMkaq') Line 138
+2024-05-09 18:58:34,733 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:34,765 - ('data', '457', '', 'tDqQmZqjJyCpsJcQpFXCWaltpbyJkwUsuRwOwMboWhyqGpifrgpyyfjyhLKoTkfcRbRPYleQhifakLBgaDAYfTqeypELleSbWPraPmOxDjGznYjKJHCpJXzwFWmcrzfhUlOQNmmSfLYkpiYFXHpWsdHehGGddXnIZBVXriuVufxDmEkkwJPxZtHnqGUhbIWlKCFYhGUtmFFYOUaXCsKHgADnAqQbTQJaCkwOlpvvsEQRoZrdaLlYPaBwsGsLyYhuTfgckCcXVYUDeFSalohcRCBcfyUvpqFZcrACQNTVswrcmQMoXfDYUHrHppMHqwFxyYASJEcstnTktJniQArACiZpTgueVchTUCWRUetYdagoiCmSRGYSNfFvErcnsXpIbQFfaMfMXBDnGutmTTvEcNwNogloUOOphuZIBbmAigFlUdnMWqMwBErRmhnGJhHcNKuOLeVVpGKWvJNKGgeulZPDGgURrXeEuZcBRPnZcQoPAOJjPgHDAoNaJIlJfWvBLifoxSMZOyCBzbwhUCfrYoWIrkSPcqqTbBUSbnzBbvfXpeekaJUnDxJNspGWNFwQQkenCHOXsdwfpSwDawXyZYyQAqtVFDugXwubmGhyevoSIObPybPOLpfFPNnlcABWajuHplaCZfMreSurHJaaohtUNFysfvlrDaJxzSQRTcsNtfoppoeKUeLlxvbjLpsWAtgmMkgNFjJZlxPKvClAcQhPHtVsVgzxXoIjsYQHXVOnqyhWhBhUcjhSIeZDKKDzrgLilldOEdjdZzNFAHDCnwWCXdhDcGcpZKpoiHyiBPMeElxulCJbZygaORQKbacgwcxPxqCZjeXctUjAREMcAKboJzAKwuuRpokSeqsUnAXcFaAzotBNCRZJyaFoUAVkQWksDtjrKxkuohwikPTiToDQBqrLViyLvEPiLQGThhegyghZrRGpXiXMxtIlPRiwsDpxveVudAktxNjUnCDVFuCkXengqUPglmciJYSkreOidRAtZsOMkaq') Line 138
+2024-05-09 18:58:34,766 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:34,798 - ('data', '457', '', 'tDqQmZqjJyCpsJcQpFXCWaltpbyJkwUsuRwOwMboWhyqGpifrgpyyfjyhLKoTkfcRbRPYleQhifakLBgaDAYfTqeypELleSbWPraPmOxDjGznYjKJHCpJXzwFWmcrzfhUlOQNmmSfLYkpiYFXHpWsdHehGGddXnIZBVXriuVufxDmEkkwJPxZtHnqGUhbIWlKCFYhGUtmFFYOUaXCsKHgADnAqQbTQJaCkwOlpvvsEQRoZrdaLlYPaBwsGsLyYhuTfgckCcXVYUDeFSalohcRCBcfyUvpqFZcrACQNTVswrcmQMoXfDYUHrHppMHqwFxyYASJEcstnTktJniQArACiZpTgueVchTUCWRUetYdagoiCmSRGYSNfFvErcnsXpIbQFfaMfMXBDnGutmTTvEcNwNogloUOOphuZIBbmAigFlUdnMWqMwBErRmhnGJhHcNKuOLeVVpGKWvJNKGgeulZPDGgURrXeEuZcBRPnZcQoPAOJjPgHDAoNaJIlJfWvBLifoxSMZOyCBzbwhUCfrYoWIrkSPcqqTbBUSbnzBbvfXpeekaJUnDxJNspGWNFwQQkenCHOXsdwfpSwDawXyZYyQAqtVFDugXwubmGhyevoSIObPybPOLpfFPNnlcABWajuHplaCZfMreSurHJaaohtUNFysfvlrDaJxzSQRTcsNtfoppoeKUeLlxvbjLpsWAtgmMkgNFjJZlxPKvClAcQhPHtVsVgzxXoIjsYQHXVOnqyhWhBhUcjhSIeZDKKDzrgLilldOEdjdZzNFAHDCnwWCXdhDcGcpZKpoiHyiBPMeElxulCJbZygaORQKbacgwcxPxqCZjeXctUjAREMcAKboJzAKwuuRpokSeqsUnAXcFaAzotBNCRZJyaFoUAVkQWksDtjrKxkuohwikPTiToDQBqrLViyLvEPiLQGThhegyghZrRGpXiXMxtIlPRiwsDpxveVudAktxNjUnCDVFuCkXengqUPglmciJYSkreOidRAtZsOMkaq') Line 138
+2024-05-09 18:58:34,798 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:34,837 - ('data', '457', '', 'tDqQmZqjJyCpsJcQpFXCWaltpbyJkwUsuRwOwMboWhyqGpifrgpyyfjyhLKoTkfcRbRPYleQhifakLBgaDAYfTqeypELleSbWPraPmOxDjGznYjKJHCpJXzwFWmcrzfhUlOQNmmSfLYkpiYFXHpWsdHehGGddXnIZBVXriuVufxDmEkkwJPxZtHnqGUhbIWlKCFYhGUtmFFYOUaXCsKHgADnAqQbTQJaCkwOlpvvsEQRoZrdaLlYPaBwsGsLyYhuTfgckCcXVYUDeFSalohcRCBcfyUvpqFZcrACQNTVswrcmQMoXfDYUHrHppMHqwFxyYASJEcstnTktJniQArACiZpTgueVchTUCWRUetYdagoiCmSRGYSNfFvErcnsXpIbQFfaMfMXBDnGutmTTvEcNwNogloUOOphuZIBbmAigFlUdnMWqMwBErRmhnGJhHcNKuOLeVVpGKWvJNKGgeulZPDGgURrXeEuZcBRPnZcQoPAOJjPgHDAoNaJIlJfWvBLifoxSMZOyCBzbwhUCfrYoWIrkSPcqqTbBUSbnzBbvfXpeekaJUnDxJNspGWNFwQQkenCHOXsdwfpSwDawXyZYyQAqtVFDugXwubmGhyevoSIObPybPOLpfFPNnlcABWajuHplaCZfMreSurHJaaohtUNFysfvlrDaJxzSQRTcsNtfoppoeKUeLlxvbjLpsWAtgmMkgNFjJZlxPKvClAcQhPHtVsVgzxXoIjsYQHXVOnqyhWhBhUcjhSIeZDKKDzrgLilldOEdjdZzNFAHDCnwWCXdhDcGcpZKpoiHyiBPMeElxulCJbZygaORQKbacgwcxPxqCZjeXctUjAREMcAKboJzAKwuuRpokSeqsUnAXcFaAzotBNCRZJyaFoUAVkQWksDtjrKxkuohwikPTiToDQBqrLViyLvEPiLQGThhegyghZrRGpXiXMxtIlPRiwsDpxveVudAktxNjUnCDVFuCkXengqUPglmciJYSkreOidRAtZsOMkaq') Line 138
+2024-05-09 18:58:34,837 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:34,863 - ('data', '457', '', 'tDqQmZqjJyCpsJcQpFXCWaltpbyJkwUsuRwOwMboWhyqGpifrgpyyfjyhLKoTkfcRbRPYleQhifakLBgaDAYfTqeypELleSbWPraPmOxDjGznYjKJHCpJXzwFWmcrzfhUlOQNmmSfLYkpiYFXHpWsdHehGGddXnIZBVXriuVufxDmEkkwJPxZtHnqGUhbIWlKCFYhGUtmFFYOUaXCsKHgADnAqQbTQJaCkwOlpvvsEQRoZrdaLlYPaBwsGsLyYhuTfgckCcXVYUDeFSalohcRCBcfyUvpqFZcrACQNTVswrcmQMoXfDYUHrHppMHqwFxyYASJEcstnTktJniQArACiZpTgueVchTUCWRUetYdagoiCmSRGYSNfFvErcnsXpIbQFfaMfMXBDnGutmTTvEcNwNogloUOOphuZIBbmAigFlUdnMWqMwBErRmhnGJhHcNKuOLeVVpGKWvJNKGgeulZPDGgURrXeEuZcBRPnZcQoPAOJjPgHDAoNaJIlJfWvBLifoxSMZOyCBzbwhUCfrYoWIrkSPcqqTbBUSbnzBbvfXpeekaJUnDxJNspGWNFwQQkenCHOXsdwfpSwDawXyZYyQAqtVFDugXwubmGhyevoSIObPybPOLpfFPNnlcABWajuHplaCZfMreSurHJaaohtUNFysfvlrDaJxzSQRTcsNtfoppoeKUeLlxvbjLpsWAtgmMkgNFjJZlxPKvClAcQhPHtVsVgzxXoIjsYQHXVOnqyhWhBhUcjhSIeZDKKDzrgLilldOEdjdZzNFAHDCnwWCXdhDcGcpZKpoiHyiBPMeElxulCJbZygaORQKbacgwcxPxqCZjeXctUjAREMcAKboJzAKwuuRpokSeqsUnAXcFaAzotBNCRZJyaFoUAVkQWksDtjrKxkuohwikPTiToDQBqrLViyLvEPiLQGThhegyghZrRGpXiXMxtIlPRiwsDpxveVudAktxNjUnCDVFuCkXengqUPglmciJYSkreOidRAtZsOMkaq') Line 138
+2024-05-09 18:58:34,864 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:34,897 - ('data', '457', '', 'tDqQmZqjJyCpsJcQpFXCWaltpbyJkwUsuRwOwMboWhyqGpifrgpyyfjyhLKoTkfcRbRPYleQhifakLBgaDAYfTqeypELleSbWPraPmOxDjGznYjKJHCpJXzwFWmcrzfhUlOQNmmSfLYkpiYFXHpWsdHehGGddXnIZBVXriuVufxDmEkkwJPxZtHnqGUhbIWlKCFYhGUtmFFYOUaXCsKHgADnAqQbTQJaCkwOlpvvsEQRoZrdaLlYPaBwsGsLyYhuTfgckCcXVYUDeFSalohcRCBcfyUvpqFZcrACQNTVswrcmQMoXfDYUHrHppMHqwFxyYASJEcstnTktJniQArACiZpTgueVchTUCWRUetYdagoiCmSRGYSNfFvErcnsXpIbQFfaMfMXBDnGutmTTvEcNwNogloUOOphuZIBbmAigFlUdnMWqMwBErRmhnGJhHcNKuOLeVVpGKWvJNKGgeulZPDGgURrXeEuZcBRPnZcQoPAOJjPgHDAoNaJIlJfWvBLifoxSMZOyCBzbwhUCfrYoWIrkSPcqqTbBUSbnzBbvfXpeekaJUnDxJNspGWNFwQQkenCHOXsdwfpSwDawXyZYyQAqtVFDugXwubmGhyevoSIObPybPOLpfFPNnlcABWajuHplaCZfMreSurHJaaohtUNFysfvlrDaJxzSQRTcsNtfoppoeKUeLlxvbjLpsWAtgmMkgNFjJZlxPKvClAcQhPHtVsVgzxXoIjsYQHXVOnqyhWhBhUcjhSIeZDKKDzrgLilldOEdjdZzNFAHDCnwWCXdhDcGcpZKpoiHyiBPMeElxulCJbZygaORQKbacgwcxPxqCZjeXctUjAREMcAKboJzAKwuuRpokSeqsUnAXcFaAzotBNCRZJyaFoUAVkQWksDtjrKxkuohwikPTiToDQBqrLViyLvEPiLQGThhegyghZrRGpXiXMxtIlPRiwsDpxveVudAktxNjUnCDVFuCkXengqUPglmciJYSkreOidRAtZsOMkaq') Line 138
+2024-05-09 18:58:34,897 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:34,937 - ('data', '457', '', 'tDqQmZqjJyCpsJcQpFXCWaltpbyJkwUsuRwOwMboWhyqGpifrgpyyfjyhLKoTkfcRbRPYleQhifakLBgaDAYfTqeypELleSbWPraPmOxDjGznYjKJHCpJXzwFWmcrzfhUlOQNmmSfLYkpiYFXHpWsdHehGGddXnIZBVXriuVufxDmEkkwJPxZtHnqGUhbIWlKCFYhGUtmFFYOUaXCsKHgADnAqQbTQJaCkwOlpvvsEQRoZrdaLlYPaBwsGsLyYhuTfgckCcXVYUDeFSalohcRCBcfyUvpqFZcrACQNTVswrcmQMoXfDYUHrHppMHqwFxyYASJEcstnTktJniQArACiZpTgueVchTUCWRUetYdagoiCmSRGYSNfFvErcnsXpIbQFfaMfMXBDnGutmTTvEcNwNogloUOOphuZIBbmAigFlUdnMWqMwBErRmhnGJhHcNKuOLeVVpGKWvJNKGgeulZPDGgURrXeEuZcBRPnZcQoPAOJjPgHDAoNaJIlJfWvBLifoxSMZOyCBzbwhUCfrYoWIrkSPcqqTbBUSbnzBbvfXpeekaJUnDxJNspGWNFwQQkenCHOXsdwfpSwDawXyZYyQAqtVFDugXwubmGhyevoSIObPybPOLpfFPNnlcABWajuHplaCZfMreSurHJaaohtUNFysfvlrDaJxzSQRTcsNtfoppoeKUeLlxvbjLpsWAtgmMkgNFjJZlxPKvClAcQhPHtVsVgzxXoIjsYQHXVOnqyhWhBhUcjhSIeZDKKDzrgLilldOEdjdZzNFAHDCnwWCXdhDcGcpZKpoiHyiBPMeElxulCJbZygaORQKbacgwcxPxqCZjeXctUjAREMcAKboJzAKwuuRpokSeqsUnAXcFaAzotBNCRZJyaFoUAVkQWksDtjrKxkuohwikPTiToDQBqrLViyLvEPiLQGThhegyghZrRGpXiXMxtIlPRiwsDpxveVudAktxNjUnCDVFuCkXengqUPglmciJYSkreOidRAtZsOMkaq') Line 138
+2024-05-09 18:58:34,937 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:34,976 - ('data', '457', '', 'tDqQmZqjJyCpsJcQpFXCWaltpbyJkwUsuRwOwMboWhyqGpifrgpyyfjyhLKoTkfcRbRPYleQhifakLBgaDAYfTqeypELleSbWPraPmOxDjGznYjKJHCpJXzwFWmcrzfhUlOQNmmSfLYkpiYFXHpWsdHehGGddXnIZBVXriuVufxDmEkkwJPxZtHnqGUhbIWlKCFYhGUtmFFYOUaXCsKHgADnAqQbTQJaCkwOlpvvsEQRoZrdaLlYPaBwsGsLyYhuTfgckCcXVYUDeFSalohcRCBcfyUvpqFZcrACQNTVswrcmQMoXfDYUHrHppMHqwFxyYASJEcstnTktJniQArACiZpTgueVchTUCWRUetYdagoiCmSRGYSNfFvErcnsXpIbQFfaMfMXBDnGutmTTvEcNwNogloUOOphuZIBbmAigFlUdnMWqMwBErRmhnGJhHcNKuOLeVVpGKWvJNKGgeulZPDGgURrXeEuZcBRPnZcQoPAOJjPgHDAoNaJIlJfWvBLifoxSMZOyCBzbwhUCfrYoWIrkSPcqqTbBUSbnzBbvfXpeekaJUnDxJNspGWNFwQQkenCHOXsdwfpSwDawXyZYyQAqtVFDugXwubmGhyevoSIObPybPOLpfFPNnlcABWajuHplaCZfMreSurHJaaohtUNFysfvlrDaJxzSQRTcsNtfoppoeKUeLlxvbjLpsWAtgmMkgNFjJZlxPKvClAcQhPHtVsVgzxXoIjsYQHXVOnqyhWhBhUcjhSIeZDKKDzrgLilldOEdjdZzNFAHDCnwWCXdhDcGcpZKpoiHyiBPMeElxulCJbZygaORQKbacgwcxPxqCZjeXctUjAREMcAKboJzAKwuuRpokSeqsUnAXcFaAzotBNCRZJyaFoUAVkQWksDtjrKxkuohwikPTiToDQBqrLViyLvEPiLQGThhegyghZrRGpXiXMxtIlPRiwsDpxveVudAktxNjUnCDVFuCkXengqUPglmciJYSkreOidRAtZsOMkaq') Line 138
+2024-05-09 18:58:34,976 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:34,997 - ('data', '457', '', 'tDqQmZqjJyCpsJcQpFXCWaltpbyJkwUsuRwOwMboWhyqGpifrgpyyfjyhLKoTkfcRbRPYleQhifakLBgaDAYfTqeypELleSbWPraPmOxDjGznYjKJHCpJXzwFWmcrzfhUlOQNmmSfLYkpiYFXHpWsdHehGGddXnIZBVXriuVufxDmEkkwJPxZtHnqGUhbIWlKCFYhGUtmFFYOUaXCsKHgADnAqQbTQJaCkwOlpvvsEQRoZrdaLlYPaBwsGsLyYhuTfgckCcXVYUDeFSalohcRCBcfyUvpqFZcrACQNTVswrcmQMoXfDYUHrHppMHqwFxyYASJEcstnTktJniQArACiZpTgueVchTUCWRUetYdagoiCmSRGYSNfFvErcnsXpIbQFfaMfMXBDnGutmTTvEcNwNogloUOOphuZIBbmAigFlUdnMWqMwBErRmhnGJhHcNKuOLeVVpGKWvJNKGgeulZPDGgURrXeEuZcBRPnZcQoPAOJjPgHDAoNaJIlJfWvBLifoxSMZOyCBzbwhUCfrYoWIrkSPcqqTbBUSbnzBbvfXpeekaJUnDxJNspGWNFwQQkenCHOXsdwfpSwDawXyZYyQAqtVFDugXwubmGhyevoSIObPybPOLpfFPNnlcABWajuHplaCZfMreSurHJaaohtUNFysfvlrDaJxzSQRTcsNtfoppoeKUeLlxvbjLpsWAtgmMkgNFjJZlxPKvClAcQhPHtVsVgzxXoIjsYQHXVOnqyhWhBhUcjhSIeZDKKDzrgLilldOEdjdZzNFAHDCnwWCXdhDcGcpZKpoiHyiBPMeElxulCJbZygaORQKbacgwcxPxqCZjeXctUjAREMcAKboJzAKwuuRpokSeqsUnAXcFaAzotBNCRZJyaFoUAVkQWksDtjrKxkuohwikPTiToDQBqrLViyLvEPiLQGThhegyghZrRGpXiXMxtIlPRiwsDpxveVudAktxNjUnCDVFuCkXengqUPglmciJYSkreOidRAtZsOMkaq') Line 138
+2024-05-09 18:58:34,997 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:35,030 - ('data', '458', '', 'xlRxSnPEZhfMpOIzXesrgfxPVsxMeoqherThElYvcbZmQRWHMxXSOJISyzoKpvsWJDGZWeAxLiTIHayakoKmhmCOOiajnPGbSrxdXqefchEnQzxZIMgOBqmjPuncbuEgPgYmwlAmwPZdQgqOjqKrPyfkUjebTMwIhmFGjSxmaIIKoXsMJeWVDYELllEcngsJOCHtQQHsRlIbSTPwcLbjQMEnpSMmPnBqxmDqVyqLItyTgzTEYeRaStRcLcNCYYLqmOJpFxGCTXMoZihEjtOfrxUiiZYByplvhdRQzueyVrHMOGuyJtRbhhjWIrbwwNLgbjMZKOolJcgfpkLlMwRtlhoPgiuspuUGIDHrWbvXwTiFVAuTUihtMmgfxhHnxJEsZAdiAWorezduUqUgwqBfJtuRECDyaSikPoaxhojKHEdPZVMhTNyxBhOlbtxDTRBtMErADNbtnjuCSUGipdpcjvDEfHyKzGDdEefwSHYUnjRejQBaVuVHFYHKFFHivtXhtSysIvZuqinCyWoScVIWpQhirjueJPMYtIjeLknxdlPnbIfgCdJIGsYLKkimbOhaCtDZlZeKyUkHyCevQAjhQEvmrwfOLLpXUckXqfTWpPksmjcqUESSGmrUypJmblaxtUUgOVBIWSVPteCOBILURTPeWTunoKuJmShaTSmBfgcbokOnzzHrkkERbhpyXnaZvyUupUqdxVWhgNFhsRAESeCOHKRXWisqWVmkuUptDXrTGksAyrBUZduFfFJglGAohoGZelhBrYlpNkbhzwzlfuAEFriIZQWOTpVAtNkWJQlkKQBIKWxlUUkLogWAZKzbAJdxMrTpNpkXTLFYCekmRafqaNwOHqXpSWhnvoTBPzjhRgYloykqsdEnhnkXJKZOiKAwapFAaGhYzTSJtqVdWkCgYvdhTWZwEDdsnyQZCoIAoTIMkyVXPLmcgeqnFnOyanNkLSSFLEgvMWOkAJGWFvhterFkDMxpRzgpBYFkdTpeydVEGzFJWHa') Line 138
+2024-05-09 18:58:35,031 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:35,132 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:35,132 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:35,133 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:35,133 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:35,133 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:35,133 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:35,134 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:35,134 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:35,134 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:35,134 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:35,135 - ***Timeout occurred while waiting for data ack.***, username: client4 Line 128
+2024-05-09 18:58:35,135 - Gave ip resending Line 124
+2024-05-09 18:58:35,135 - chunk: IDEDqbumhLbqJbPSYgAoREaOLPCcdiEvFYQxYjgjgUNMSOdPITHERWuzLgxerviOlSWXdhBRZNSeHRQBajufEIqWYNqohbWvEHqjQchIJqnkirnsfChaJesbBSKrROoSocloGTqASMegMNzUJyNTUajgWcAwKOPUBTnBxnBQufNsodHYGvYHlulYwfUGFCRZqeJZksMdWSjuIwjYVAjrYtIAtYcVaxwelTtqMbntUGyRlETLoxyTgaUbmxkicRbQKeQsiUqnxVSQpGvOeNNHpLcfvCmJlfPGYERJOYqJGHhSTSfXISLZXqqPrIuaTvhQLsjHYlaTHaUjJvTFsssFZIUPXpsjJoavjBidxCLBtkDHfVqOPEOWGNTkfIZGydPEnHIZQLOouoaHrizcFTvHQjHwMcEqXeFqGBNbTvoCBQVbxfgnxMHLoFSyUmxipCiuoalWCfQKaJvsbgqTdjLiqzKUdHQZGdPnCdbmqURYAJAJSYqAcVxTyQPaTOYypFgaiYeAtdIOQFzBlDxQGwHPSuZNzGgKrdeyzEzCpwkYUjoIhtDwVCCMAGorXMTBtJmSjwOgcsDxAfTrUFrbzWekNdVaKYHLyymlOSPGtEkTaRIvaEhbHswmgAVsEFeRNwUCjLSwFfDlbzPtwrOSDHVqJFhYyOomBLArHYHNinOZVURgyIWArmKFLcPiAjhxxcFBIEidQVrIbNhkUDloPqOIKvEJzUbdWFDbidYgJakbGmGENefwZfWfKLBGbwAlCtILNhbrAAswybOvQpnDlWDEsuJRuRWPXotIUNaphmBIvtUOVgdOIInxLfflxVJxeQuRcxnSQvnEdHgXVSOO Line 114
+2024-05-09 18:58:35,154 - ('data', '458', '', 'xlRxSnPEZhfMpOIzXesrgfxPVsxMeoqherThElYvcbZmQRWHMxXSOJISyzoKpvsWJDGZWeAxLiTIHayakoKmhmCOOiajnPGbSrxdXqefchEnQzxZIMgOBqmjPuncbuEgPgYmwlAmwPZdQgqOjqKrPyfkUjebTMwIhmFGjSxmaIIKoXsMJeWVDYELllEcngsJOCHtQQHsRlIbSTPwcLbjQMEnpSMmPnBqxmDqVyqLItyTgzTEYeRaStRcLcNCYYLqmOJpFxGCTXMoZihEjtOfrxUiiZYByplvhdRQzueyVrHMOGuyJtRbhhjWIrbwwNLgbjMZKOolJcgfpkLlMwRtlhoPgiuspuUGIDHrWbvXwTiFVAuTUihtMmgfxhHnxJEsZAdiAWorezduUqUgwqBfJtuRECDyaSikPoaxhojKHEdPZVMhTNyxBhOlbtxDTRBtMErADNbtnjuCSUGipdpcjvDEfHyKzGDdEefwSHYUnjRejQBaVuVHFYHKFFHivtXhtSysIvZuqinCyWoScVIWpQhirjueJPMYtIjeLknxdlPnbIfgCdJIGsYLKkimbOhaCtDZlZeKyUkHyCevQAjhQEvmrwfOLLpXUckXqfTWpPksmjcqUESSGmrUypJmblaxtUUgOVBIWSVPteCOBILURTPeWTunoKuJmShaTSmBfgcbokOnzzHrkkERbhpyXnaZvyUupUqdxVWhgNFhsRAESeCOHKRXWisqWVmkuUptDXrTGksAyrBUZduFfFJglGAohoGZelhBrYlpNkbhzwzlfuAEFriIZQWOTpVAtNkWJQlkKQBIKWxlUUkLogWAZKzbAJdxMrTpNpkXTLFYCekmRafqaNwOHqXpSWhnvoTBPzjhRgYloykqsdEnhnkXJKZOiKAwapFAaGhYzTSJtqVdWkCgYvdhTWZwEDdsnyQZCoIAoTIMkyVXPLmcgeqnFnOyanNkLSSFLEgvMWOkAJGWFvhterFkDMxpRzgpBYFkdTpeydVEGzFJWHa') Line 138
+2024-05-09 18:58:35,155 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:35,188 - ('data', '458', '', 'xlRxSnPEZhfMpOIzXesrgfxPVsxMeoqherThElYvcbZmQRWHMxXSOJISyzoKpvsWJDGZWeAxLiTIHayakoKmhmCOOiajnPGbSrxdXqefchEnQzxZIMgOBqmjPuncbuEgPgYmwlAmwPZdQgqOjqKrPyfkUjebTMwIhmFGjSxmaIIKoXsMJeWVDYELllEcngsJOCHtQQHsRlIbSTPwcLbjQMEnpSMmPnBqxmDqVyqLItyTgzTEYeRaStRcLcNCYYLqmOJpFxGCTXMoZihEjtOfrxUiiZYByplvhdRQzueyVrHMOGuyJtRbhhjWIrbwwNLgbjMZKOolJcgfpkLlMwRtlhoPgiuspuUGIDHrWbvXwTiFVAuTUihtMmgfxhHnxJEsZAdiAWorezduUqUgwqBfJtuRECDyaSikPoaxhojKHEdPZVMhTNyxBhOlbtxDTRBtMErADNbtnjuCSUGipdpcjvDEfHyKzGDdEefwSHYUnjRejQBaVuVHFYHKFFHivtXhtSysIvZuqinCyWoScVIWpQhirjueJPMYtIjeLknxdlPnbIfgCdJIGsYLKkimbOhaCtDZlZeKyUkHyCevQAjhQEvmrwfOLLpXUckXqfTWpPksmjcqUESSGmrUypJmblaxtUUgOVBIWSVPteCOBILURTPeWTunoKuJmShaTSmBfgcbokOnzzHrkkERbhpyXnaZvyUupUqdxVWhgNFhsRAESeCOHKRXWisqWVmkuUptDXrTGksAyrBUZduFfFJglGAohoGZelhBrYlpNkbhzwzlfuAEFriIZQWOTpVAtNkWJQlkKQBIKWxlUUkLogWAZKzbAJdxMrTpNpkXTLFYCekmRafqaNwOHqXpSWhnvoTBPzjhRgYloykqsdEnhnkXJKZOiKAwapFAaGhYzTSJtqVdWkCgYvdhTWZwEDdsnyQZCoIAoTIMkyVXPLmcgeqnFnOyanNkLSSFLEgvMWOkAJGWFvhterFkDMxpRzgpBYFkdTpeydVEGzFJWHa') Line 138
+2024-05-09 18:58:35,188 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:35,231 - ('data', '458', '', 'xlRxSnPEZhfMpOIzXesrgfxPVsxMeoqherThElYvcbZmQRWHMxXSOJISyzoKpvsWJDGZWeAxLiTIHayakoKmhmCOOiajnPGbSrxdXqefchEnQzxZIMgOBqmjPuncbuEgPgYmwlAmwPZdQgqOjqKrPyfkUjebTMwIhmFGjSxmaIIKoXsMJeWVDYELllEcngsJOCHtQQHsRlIbSTPwcLbjQMEnpSMmPnBqxmDqVyqLItyTgzTEYeRaStRcLcNCYYLqmOJpFxGCTXMoZihEjtOfrxUiiZYByplvhdRQzueyVrHMOGuyJtRbhhjWIrbwwNLgbjMZKOolJcgfpkLlMwRtlhoPgiuspuUGIDHrWbvXwTiFVAuTUihtMmgfxhHnxJEsZAdiAWorezduUqUgwqBfJtuRECDyaSikPoaxhojKHEdPZVMhTNyxBhOlbtxDTRBtMErADNbtnjuCSUGipdpcjvDEfHyKzGDdEefwSHYUnjRejQBaVuVHFYHKFFHivtXhtSysIvZuqinCyWoScVIWpQhirjueJPMYtIjeLknxdlPnbIfgCdJIGsYLKkimbOhaCtDZlZeKyUkHyCevQAjhQEvmrwfOLLpXUckXqfTWpPksmjcqUESSGmrUypJmblaxtUUgOVBIWSVPteCOBILURTPeWTunoKuJmShaTSmBfgcbokOnzzHrkkERbhpyXnaZvyUupUqdxVWhgNFhsRAESeCOHKRXWisqWVmkuUptDXrTGksAyrBUZduFfFJglGAohoGZelhBrYlpNkbhzwzlfuAEFriIZQWOTpVAtNkWJQlkKQBIKWxlUUkLogWAZKzbAJdxMrTpNpkXTLFYCekmRafqaNwOHqXpSWhnvoTBPzjhRgYloykqsdEnhnkXJKZOiKAwapFAaGhYzTSJtqVdWkCgYvdhTWZwEDdsnyQZCoIAoTIMkyVXPLmcgeqnFnOyanNkLSSFLEgvMWOkAJGWFvhterFkDMxpRzgpBYFkdTpeydVEGzFJWHa') Line 138
+2024-05-09 18:58:35,231 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:35,265 - ('data', '458', '', 'xlRxSnPEZhfMpOIzXesrgfxPVsxMeoqherThElYvcbZmQRWHMxXSOJISyzoKpvsWJDGZWeAxLiTIHayakoKmhmCOOiajnPGbSrxdXqefchEnQzxZIMgOBqmjPuncbuEgPgYmwlAmwPZdQgqOjqKrPyfkUjebTMwIhmFGjSxmaIIKoXsMJeWVDYELllEcngsJOCHtQQHsRlIbSTPwcLbjQMEnpSMmPnBqxmDqVyqLItyTgzTEYeRaStRcLcNCYYLqmOJpFxGCTXMoZihEjtOfrxUiiZYByplvhdRQzueyVrHMOGuyJtRbhhjWIrbwwNLgbjMZKOolJcgfpkLlMwRtlhoPgiuspuUGIDHrWbvXwTiFVAuTUihtMmgfxhHnxJEsZAdiAWorezduUqUgwqBfJtuRECDyaSikPoaxhojKHEdPZVMhTNyxBhOlbtxDTRBtMErADNbtnjuCSUGipdpcjvDEfHyKzGDdEefwSHYUnjRejQBaVuVHFYHKFFHivtXhtSysIvZuqinCyWoScVIWpQhirjueJPMYtIjeLknxdlPnbIfgCdJIGsYLKkimbOhaCtDZlZeKyUkHyCevQAjhQEvmrwfOLLpXUckXqfTWpPksmjcqUESSGmrUypJmblaxtUUgOVBIWSVPteCOBILURTPeWTunoKuJmShaTSmBfgcbokOnzzHrkkERbhpyXnaZvyUupUqdxVWhgNFhsRAESeCOHKRXWisqWVmkuUptDXrTGksAyrBUZduFfFJglGAohoGZelhBrYlpNkbhzwzlfuAEFriIZQWOTpVAtNkWJQlkKQBIKWxlUUkLogWAZKzbAJdxMrTpNpkXTLFYCekmRafqaNwOHqXpSWhnvoTBPzjhRgYloykqsdEnhnkXJKZOiKAwapFAaGhYzTSJtqVdWkCgYvdhTWZwEDdsnyQZCoIAoTIMkyVXPLmcgeqnFnOyanNkLSSFLEgvMWOkAJGWFvhterFkDMxpRzgpBYFkdTpeydVEGzFJWHa') Line 138
+2024-05-09 18:58:35,265 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:35,286 - ('data', '458', '', 'xlRxSnPEZhfMpOIzXesrgfxPVsxMeoqherThElYvcbZmQRWHMxXSOJISyzoKpvsWJDGZWeAxLiTIHayakoKmhmCOOiajnPGbSrxdXqefchEnQzxZIMgOBqmjPuncbuEgPgYmwlAmwPZdQgqOjqKrPyfkUjebTMwIhmFGjSxmaIIKoXsMJeWVDYELllEcngsJOCHtQQHsRlIbSTPwcLbjQMEnpSMmPnBqxmDqVyqLItyTgzTEYeRaStRcLcNCYYLqmOJpFxGCTXMoZihEjtOfrxUiiZYByplvhdRQzueyVrHMOGuyJtRbhhjWIrbwwNLgbjMZKOolJcgfpkLlMwRtlhoPgiuspuUGIDHrWbvXwTiFVAuTUihtMmgfxhHnxJEsZAdiAWorezduUqUgwqBfJtuRECDyaSikPoaxhojKHEdPZVMhTNyxBhOlbtxDTRBtMErADNbtnjuCSUGipdpcjvDEfHyKzGDdEefwSHYUnjRejQBaVuVHFYHKFFHivtXhtSysIvZuqinCyWoScVIWpQhirjueJPMYtIjeLknxdlPnbIfgCdJIGsYLKkimbOhaCtDZlZeKyUkHyCevQAjhQEvmrwfOLLpXUckXqfTWpPksmjcqUESSGmrUypJmblaxtUUgOVBIWSVPteCOBILURTPeWTunoKuJmShaTSmBfgcbokOnzzHrkkERbhpyXnaZvyUupUqdxVWhgNFhsRAESeCOHKRXWisqWVmkuUptDXrTGksAyrBUZduFfFJglGAohoGZelhBrYlpNkbhzwzlfuAEFriIZQWOTpVAtNkWJQlkKQBIKWxlUUkLogWAZKzbAJdxMrTpNpkXTLFYCekmRafqaNwOHqXpSWhnvoTBPzjhRgYloykqsdEnhnkXJKZOiKAwapFAaGhYzTSJtqVdWkCgYvdhTWZwEDdsnyQZCoIAoTIMkyVXPLmcgeqnFnOyanNkLSSFLEgvMWOkAJGWFvhterFkDMxpRzgpBYFkdTpeydVEGzFJWHa') Line 138
+2024-05-09 18:58:35,286 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:35,326 - ('data', '458', '', 'xlRxSnPEZhfMpOIzXesrgfxPVsxMeoqherThElYvcbZmQRWHMxXSOJISyzoKpvsWJDGZWeAxLiTIHayakoKmhmCOOiajnPGbSrxdXqefchEnQzxZIMgOBqmjPuncbuEgPgYmwlAmwPZdQgqOjqKrPyfkUjebTMwIhmFGjSxmaIIKoXsMJeWVDYELllEcngsJOCHtQQHsRlIbSTPwcLbjQMEnpSMmPnBqxmDqVyqLItyTgzTEYeRaStRcLcNCYYLqmOJpFxGCTXMoZihEjtOfrxUiiZYByplvhdRQzueyVrHMOGuyJtRbhhjWIrbwwNLgbjMZKOolJcgfpkLlMwRtlhoPgiuspuUGIDHrWbvXwTiFVAuTUihtMmgfxhHnxJEsZAdiAWorezduUqUgwqBfJtuRECDyaSikPoaxhojKHEdPZVMhTNyxBhOlbtxDTRBtMErADNbtnjuCSUGipdpcjvDEfHyKzGDdEefwSHYUnjRejQBaVuVHFYHKFFHivtXhtSysIvZuqinCyWoScVIWpQhirjueJPMYtIjeLknxdlPnbIfgCdJIGsYLKkimbOhaCtDZlZeKyUkHyCevQAjhQEvmrwfOLLpXUckXqfTWpPksmjcqUESSGmrUypJmblaxtUUgOVBIWSVPteCOBILURTPeWTunoKuJmShaTSmBfgcbokOnzzHrkkERbhpyXnaZvyUupUqdxVWhgNFhsRAESeCOHKRXWisqWVmkuUptDXrTGksAyrBUZduFfFJglGAohoGZelhBrYlpNkbhzwzlfuAEFriIZQWOTpVAtNkWJQlkKQBIKWxlUUkLogWAZKzbAJdxMrTpNpkXTLFYCekmRafqaNwOHqXpSWhnvoTBPzjhRgYloykqsdEnhnkXJKZOiKAwapFAaGhYzTSJtqVdWkCgYvdhTWZwEDdsnyQZCoIAoTIMkyVXPLmcgeqnFnOyanNkLSSFLEgvMWOkAJGWFvhterFkDMxpRzgpBYFkdTpeydVEGzFJWHa') Line 138
+2024-05-09 18:58:35,326 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:35,353 - ('data', '458', '', 'xlRxSnPEZhfMpOIzXesrgfxPVsxMeoqherThElYvcbZmQRWHMxXSOJISyzoKpvsWJDGZWeAxLiTIHayakoKmhmCOOiajnPGbSrxdXqefchEnQzxZIMgOBqmjPuncbuEgPgYmwlAmwPZdQgqOjqKrPyfkUjebTMwIhmFGjSxmaIIKoXsMJeWVDYELllEcngsJOCHtQQHsRlIbSTPwcLbjQMEnpSMmPnBqxmDqVyqLItyTgzTEYeRaStRcLcNCYYLqmOJpFxGCTXMoZihEjtOfrxUiiZYByplvhdRQzueyVrHMOGuyJtRbhhjWIrbwwNLgbjMZKOolJcgfpkLlMwRtlhoPgiuspuUGIDHrWbvXwTiFVAuTUihtMmgfxhHnxJEsZAdiAWorezduUqUgwqBfJtuRECDyaSikPoaxhojKHEdPZVMhTNyxBhOlbtxDTRBtMErADNbtnjuCSUGipdpcjvDEfHyKzGDdEefwSHYUnjRejQBaVuVHFYHKFFHivtXhtSysIvZuqinCyWoScVIWpQhirjueJPMYtIjeLknxdlPnbIfgCdJIGsYLKkimbOhaCtDZlZeKyUkHyCevQAjhQEvmrwfOLLpXUckXqfTWpPksmjcqUESSGmrUypJmblaxtUUgOVBIWSVPteCOBILURTPeWTunoKuJmShaTSmBfgcbokOnzzHrkkERbhpyXnaZvyUupUqdxVWhgNFhsRAESeCOHKRXWisqWVmkuUptDXrTGksAyrBUZduFfFJglGAohoGZelhBrYlpNkbhzwzlfuAEFriIZQWOTpVAtNkWJQlkKQBIKWxlUUkLogWAZKzbAJdxMrTpNpkXTLFYCekmRafqaNwOHqXpSWhnvoTBPzjhRgYloykqsdEnhnkXJKZOiKAwapFAaGhYzTSJtqVdWkCgYvdhTWZwEDdsnyQZCoIAoTIMkyVXPLmcgeqnFnOyanNkLSSFLEgvMWOkAJGWFvhterFkDMxpRzgpBYFkdTpeydVEGzFJWHa') Line 138
+2024-05-09 18:58:35,353 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:35,386 - ('data', '458', '', 'xlRxSnPEZhfMpOIzXesrgfxPVsxMeoqherThElYvcbZmQRWHMxXSOJISyzoKpvsWJDGZWeAxLiTIHayakoKmhmCOOiajnPGbSrxdXqefchEnQzxZIMgOBqmjPuncbuEgPgYmwlAmwPZdQgqOjqKrPyfkUjebTMwIhmFGjSxmaIIKoXsMJeWVDYELllEcngsJOCHtQQHsRlIbSTPwcLbjQMEnpSMmPnBqxmDqVyqLItyTgzTEYeRaStRcLcNCYYLqmOJpFxGCTXMoZihEjtOfrxUiiZYByplvhdRQzueyVrHMOGuyJtRbhhjWIrbwwNLgbjMZKOolJcgfpkLlMwRtlhoPgiuspuUGIDHrWbvXwTiFVAuTUihtMmgfxhHnxJEsZAdiAWorezduUqUgwqBfJtuRECDyaSikPoaxhojKHEdPZVMhTNyxBhOlbtxDTRBtMErADNbtnjuCSUGipdpcjvDEfHyKzGDdEefwSHYUnjRejQBaVuVHFYHKFFHivtXhtSysIvZuqinCyWoScVIWpQhirjueJPMYtIjeLknxdlPnbIfgCdJIGsYLKkimbOhaCtDZlZeKyUkHyCevQAjhQEvmrwfOLLpXUckXqfTWpPksmjcqUESSGmrUypJmblaxtUUgOVBIWSVPteCOBILURTPeWTunoKuJmShaTSmBfgcbokOnzzHrkkERbhpyXnaZvyUupUqdxVWhgNFhsRAESeCOHKRXWisqWVmkuUptDXrTGksAyrBUZduFfFJglGAohoGZelhBrYlpNkbhzwzlfuAEFriIZQWOTpVAtNkWJQlkKQBIKWxlUUkLogWAZKzbAJdxMrTpNpkXTLFYCekmRafqaNwOHqXpSWhnvoTBPzjhRgYloykqsdEnhnkXJKZOiKAwapFAaGhYzTSJtqVdWkCgYvdhTWZwEDdsnyQZCoIAoTIMkyVXPLmcgeqnFnOyanNkLSSFLEgvMWOkAJGWFvhterFkDMxpRzgpBYFkdTpeydVEGzFJWHa') Line 138
+2024-05-09 18:58:35,386 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:35,426 - ('data', '458', '', 'xlRxSnPEZhfMpOIzXesrgfxPVsxMeoqherThElYvcbZmQRWHMxXSOJISyzoKpvsWJDGZWeAxLiTIHayakoKmhmCOOiajnPGbSrxdXqefchEnQzxZIMgOBqmjPuncbuEgPgYmwlAmwPZdQgqOjqKrPyfkUjebTMwIhmFGjSxmaIIKoXsMJeWVDYELllEcngsJOCHtQQHsRlIbSTPwcLbjQMEnpSMmPnBqxmDqVyqLItyTgzTEYeRaStRcLcNCYYLqmOJpFxGCTXMoZihEjtOfrxUiiZYByplvhdRQzueyVrHMOGuyJtRbhhjWIrbwwNLgbjMZKOolJcgfpkLlMwRtlhoPgiuspuUGIDHrWbvXwTiFVAuTUihtMmgfxhHnxJEsZAdiAWorezduUqUgwqBfJtuRECDyaSikPoaxhojKHEdPZVMhTNyxBhOlbtxDTRBtMErADNbtnjuCSUGipdpcjvDEfHyKzGDdEefwSHYUnjRejQBaVuVHFYHKFFHivtXhtSysIvZuqinCyWoScVIWpQhirjueJPMYtIjeLknxdlPnbIfgCdJIGsYLKkimbOhaCtDZlZeKyUkHyCevQAjhQEvmrwfOLLpXUckXqfTWpPksmjcqUESSGmrUypJmblaxtUUgOVBIWSVPteCOBILURTPeWTunoKuJmShaTSmBfgcbokOnzzHrkkERbhpyXnaZvyUupUqdxVWhgNFhsRAESeCOHKRXWisqWVmkuUptDXrTGksAyrBUZduFfFJglGAohoGZelhBrYlpNkbhzwzlfuAEFriIZQWOTpVAtNkWJQlkKQBIKWxlUUkLogWAZKzbAJdxMrTpNpkXTLFYCekmRafqaNwOHqXpSWhnvoTBPzjhRgYloykqsdEnhnkXJKZOiKAwapFAaGhYzTSJtqVdWkCgYvdhTWZwEDdsnyQZCoIAoTIMkyVXPLmcgeqnFnOyanNkLSSFLEgvMWOkAJGWFvhterFkDMxpRzgpBYFkdTpeydVEGzFJWHa') Line 138
+2024-05-09 18:58:35,426 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:35,459 - ('data', '458', '', 'xlRxSnPEZhfMpOIzXesrgfxPVsxMeoqherThElYvcbZmQRWHMxXSOJISyzoKpvsWJDGZWeAxLiTIHayakoKmhmCOOiajnPGbSrxdXqefchEnQzxZIMgOBqmjPuncbuEgPgYmwlAmwPZdQgqOjqKrPyfkUjebTMwIhmFGjSxmaIIKoXsMJeWVDYELllEcngsJOCHtQQHsRlIbSTPwcLbjQMEnpSMmPnBqxmDqVyqLItyTgzTEYeRaStRcLcNCYYLqmOJpFxGCTXMoZihEjtOfrxUiiZYByplvhdRQzueyVrHMOGuyJtRbhhjWIrbwwNLgbjMZKOolJcgfpkLlMwRtlhoPgiuspuUGIDHrWbvXwTiFVAuTUihtMmgfxhHnxJEsZAdiAWorezduUqUgwqBfJtuRECDyaSikPoaxhojKHEdPZVMhTNyxBhOlbtxDTRBtMErADNbtnjuCSUGipdpcjvDEfHyKzGDdEefwSHYUnjRejQBaVuVHFYHKFFHivtXhtSysIvZuqinCyWoScVIWpQhirjueJPMYtIjeLknxdlPnbIfgCdJIGsYLKkimbOhaCtDZlZeKyUkHyCevQAjhQEvmrwfOLLpXUckXqfTWpPksmjcqUESSGmrUypJmblaxtUUgOVBIWSVPteCOBILURTPeWTunoKuJmShaTSmBfgcbokOnzzHrkkERbhpyXnaZvyUupUqdxVWhgNFhsRAESeCOHKRXWisqWVmkuUptDXrTGksAyrBUZduFfFJglGAohoGZelhBrYlpNkbhzwzlfuAEFriIZQWOTpVAtNkWJQlkKQBIKWxlUUkLogWAZKzbAJdxMrTpNpkXTLFYCekmRafqaNwOHqXpSWhnvoTBPzjhRgYloykqsdEnhnkXJKZOiKAwapFAaGhYzTSJtqVdWkCgYvdhTWZwEDdsnyQZCoIAoTIMkyVXPLmcgeqnFnOyanNkLSSFLEgvMWOkAJGWFvhterFkDMxpRzgpBYFkdTpeydVEGzFJWHa') Line 138
+2024-05-09 18:58:35,459 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:35,490 - ('data', '458', '', 'xlRxSnPEZhfMpOIzXesrgfxPVsxMeoqherThElYvcbZmQRWHMxXSOJISyzoKpvsWJDGZWeAxLiTIHayakoKmhmCOOiajnPGbSrxdXqefchEnQzxZIMgOBqmjPuncbuEgPgYmwlAmwPZdQgqOjqKrPyfkUjebTMwIhmFGjSxmaIIKoXsMJeWVDYELllEcngsJOCHtQQHsRlIbSTPwcLbjQMEnpSMmPnBqxmDqVyqLItyTgzTEYeRaStRcLcNCYYLqmOJpFxGCTXMoZihEjtOfrxUiiZYByplvhdRQzueyVrHMOGuyJtRbhhjWIrbwwNLgbjMZKOolJcgfpkLlMwRtlhoPgiuspuUGIDHrWbvXwTiFVAuTUihtMmgfxhHnxJEsZAdiAWorezduUqUgwqBfJtuRECDyaSikPoaxhojKHEdPZVMhTNyxBhOlbtxDTRBtMErADNbtnjuCSUGipdpcjvDEfHyKzGDdEefwSHYUnjRejQBaVuVHFYHKFFHivtXhtSysIvZuqinCyWoScVIWpQhirjueJPMYtIjeLknxdlPnbIfgCdJIGsYLKkimbOhaCtDZlZeKyUkHyCevQAjhQEvmrwfOLLpXUckXqfTWpPksmjcqUESSGmrUypJmblaxtUUgOVBIWSVPteCOBILURTPeWTunoKuJmShaTSmBfgcbokOnzzHrkkERbhpyXnaZvyUupUqdxVWhgNFhsRAESeCOHKRXWisqWVmkuUptDXrTGksAyrBUZduFfFJglGAohoGZelhBrYlpNkbhzwzlfuAEFriIZQWOTpVAtNkWJQlkKQBIKWxlUUkLogWAZKzbAJdxMrTpNpkXTLFYCekmRafqaNwOHqXpSWhnvoTBPzjhRgYloykqsdEnhnkXJKZOiKAwapFAaGhYzTSJtqVdWkCgYvdhTWZwEDdsnyQZCoIAoTIMkyVXPLmcgeqnFnOyanNkLSSFLEgvMWOkAJGWFvhterFkDMxpRzgpBYFkdTpeydVEGzFJWHa') Line 138
+2024-05-09 18:58:35,490 - *** Checksum invalid. Must discard packet *** Line 145
+2024-05-09 18:58:35,524 - ('data', '459', 'IDEDqbumhLbqJbPSYgAoREaOLPCcdiEvFYQxYjgjgUNMSOdPITHERWuzLgxerviOlSWXdhBRZNSeHRQBajufEIqWYNqohbWvEHqjQchIJqnkirnsfChaJesbBSKrROoSocloGTqASMegMNzUJyNTUajgWcAwKOPUBTnBxnBQufNsodHYGvYHlulYwfUGFCRZqeJZksMdWSjuIwjYVAjrYtIAtYcVaxwelTtqMbntUGyRlETLoxyTgaUbmxkicRbQKeQsiUqnxVSQpGvOeNNHpLcfvCmJlfPGYERJOYqJGHhSTSfXISLZXqqPrIuaTvhQLsjHYlaTHaUjJvTFsssFZIUPXpsjJoavjBidxCLBtkDHfVqOPEOWGNTkfIZGydPEnHIZQLOouoaHrizcFTvHQjHwMcEqXeFqGBNbTvoCBQVbxfgnxMHLoFSyUmxipCiuoalWCfQKaJvsbgqTdjLiqzKUdHQZGdPnCdbmqURYAJAJSYqAcVxTyQPaTOYypFgaiYeAtdIOQFzBlDxQGwHPSuZNzGgKrdeyzEzCpwkYUjoIhtDwVCCMAGorXMTBtJmSjwOgcsDxAfTrUFrbzWekNdVaKYHLyymlOSPGtEkTaRIvaEhbHswmgAVsEFeRNwUCjLSwFfDlbzPtwrOSDHVqJFhYyOomBLArHYHNinOZVURgyIWArmKFLcPiAjhxxcFBIEidQVrIbNhkUDloPqOIKvEJzUbdWFDbidYgJakbGmGENefwZfWfKLBGbwAlCtILNhbrAAswybOvQpnDlWDEsuJRuRWPXotIUNaphmBIvtUOVgdOIInxLfflxVJxeQuRcxnSQvnEdHgXVSOO', '1528534524') Line 138
+2024-05-09 18:58:35,524 - msg chunk: IDEDqbumhLbqJbPSYgAoREaOLPCcdiEvFYQxYjgjgUNMSOdPITHERWuzLgxerviOlSWXdhBRZNSeHRQBajufEIqWYNqohbWvEHqjQchIJqnkirnsfChaJesbBSKrROoSocloGTqASMegMNzUJyNTUajgWcAwKOPUBTnBxnBQufNsodHYGvYHlulYwfUGFCRZqeJZksMdWSjuIwjYVAjrYtIAtYcVaxwelTtqMbntUGyRlETLoxyTgaUbmxkicRbQKeQsiUqnxVSQpGvOeNNHpLcfvCmJlfPGYERJOYqJGHhSTSfXISLZXqqPrIuaTvhQLsjHYlaTHaUjJvTFsssFZIUPXpsjJoavjBidxCLBtkDHfVqOPEOWGNTkfIZGydPEnHIZQLOouoaHrizcFTvHQjHwMcEqXeFqGBNbTvoCBQVbxfgnxMHLoFSyUmxipCiuoalWCfQKaJvsbgqTdjLiqzKUdHQZGdPnCdbmqURYAJAJSYqAcVxTyQPaTOYypFgaiYeAtdIOQFzBlDxQGwHPSuZNzGgKrdeyzEzCpwkYUjoIhtDwVCCMAGorXMTBtJmSjwOgcsDxAfTrUFrbzWekNdVaKYHLyymlOSPGtEkTaRIvaEhbHswmgAVsEFeRNwUCjLSwFfDlbzPtwrOSDHVqJFhYyOomBLArHYHNinOZVURgyIWArmKFLcPiAjhxxcFBIEidQVrIbNhkUDloPqOIKvEJzUbdWFDbidYgJakbGmGENefwZfWfKLBGbwAlCtILNhbrAAswybOvQpnDlWDEsuJRuRWPXotIUNaphmBIvtUOVgdOIInxLfflxVJxeQuRcxnSQvnEdHgXVSOO Line 159
+2024-05-09 18:58:35,548 - passed initial data loop Line 135
+2024-05-09 18:58:35,582 - ('end', '460', '', '1228312774') Line 138
+2024-05-09 18:58:35,583 - end ack sent Line 169
+2024-05-09 18:58:35,583 - complete message: IDEDqbumhLbqJbPSYgAoREaOLPCcdiEvFYQxYjgjgUNMSOdPITHERWuzLgxerviOlSWXdhBRZNSeHRQBajufEIqWYNqohbWvEHqjQchIJqnkirnsfChaJesbBSKrROoSocloGTqASMegMNzUJyNTUajgWcAwKOPUBTnBxnBQufNsodHYGvYHlulYwfUGFCRZqeJZksMdWSjuIwjYVAjrYtIAtYcVaxwelTtqMbntUGyRlETLoxyTgaUbmxkicRbQKeQsiUqnxVSQpGvOeNNHpLcfvCmJlfPGYERJOYqJGHhSTSfXISLZXqqPrIuaTvhQLsjHYlaTHaUjJvTFsssFZIUPXpsjJoavjBidxCLBtkDHfVqOPEOWGNTkfIZGydPEnHIZQLOouoaHrizcFTvHQjHwMcEqXeFqGBNbTvoCBQVbxfgnxMHLoFSyUmxipCiuoalWCfQKaJvsbgqTdjLiqzKUdHQZGdPnCdbmqURYAJAJSYqAcVxTyQPaTOYypFgaiYeAtdIOQFzBlDxQGwHPSuZNzGgKrdeyzEzCpwkYUjoIhtDwVCCMAGorXMTBtJmSjwOgcsDxAfTrUFrbzWekNdVaKYHLyymlOSPGtEkTaRIvaEhbHswmgAVsEFeRNwUCjLSwFfDlbzPtwrOSDHVqJFhYyOomBLArHYHNinOZVURgyIWArmKFLcPiAjhxxcFBIEidQVrIbNhkUDloPqOIKvEJzUbdWFDbidYgJakbGmGENefwZfWfKLBGbwAlCtILNhbrAAswybOvQpnDlWDEsuJRuRWPXotIUNaphmBIvtUOVgdOIInxLfflxVJxeQuRcxnSQvnEdHgXVSOO Line 170
+2024-05-09 18:58:35,583 - msg_type: IDEDqbumhLbqJbPSYgAoREaOLPCcdiEvFYQxYjgjgUNMSOdPITHERWuzLgxerviOlSWXdhBRZNSeHRQBajufEIqWYNqohbWvEHqjQchIJqnkirnsfChaJesbBSKrROoSocloGTqASMegMNzUJyNTUajgWcAwKOPUBTnBxnBQufNsodHYGvYHlulYwfUGFCRZqeJZksMdWSjuIwjYVAjrYtIAtYcVaxwelTtqMbntUGyRlETLoxyTgaUbmxkicRbQKeQsiUqnxVSQpGvOeNNHpLcfvCmJlfPGYERJOYqJGHhSTSfXISLZXqqPrIuaTvhQLsjHYlaTHaUjJvTFsssFZIUPXpsjJoavjBidxCLBtkDHfVqOPEOWGNTkfIZGydPEnHIZQLOouoaHrizcFTvHQjHwMcEqXeFqGBNbTvoCBQVbxfgnxMHLoFSyUmxipCiuoalWCfQKaJvsbgqTdjLiqzKUdHQZGdPnCdbmqURYAJAJSYqAcVxTyQPaTOYypFgaiYeAtdIOQFzBlDxQGwHPSuZNzGgKrdeyzEzCpwkYUjoIhtDwVCCMAGorXMTBtJmSjwOgcsDxAfTrUFrbzWekNdVaKYHLyymlOSPGtEkTaRIvaEhbHswmgAVsEFeRNwUCjLSwFfDlbzPtwrOSDHVqJFhYyOomBLArHYHNinOZVURgyIWArmKFLcPiAjhxxcFBIEidQVrIbNhkUDloPqOIKvEJzUbdWFDbidYgJakbGmGENefwZfWfKLBGbwAlCtILNhbrAAswybOvQpnDlWDEsuJRuRWPXotIUNaphmBIvtUOVgdOIInxLfflxVJxeQuRcxnSQvnEdHgXVSOO Line 175
+2024-05-09 18:58:36,041 - passed start loop Line 102
+2024-05-09 18:58:36,041 - chunk: send_message 71 msg 4 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 114
+2024-05-09 18:58:36,058 - ('start', '473', '', '4144370702') Line 138
+2024-05-09 18:58:36,097 - ('data', '474', 'send_message 71 msg 4 client1 client2 client3 client4 Hello Dear Friends! Do not cheat.', '2829282369') Line 138
+2024-05-09 18:58:36,097 - msg chunk: send_message 71 msg 4 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 159
+2024-05-09 18:58:36,124 - passed initial data loop Line 135
+2024-05-09 18:58:36,194 - ('end', '475', '', '4148245832') Line 138
+2024-05-09 18:58:36,194 - end ack sent Line 169
+2024-05-09 18:58:36,194 - complete message: send_message 71 msg 4 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 170
+2024-05-09 18:58:36,194 - msg_type: send_message Line 175
+2024-05-09 18:58:36,194 - text: send_message 71 msg 4 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 80
+2024-05-09 18:58:36,195 - ['client1', 'client2', 'client3', 'client4'] Line 100
+2024-05-09 18:58:36,195 - 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 104
+2024-05-09 18:58:44,043 - passed start loop Line 102
+2024-05-09 18:58:44,043 - passed start loop Line 102
+2024-05-09 18:58:44,043 - passed start loop Line 102
+2024-05-09 18:58:44,043 - chunk: disconnect 7 client2 Line 114
+2024-05-09 18:58:44,043 - passed start loop Line 102
+2024-05-09 18:58:44,043 - chunk: disconnect 7 client4 Line 114
+2024-05-09 18:58:44,043 - chunk: disconnect 7 client3 Line 114
+2024-05-09 18:58:44,043 - chunk: disconnect 7 client1 Line 114
+2024-05-09 18:58:44,071 - ('start', '282', '', '568826831') Line 138
+2024-05-09 18:58:44,071 - ('start', '457', '', '1510372441') Line 138
+2024-05-09 18:58:44,071 - ('start', '251', '', '3519806795') Line 138
+2024-05-09 18:58:44,071 - ('start', '377', '', '1110401218') Line 138
+2024-05-09 18:58:44,071 - ('data', '283', 'disconnect 7 client3', '459317192') Line 138
+2024-05-09 18:58:44,071 - msg chunk: disconnect 7 client3 Line 159
+2024-05-09 18:58:44,071 - ('data', '458', 'disconnect 7 client4', '1938348148') Line 138
+2024-05-09 18:58:44,071 - msg chunk: disconnect 7 client4 Line 159
+2024-05-09 18:58:44,071 - ('data', '252', 'disconnect 7 client1', '2282475608') Line 138
+2024-05-09 18:58:44,072 - msg chunk: disconnect 7 client1 Line 159
+2024-05-09 18:58:44,072 - ('data', '378', 'disconnect 7 client2', '851005269') Line 138
+2024-05-09 18:58:44,072 - msg chunk: disconnect 7 client2 Line 159
+2024-05-09 18:58:44,119 - passed initial data loop Line 135
+2024-05-09 18:58:44,127 - passed initial data loop Line 135
+2024-05-09 18:58:44,127 - passed initial data loop Line 135
+2024-05-09 18:58:44,137 - passed initial data loop Line 135
+2024-05-09 18:58:44,144 - ('end', '284', '', '564181641') Line 138
+2024-05-09 18:58:44,144 - end ack sent Line 169
+2024-05-09 18:58:44,144 - complete message: disconnect 7 client3 Line 170
+2024-05-09 18:58:44,144 - msg_type: disconnect Line 175
+2024-05-09 18:58:44,145 - ('end', '459', '', '1414661287') Line 138
+2024-05-09 18:58:44,145 - end ack sent Line 169
+2024-05-09 18:58:44,145 - complete message: disconnect 7 client4 Line 170
+2024-05-09 18:58:44,145 - msg_type: disconnect Line 175
+2024-05-09 18:58:44,145 - ('end', '253', '', '3599070417') Line 138
+2024-05-09 18:58:44,145 - end ack sent Line 169
+2024-05-09 18:58:44,145 - complete message: disconnect 7 client1 Line 170
+2024-05-09 18:58:44,145 - msg_type: disconnect Line 175
+2024-05-09 18:58:44,145 - ('end', '379', '', '1283133500') Line 138
+2024-05-09 18:58:44,146 - end ack sent Line 169
+2024-05-09 18:58:44,146 - complete message: disconnect 7 client2 Line 170
+2024-05-09 18:58:44,146 - msg_type: disconnect Line 175
 Exception ignored in: <module 'threading' from '/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py'>
 Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 1388, in _shutdown
     lock.acquire()
 KeyboardInterrupt: 
-Test Failed: Client output is not correct
+Test Failed! Some Packets were not acknowledged.

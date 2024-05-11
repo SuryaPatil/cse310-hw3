@@ -71,6 +71,7 @@ class BasicTest(object):
         # Check ACK packets
         if self.packets_processed['ack'] < self.num_of_acks:
             print("Test Failed! Some Packets were not acknowledged.")
+            print("packets processed:", self.packets_processed, "acks received:", self.num_of_acks)
             return False
         
         # Generating Expected Output
@@ -117,9 +118,13 @@ class BasicTest(object):
             lines = []
             with open("client_"+client) as f:
                 lines = list(map(lambda x: x.lower(), f.read().split('\n')))
+                # print(lines)
+                # print("****")
+                # print(clients_out[client])
             for each_line in clients_out[client]:
                 if each_line.lower() not in lines:
-                    print("Test Failed: Client output is not correct",each_line,lines)
+                    print("Test Failed: Client output is not correct for client", client)
+                    print(each_line.lower()[0:100],"not in expected output")
                     return False
         
         # Checking Output of Server Messages

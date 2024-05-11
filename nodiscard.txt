@@ -1,0 +1,108 @@
+Testing BasicFunctionality
+2024-05-10 10:59:15,654 - ('start', '448', '', '3924186113') Line 138
+2024-05-10 10:59:15,655 - ('start', '337', '', '3444438933') Line 138
+2024-05-10 10:59:15,670 - ('start', '102', '', '2750663152') Line 138
+2024-05-10 10:59:15,671 - ('start', '228', '', '1137573501') Line 138
+2024-05-10 10:59:15,691 - ('data', '338', 'join 7 client2', '417516251') Line 138
+2024-05-10 10:59:15,691 - msg chunk: join 7 client2 Line 159
+2024-05-10 10:59:15,692 - ('data', '449', 'join 7 client1', '528077684') Line 138
+2024-05-10 10:59:15,692 - msg chunk: join 7 client1 Line 159
+2024-05-10 10:59:15,705 - ('data', '103', 'join 7 client3', '708916243') Line 138
+2024-05-10 10:59:15,706 - msg chunk: join 7 client3 Line 159
+2024-05-10 10:59:15,706 - ('data', '229', 'join 7 client4', '4054749351') Line 138
+2024-05-10 10:59:15,706 - msg chunk: join 7 client4 Line 159
+2024-05-10 10:59:15,719 - ('end', '450', '', '1535328040') Line 138
+2024-05-10 10:59:15,719 - end ack sent Line 169
+2024-05-10 10:59:15,719 - complete message: join 7 client1 Line 170
+2024-05-10 10:59:15,720 - msg_type: join Line 175
+2024-05-10 10:59:15,720 - {} Line 29
+2024-05-10 10:59:15,720 - ('end', '339', '', '3273230187') Line 138
+2024-05-10 10:59:15,720 - end ack sent Line 169
+2024-05-10 10:59:15,720 - complete message: join 7 client2 Line 170
+2024-05-10 10:59:15,720 - msg_type: join Line 175
+2024-05-10 10:59:15,720 - {'client1': ('127.0.0.1', 20952)} Line 29
+2024-05-10 10:59:15,720 - ('end', '230', '', '4054357332') Line 138
+2024-05-10 10:59:15,720 - end ack sent Line 169
+2024-05-10 10:59:15,720 - complete message: join 7 client4 Line 170
+2024-05-10 10:59:15,720 - msg_type: join Line 175
+2024-05-10 10:59:15,721 - {'client1': ('127.0.0.1', 20952), 'client2': ('127.0.0.1', 20951)} Line 29
+2024-05-10 10:59:15,732 - ('end', '104', '', '2746542262') Line 138
+2024-05-10 10:59:15,733 - end ack sent Line 169
+2024-05-10 10:59:15,733 - complete message: join 7 client3 Line 170
+2024-05-10 10:59:15,733 - msg_type: join Line 175
+2024-05-10 10:59:15,733 - {'client1': ('127.0.0.1', 20952), 'client2': ('127.0.0.1', 20951), 'client4': ('127.0.0.1', 20949)} Line 29
+2024-05-10 10:59:17,304 - ('start', '220', '', '1306439621') Line 138
+2024-05-10 10:59:17,337 - ('data', '221', 'request_users_list 0', '4133387747') Line 138
+2024-05-10 10:59:17,337 - msg chunk: request_users_list 0 Line 159
+2024-05-10 10:59:17,438 - ('end', '222', '', '1250960991') Line 138
+2024-05-10 10:59:17,439 - end ack sent Line 169
+2024-05-10 10:59:17,439 - complete message: request_users_list 0 Line 170
+2024-05-10 10:59:17,439 - msg_type: request_users_list Line 175
+2024-05-10 10:59:19,290 - ('start', '329', '', '2138029562') Line 138
+2024-05-10 10:59:19,321 - ('data', '330', 'send_message 43 msg 3 client1 client3 client4 Can we cheat?', '3891383005') Line 138
+2024-05-10 10:59:19,321 - msg chunk: send_message 43 msg 3 client1 client3 client4 Can we cheat? Line 159
+2024-05-10 10:59:19,421 - ('end', '331', '', '3440039635') Line 138
+2024-05-10 10:59:19,422 - end ack sent Line 169
+2024-05-10 10:59:19,422 - complete message: send_message 43 msg 3 client1 client3 client4 Can we cheat? Line 170
+2024-05-10 10:59:19,422 - msg_type: send_message Line 175
+2024-05-10 10:59:19,422 - text: send_message 43 msg 3 client1 client3 client4 Can we cheat? Line 80
+2024-05-10 10:59:19,422 - ['client1', 'client3', 'client4'] Line 100
+2024-05-10 10:59:19,422 - 4 client4 client1 client3 client4 Can we cheat? Line 104
+2024-05-10 10:59:21,299 - ('start', '339', '', '3352550047') Line 138
+2024-05-10 10:59:21,350 - ('data', '340', '', 'send_message 5030 msg 3 client1 client3 client4 dqjEaRpkHOFNPxgLKCYwWYmIqAUGWeFJHAXxqtiObWuQfIgvqlRUCbcpnpDKjwtTXWemfMkXPGxJEgMAwHUqwxHTMroLjAnfWyksQYZAIOBoCChLEWsReCibZBsmfihfcqSMuliuGUZJeVRQPmSBmSKMzWQiFDyIfHTNUptaZvRsBkTdlYtzmqzFRLHjpdwuhHlMXeZZBbVuccxbBLMGFasgZZeySATNQMhLvoLFGVliRMEvxUVHqUoGbanUNauAorKVgGcwlRbsNlBRUhHHtitmyyXJEzMwQcBepfNLxlHMMZcCeVPLmSjosrrlNmKgwThAmuvuaHQdcyeIvdHRKfjRGKKCCvgQCRuGgCUQPJCmOxtOirzpLqQAMUuTtPGJyhHXIzkkVVnoweUvpFGYXFClyQmHhEVGamkhnewxIIWKZUVBTxQdYmIaaBqETvaGtNOhRTkmSGnkHvIEtdZnTpNlMABlPdnAPbYxjUCRgbDYofKLViiTGRvGpYBTZKvAiLZfiYCgOijgVpzJRVmgCDZxexveLPpmxJKqXYMeXDDmysgqAIeSRZPxiwAVuDaVjTGoRghcvzYjRNBKhzGetcSCOmRXDMyjgOvTOwyIoPZIKnHLBTALdyxWWmNdwgyMMxnCHflNmepFxzCYrXXzoJxpGXPqthbOuZpGUjpYGRojNpSpGlzTMFWAKCekzLlutHQBlgjLoHSsRxJMtqvcriNzOCZftZNAOrLVpEsYdwAWvLGWVIxPDZkgbjCncctAnbPmHqbPrfnZcqvdTBPSHSPsdcoxKpxXGtkwgTzcxfQCuvVPIJNDXkzjVlxuASTeRCQyqkhwTiQQrzSldWmEhyuGmoxwRDfMzyCOdlhiooscpuNoegAWqXtRYYRAbhOWaPSDYhnXCBuKZucnTkEfoZfCpNjWATlUozZsKTJHviYNTcAreHnhlwOnIbqWqcuahlwBRhO') Line 138
+2024-05-10 10:59:21,350 - msg chunk:  Line 159
+2024-05-10 10:59:21,432 - ('data', '341', '', 'WZFKKszDnINXaRubCCtwIvqQRzDdHtMvgKCnDSPDxHVCGDCZiXqikzggmpIBfruYpMQEmOMueSNBWzPbOLwIGFiPUuCyMXDjNpbLBdpQXvqhYOwbgyurSzwZHJQUDRCkdTSTMgzKJeSAjnjZVvAdoHzReBvUwVOlOubGdPySgOBNZhvveENqbTBJOOwhSuidrdMKYpIxjtUzCRCeAOUogmvzzvlMnzUTPpdPkgUKotVfztFvnQaBILFNLmCCudQfdxRthyFEdhChiNJqFbVkvnxZomEqnKIJCKIbIkWxKpNaRvebkGULkXiQacRqFBwQSlFAnRGEgahFygqiybiMaaMhBZCvRoFlNuQKsNrwnJUXHKTtVeObXtePiFaYubAUlkeBWgApVMuKvREKljNCoquPjCGbEVFJXxGrSRnGbmslUmypucwGTCMhuFQRHJzxSdDwWzmTNMNItyigViKoKUrOlwevlcbBrAoHvXescpCyuZISHudhBYPpaqGkOwMDwgYSnnbMbwMpqjcUjpvFPBEwEfpwqtxbTAnBsIMAoKGiWpNRrCRSiShmfVdVUroddYfAglJrAIpPGuSjpgmbptxmLCsZoHfycqlYejyJrxlIHzCDEjEFZZViwWodJJjTrtkSNcGCXbUvodonWQRJaFaPTyrNnHBBPfKKewvTGYBCjvRiPSySBmQtkvcVNxoOISrxrjZyCdtpuFtvsRiBGePUeFjXzgTNzBfNPHGOxQgbyHDAPRxjszrKNTgauUwLKqeKhdfvvnfNJYrVtGrkXXfuTcRxdMLfRCcszrhjJSwKEoBOtQGSdCsowMyHdWHaUUjYVEELsHkhpsNrbhNEKYMEHqflvaQAtwqsrFMWyquBQideTmWKFMcJsOpzGjeDyAPcviLYfoNDFfommEaxuKjfcBkeOCkLRNDgzTHrPIvGrgXeDqFddwihNJPUNScCEiYpnghOYJhsIzGDYJUAtIkXXQcpIDBkpqxZxFexbDsFBKhaVVmQMaF') Line 138
+2024-05-10 10:59:21,432 - msg chunk:  Line 159
+2024-05-10 10:59:21,466 - ('data', '342', '', 'lyCLZxemoHnebEkRJcACXIoOfSaQpsOjLknrZppGVoFFogNKZJXhPPYTqULTXxfQeLQHULYfpEPLkEkbVSxPXTfyicujEhUKzsOSRPDJXWuLgQmiKdTkwjXDYJjoYiQboQaVwYcSpKRbrbEWjZSLnUpoTKQuDHDgLWAsSFrOLBrkZOuHdfXGUFQsRpEZLCLfozVclVGSoNoisKkJAmmGAhrSWwosBVJplZxkhNjndYUiwAHnXGESYSquwNHxJIeWEmGjZjEKyXRuokMmcpBotvcwyZBgNlaTabQBFwNKbSsQjJxilmgvjSqwzuhDErVPHpKmrUtmOOYoXMvxEruxNAhVXdiXZbMoJulHNMHaUSKPhDgfTEcXWrOdhOeYoZYpIWUTyoTAAkRTvgRYPtpJQhFvGAjztaywscQGDOLIvGYxedtpbxyJcfOracRPsXfVfZIpTyzYvTIVaktVgDuyHqWibjcIgDAjIcpgLAtJbtqZNMDPQgvZNQMfFAdbEryTwxuAsUkscslASgAjjlRrQBqVCnJzkZobuVUUBQyocDrtAQAIHntoxyRcFImgUJKXtMMpCGjqYlkllxFARVlQMzFHGkggpgxfkwRLkOMmXwEAQaSeLGDdeTJzEYItQPCbxjbbBPDjewinoOFNZOvOSRLSaISCOikqESbagCzEkZoLnwDIuVEcARKQhoXdXNalxnSgKEkPyNkjAFDdReNRESDqJKhuvobLKbbUbOjpAFiVYxfQeqsYmJVHykLfHCVPBgNYSJXSkFHgRSJjSHNqeNfoTGRpEtUynVFleazJvuQVZLhvTvYKbVqEyANPwdjMEQkyssKAUGenRqKYKBiWdMjZmQaeArrgukMMRWlYdLmuwODBOqMYVxYCgcuBPOlXYLARJArsjmRDWkbeURLTQFgWjCggMSpkaTKjRhKmHMvwAkPlrEkJwYablQLSqmPpxJMrnObhUSDkPtfJggOGJWWCzrBuXKezwQugiuazWrsetJqpLmJRDUU') Line 138
+2024-05-10 10:59:21,466 - msg chunk:  Line 159
+2024-05-10 10:59:21,567 - ('data', '343', 'QfTQcBkpgjLnJUMYclOTSQZYnCtSUzmbpgKjxZWwepFQxHPvtRNkGcfORzhLdPOfkfrrxldrNFstFFIJKSHeapWHoVmzmpJplNmcivhnxoKheHpAhBrKgZosYmCEMjQznCVQYNxZjFdjGmLliJEqCdDkmpzGAipnipQAlYaRvirxHGejUfhRxJwuszRGdcfzjdSWJdtjDZVSMlvdcSxswAFfyQZRxgOYcIeYJXnxxuwxnCcCRVVswfKDdVVqXwRKfpinWDXJPAnwYeRLtTgyfeVkOpektorvIxvJjyCzAwhoFMKfASPcACLvQuxTvxSqGcBiJrMzBQEzCRUkraLeBwafqJiZdCIORctshlYzBSCWaTEEtHAkybdpBFGFsTunIEkEPnAqRSlEgHcpqUWRPzYqpSftJYTXBNTCZrncCYMRbMUGVuzknEqghYxknZlCQJarsLDIKNqrqRPnROYDEZVLvSntwyOoXNSVJiNVxbsFupNcDdiDtIDzafxWwUwaqETfuJAVpRinpDODIWlWIOhtwqzgswexeIpDQRLRMUasyKRerXeczEFRwQFEFTExXNjYrkXOaZUcPMrJNBtqthZjeYqYOaHhwqihyBuXTEhNavYFRlesVtFhRVDkZwQpZpBklQAVmPagiaYdBftfvvtkFtZZFuLYdaUWKIAoAwceMpSGjiDyCYaKsFoqMjYamTtkkkHPervyXJEJNQyPsxUWyBNloFAyEtFJibKNxvDDcNtRkkgYzHHpJmZHivjwlbKTbsvzLNmnsHtvGhjamxCxzwmMMifrAPXvQbmsXDaImvcobJvTqAvVWMnotNFQelJEJDAZFxKgHGdp', '1078569538') Line 138
+2024-05-10 10:59:21,567 - msg chunk: QfTQcBkpgjLnJUMYclOTSQZYnCtSUzmbpgKjxZWwepFQxHPvtRNkGcfORzhLdPOfkfrrxldrNFstFFIJKSHeapWHoVmzmpJplNmcivhnxoKheHpAhBrKgZosYmCEMjQznCVQYNxZjFdjGmLliJEqCdDkmpzGAipnipQAlYaRvirxHGejUfhRxJwuszRGdcfzjdSWJdtjDZVSMlvdcSxswAFfyQZRxgOYcIeYJXnxxuwxnCcCRVVswfKDdVVqXwRKfpinWDXJPAnwYeRLtTgyfeVkOpektorvIxvJjyCzAwhoFMKfASPcACLvQuxTvxSqGcBiJrMzBQEzCRUkraLeBwafqJiZdCIORctshlYzBSCWaTEEtHAkybdpBFGFsTunIEkEPnAqRSlEgHcpqUWRPzYqpSftJYTXBNTCZrncCYMRbMUGVuzknEqghYxknZlCQJarsLDIKNqrqRPnROYDEZVLvSntwyOoXNSVJiNVxbsFupNcDdiDtIDzafxWwUwaqETfuJAVpRinpDODIWlWIOhtwqzgswexeIpDQRLRMUasyKRerXeczEFRwQFEFTExXNjYrkXOaZUcPMrJNBtqthZjeYqYOaHhwqihyBuXTEhNavYFRlesVtFhRVDkZwQpZpBklQAVmPagiaYdBftfvvtkFtZZFuLYdaUWKIAoAwceMpSGjiDyCYaKsFoqMjYamTtkkkHPervyXJEJNQyPsxUWyBNloFAyEtFJibKNxvDDcNtRkkgYzHHpJmZHivjwlbKTbsvzLNmnsHtvGhjamxCxzwmMMifrAPXvQbmsXDaImvcobJvTqAvVWMnotNFQelJEJDAZFxKgHGdp Line 159
+2024-05-10 10:59:21,601 - ('end', '344', '', '1444293761') Line 138
+2024-05-10 10:59:21,601 - end ack sent Line 169
+2024-05-10 10:59:21,601 - complete message: QfTQcBkpgjLnJUMYclOTSQZYnCtSUzmbpgKjxZWwepFQxHPvtRNkGcfORzhLdPOfkfrrxldrNFstFFIJKSHeapWHoVmzmpJplNmcivhnxoKheHpAhBrKgZosYmCEMjQznCVQYNxZjFdjGmLliJEqCdDkmpzGAipnipQAlYaRvirxHGejUfhRxJwuszRGdcfzjdSWJdtjDZVSMlvdcSxswAFfyQZRxgOYcIeYJXnxxuwxnCcCRVVswfKDdVVqXwRKfpinWDXJPAnwYeRLtTgyfeVkOpektorvIxvJjyCzAwhoFMKfASPcACLvQuxTvxSqGcBiJrMzBQEzCRUkraLeBwafqJiZdCIORctshlYzBSCWaTEEtHAkybdpBFGFsTunIEkEPnAqRSlEgHcpqUWRPzYqpSftJYTXBNTCZrncCYMRbMUGVuzknEqghYxknZlCQJarsLDIKNqrqRPnROYDEZVLvSntwyOoXNSVJiNVxbsFupNcDdiDtIDzafxWwUwaqETfuJAVpRinpDODIWlWIOhtwqzgswexeIpDQRLRMUasyKRerXeczEFRwQFEFTExXNjYrkXOaZUcPMrJNBtqthZjeYqYOaHhwqihyBuXTEhNavYFRlesVtFhRVDkZwQpZpBklQAVmPagiaYdBftfvvtkFtZZFuLYdaUWKIAoAwceMpSGjiDyCYaKsFoqMjYamTtkkkHPervyXJEJNQyPsxUWyBNloFAyEtFJibKNxvDDcNtRkkgYzHHpJmZHivjwlbKTbsvzLNmnsHtvGhjamxCxzwmMMifrAPXvQbmsXDaImvcobJvTqAvVWMnotNFQelJEJDAZFxKgHGdp Line 170
+2024-05-10 10:59:21,601 - msg_type: QfTQcBkpgjLnJUMYclOTSQZYnCtSUzmbpgKjxZWwepFQxHPvtRNkGcfORzhLdPOfkfrrxldrNFstFFIJKSHeapWHoVmzmpJplNmcivhnxoKheHpAhBrKgZosYmCEMjQznCVQYNxZjFdjGmLliJEqCdDkmpzGAipnipQAlYaRvirxHGejUfhRxJwuszRGdcfzjdSWJdtjDZVSMlvdcSxswAFfyQZRxgOYcIeYJXnxxuwxnCcCRVVswfKDdVVqXwRKfpinWDXJPAnwYeRLtTgyfeVkOpektorvIxvJjyCzAwhoFMKfASPcACLvQuxTvxSqGcBiJrMzBQEzCRUkraLeBwafqJiZdCIORctshlYzBSCWaTEEtHAkybdpBFGFsTunIEkEPnAqRSlEgHcpqUWRPzYqpSftJYTXBNTCZrncCYMRbMUGVuzknEqghYxknZlCQJarsLDIKNqrqRPnROYDEZVLvSntwyOoXNSVJiNVxbsFupNcDdiDtIDzafxWwUwaqETfuJAVpRinpDODIWlWIOhtwqzgswexeIpDQRLRMUasyKRerXeczEFRwQFEFTExXNjYrkXOaZUcPMrJNBtqthZjeYqYOaHhwqihyBuXTEhNavYFRlesVtFhRVDkZwQpZpBklQAVmPagiaYdBftfvvtkFtZZFuLYdaUWKIAoAwceMpSGjiDyCYaKsFoqMjYamTtkkkHPervyXJEJNQyPsxUWyBNloFAyEtFJibKNxvDDcNtRkkgYzHHpJmZHivjwlbKTbsvzLNmnsHtvGhjamxCxzwmMMifrAPXvQbmsXDaImvcobJvTqAvVWMnotNFQelJEJDAZFxKgHGdp Line 175
+2024-05-10 10:59:23,339 - ('start', '355', '', '3953294375') Line 138
+2024-05-10 10:59:23,373 - ('data', '356', 'send_message 71 msg 4 client1 client2 client3 client4 Hello Dear Friends! Do not cheat.', '2656648220') Line 138
+2024-05-10 10:59:23,373 - msg chunk: send_message 71 msg 4 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 159
+2024-05-10 10:59:23,471 - ('end', '357', '', '3974952381') Line 138
+2024-05-10 10:59:23,471 - end ack sent Line 169
+2024-05-10 10:59:23,471 - complete message: send_message 71 msg 4 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 170
+2024-05-10 10:59:23,471 - msg_type: send_message Line 175
+2024-05-10 10:59:23,471 - text: send_message 71 msg 4 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 80
+2024-05-10 10:59:23,471 - ['client1', 'client2', 'client3', 'client4'] Line 100
+2024-05-10 10:59:23,472 - 5 client2 client1 client2 client3 client4 Hello Dear Friends! Do not cheat. Line 104
+2024-05-10 10:59:31,326 - ('start', '385', '', '432579834') Line 138
+2024-05-10 10:59:31,326 - ('start', '229', '', '1108317258') Line 138
+2024-05-10 10:59:31,326 - ('start', '331', '', '3384838951') Line 138
+2024-05-10 10:59:31,326 - ('start', '112', '', '458206869') Line 138
+2024-05-10 10:59:31,326 - ('data', '386', 'disconnect 7 client1', '401745411') Line 138
+2024-05-10 10:59:31,326 - msg chunk: disconnect 7 client1 Line 159
+2024-05-10 10:59:31,326 - ('data', '230', 'disconnect 7 client2', '4270653986') Line 138
+2024-05-10 10:59:31,326 - msg chunk: disconnect 7 client2 Line 159
+2024-05-10 10:59:31,326 - ('data', '332', 'disconnect 7 client3', '2945151108') Line 138
+2024-05-10 10:59:31,326 - msg chunk: disconnect 7 client3 Line 159
+2024-05-10 10:59:31,327 - ('data', '113', 'disconnect 7 client4', '853862085') Line 138
+2024-05-10 10:59:31,327 - msg chunk: disconnect 7 client4 Line 159
+2024-05-10 10:59:31,355 - ('end', '114', '', '453545939') Line 138
+2024-05-10 10:59:31,356 - end ack sent Line 169
+2024-05-10 10:59:31,356 - complete message: disconnect 7 client4 Line 170
+2024-05-10 10:59:31,356 - msg_type: disconnect Line 175
+2024-05-10 10:59:31,357 - ('end', '387', '', '512109920') Line 138
+2024-05-10 10:59:31,357 - end ack sent Line 169
+2024-05-10 10:59:31,357 - complete message: disconnect 7 client1 Line 170
+2024-05-10 10:59:31,357 - msg_type: disconnect Line 175
+2024-05-10 10:59:31,358 - ('end', '231', '', '4033544035') Line 138
+2024-05-10 10:59:31,358 - end ack sent Line 169
+2024-05-10 10:59:31,358 - complete message: disconnect 7 client2 Line 170
+2024-05-10 10:59:31,358 - msg_type: disconnect Line 175
+2024-05-10 10:59:31,359 - ('end', '333', '', '3465413309') Line 138
+2024-05-10 10:59:31,359 - end ack sent Line 169
+2024-05-10 10:59:31,359 - complete message: disconnect 7 client3 Line 170
+2024-05-10 10:59:31,359 - msg_type: disconnect Line 175
+Exception ignored in: <module 'threading' from '/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py'>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/threading.py", line 1388, in _shutdown
+    lock.acquire()
+KeyboardInterrupt: 
+Test Failed! Some Packets were not acknowledged.
+packets processed: {'ack': 39, 'data': 23, 'start': 12, 'end': 12} num of acks: 52
